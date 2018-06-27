@@ -73,11 +73,17 @@ var config = {
                 "opacity": 1,
                 "color": '#727272',
             },
+            "outFields": [
+	              {"name": "name", "alias": "Name"},
+	              {"name": "address", "alias": "Address"},
+	              {"name": "earliest", "alias": "Earliest Appointment"},
+	              // {"name": "OBJECTID", "hidden": true}
+            ],
 	          "visible": true,
-	          // "label": {
-	  	      //     "name": "name",
-	  	      //     "minZoom": 10,
-	          // },
+	          "label": {
+	  	          "name": "earliest",
+	  	          "minZoom": 10,
+	          },
             "tooltipField": "name",
             "popup": true,
         }

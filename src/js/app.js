@@ -2023,6 +2023,7 @@ function updateScaleThresholds() {
         var zoomLevel = bootleaf.map.getZoom();
         var minZoom = layerConfig.minZoom || 1;
         var maxZoom = layerConfig.maxZoom || 19;
+        console.log([zoomLevel, minZoom, maxZoom]);
         if (zoomLevel < minZoom || zoomLevel > maxZoom) {
             layer.outsideScaleThreshold = true;
             if (layer.tocState === 'on') {

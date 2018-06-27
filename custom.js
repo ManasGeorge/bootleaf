@@ -44,5 +44,5 @@ function afterMapLoads(){
     // bootleaf.leafletGeocoder.on("markgeocode", function(evt){
     // 	console.log("Coordinates: ", evt.geocode.center.lat, ", ", evt.geocode.center.lng);
 	  // });
-    setTimeout(updateScaleThresholds, 50);
+    setTimeout(updateScaleThresholds, 1000);
 }

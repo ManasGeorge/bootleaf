@@ -1,5 +1,5 @@
 var config = {
-    "title": "DMV Appointment Finder",
+    "title": "CA DMV Appointment Finder",
     "start": {
         "center": [37.3861, -122.0839],
         "zoom": 7,
@@ -7,8 +7,8 @@ var config = {
         "zoomControl": false
     },
     "about": {
-        "title": "DMV Finder",
-        "contents": "This tool lists DMVs with the earliest available appointment times"
+        "title": "CA DMV Finder",
+        "contents": "This tool maps California DMVs with the earliest available appointment times for a behind-the wheel driving test, commercial driving test, or an office visit (REAL ID application/renewal, Driver's License application/renewal, or Title/Registration of a vessel or vehicle)."
     },
     "controls": {
         "zoom": {
@@ -60,8 +60,8 @@ var config = {
             "id": "dmvs",
             "name": "DMVs",
             "type": "geoJSON",
-            "cluster": true,
-            "showCoverageOnHover": false,
+            "cluster": false,
+            "showCoverageOnHover": true,
             "minZoom": 1,
             "url": "./data/dmvs.geojson",
             "style": {
@@ -77,7 +77,6 @@ var config = {
 	              {"name": "name", "alias": "Name"},
 	              {"name": "address", "alias": "Address"},
 	              {"name": "earliest", "alias": "Earliest Appointment"},
-	              // {"name": "OBJECTID", "hidden": true}
             ],
 	          "visible": true,
 	          "label": {

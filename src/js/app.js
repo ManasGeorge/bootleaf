@@ -37,7 +37,6 @@ var bootleaf = {
 };
 
 $(document).ready(function(){
-
     if (typeof config === 'undefined') {
         $.growl.error({message: "Error - the configuration file is not found!", fixed: true});
         return null
@@ -466,7 +465,6 @@ $(document).ready(function(){
         // Geocoder control
         // https://github.com/perliedman/leaflet-control-geocoder
         if(config.controls.leafletGeocoder !== undefined) {
-
             var geocoder = L.Control.Geocoder.nominatim(config.controls.leafletGeocoder);
             if(config.controls.leafletGeocoder.type === "Harmony") {
                 geocoder = L.Control.Geocoder.harmony(config.controls.leafletGeocoder);
@@ -483,10 +481,20 @@ $(document).ready(function(){
             }
 
             bootleaf.leafletGeocoder = L.Control.geocoder({
+                defaultMarkGeocode: false,
                 position: config.controls.leafletGeocoder.position || "bottomright",
                 placeholder: config.controls.leafletGeocoder.placeholder || "Search for an address",
                 collapsed: config.controls.leafletGeocoder.collapsed || false,
                 geocoder: geocoder
+            }).on('markgeocode', function(e) {
+                var bbox = e.geocode.bbox;
+                var poly = L.polygon([
+                    bbox.getSouthEast(),
+                    bbox.getNorthEast(),
+                    bbox.getNorthWest(),
+                    bbox.getSouthWest()
+                ]).addTo(bootleaf.map);
+                bootleaf.map.fitBounds(poly.getBounds());
             }).addTo(bootleaf.map);
 
         }
@@ -2023,7 +2031,6 @@ function updateScaleThresholds() {
         var zoomLevel = bootleaf.map.getZoom();
         var minZoom = layerConfig.minZoom || 1;
         var maxZoom = layerConfig.maxZoom || 19;
-        console.log([zoomLevel, minZoom, maxZoom]);
         if (zoomLevel < minZoom || zoomLevel > maxZoom) {
             layer.outsideScaleThreshold = true;
             if (layer.tocState === 'on') {

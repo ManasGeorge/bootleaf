@@ -1,0 +1,2581 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.54975400000001,
+                    41.491962
+                ]
+            },
+            "properties": {
+                "name": "Alturas",
+                "earliest": "July 10 16:20",
+                "address": "903 W C St, Alturas, CA 96101"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 1,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.44521499999999,
+                    34.249224
+                ]
+            },
+            "properties": {
+                "name": "Arleta",
+                "earliest": "September 04 10:40",
+                "address": "14400 Van Nuys Blvd, Arleta, CA 91331"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.8332,
+                    35.2108
+                ]
+            },
+            "properties": {
+                "name": "Arvin",
+                "earliest": "July 16 14:35",
+                "address": "317 Campus Dr., Arvin, CA 93203"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 4,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0225,
+                    35.3883
+                ]
+            },
+            "properties": {
+                "name": "Bakersfield",
+                "earliest": "July 19 08:40",
+                "address": "3120 F Street, Bakersfield, CA 93301"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 5,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.079704,
+                    35.317031
+                ]
+            },
+            "properties": {
+                "name": "Bakersfield Southwest",
+                "earliest": "July 24 13:00",
+                "address": "7000 Schirra Ct, Bakersfield, CA 93313"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 6,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.8879,
+                    33.9249
+                ]
+            },
+            "properties": {
+                "name": "Banning",
+                "earliest": "August 13 08:00",
+                "address": "1034 W. Ramsey Street B, Banning, CA 92220"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 7,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.02211899999999,
+                    34.888119
+                ]
+            },
+            "properties": {
+                "name": "Barstow",
+                "earliest": "July 12 11:00",
+                "address": "528 E Virginia Way, Barstow, CA 92311"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 8,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1491,
+                    33.9701
+                ]
+            },
+            "properties": {
+                "name": "Bell Gardens",
+                "earliest": "July 17 11:40",
+                "address": "6801 South Garfield, Bell Gardens, CA 90201"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 9,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1309,
+                    33.8747
+                ]
+            },
+            "properties": {
+                "name": "Bellflower",
+                "earliest": "July 17 13:40",
+                "address": "9520 East Artesia Blvd., Bellflower, CA 90706"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 10,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.4078,
+                    37.3613
+                ]
+            },
+            "properties": {
+                "name": "Bishop",
+                "earliest": "July 02 14:40",
+                "address": "1115 West Line Street, Bishop, CA 93514"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 11,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.5962,
+                    33.6042
+                ]
+            },
+            "properties": {
+                "name": "Blythe",
+                "earliest": "July 09 10:50",
+                "address": "430 S Broadway, Blythe, CA 92225"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 12,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5227,
+                    32.9787
+                ]
+            },
+            "properties": {
+                "name": "Brawley",
+                "earliest": "August 10 15:20",
+                "address": "1175 East Main Street, Brawley, CA 92227"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 13,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.9627,
+                    36.9732
+                ]
+            },
+            "properties": {
+                "name": "Capitola",
+                "earliest": "July 31 13:00",
+                "address": "4200 Capitola Road, Capitola, CA 95010"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 14,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.34328799999999,
+                    38.625159000000004
+                ]
+            },
+            "properties": {
+                "name": "Carmichael",
+                "earliest": "August 14 09:20",
+                "address": "5209 North Ave, Carmichael, CA 95608"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 15,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.8491,
+                    39.7528
+                ]
+            },
+            "properties": {
+                "name": "Chico",
+                "earliest": "August 02 09:00",
+                "address": "107 Parmac Rd #1, Chico, CA 95926"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 17,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6766,
+                    36.8095
+                ]
+            },
+            "properties": {
+                "name": "Clovis",
+                "earliest": "July 24 13:40",
+                "address": "2103 Shaw Avenue, Clovis, CA 93611"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 18,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.3572,
+                    36.143
+                ]
+            },
+            "properties": {
+                "name": "Coalinga",
+                "earliest": "July 24 13:20",
+                "address": "406 East Elm Avenue, Coalinga, CA 93210"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 19,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0044,
+                    39.2039
+                ]
+            },
+            "properties": {
+                "name": "Colusa",
+                "earliest": "July 26 14:20",
+                "address": "1025 Bridge St. STE B, Colusa, CA 95932"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 20,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2154,
+                    33.8765
+                ]
+            },
+            "properties": {
+                "name": "Compton",
+                "earliest": "July 13 12:20",
+                "address": "2111 South Santa Fe Avenue, Compton, CA 90221"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 21,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0566,
+                    37.9747
+                ]
+            },
+            "properties": {
+                "name": "Concord",
+                "earliest": "July 30 08:40",
+                "address": "2070 Diamond Boulevard, Concord, CA 94520"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.5177,
+                    37.9347
+                ]
+            },
+            "properties": {
+                "name": "Corte Madera",
+                "earliest": "July 24 08:20",
+                "address": "75 Tamal Vista Boulevard, Corte Madera, CA 94925"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 23,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9259,
+                    33.6435
+                ]
+            },
+            "properties": {
+                "name": "Costa Mesa",
+                "earliest": "August 29 09:40",
+                "address": "650 W. 19th Street, Costa Mesa, CA 92627"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 24,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -124.1847,
+                    41.7719
+                ]
+            },
+            "properties": {
+                "name": "Crescent City",
+                "earliest": "August 07 14:20",
+                "address": "1475 Parkway Drive, Crescent City, CA 95531"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 25,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.41536799999999,
+                    34.002309000000004
+                ]
+            },
+            "properties": {
+                "name": "Culver City",
+                "earliest": "July 12 13:40",
+                "address": "11400 W Washington Blvd, Culver City, CA 90066"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 26,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4728,
+                    37.689
+                ]
+            },
+            "properties": {
+                "name": "Daly City",
+                "earliest": "September 07 09:20",
+                "address": "1500 Sullivan Avenue, Daly City, CA 94015"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 27,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.7267,
+                    38.5492
+                ]
+            },
+            "properties": {
+                "name": "Davis",
+                "earliest": "July 31 13:20",
+                "address": "505 Pole Line Road, Davis, CA 95616"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 28,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2437,
+                    35.7651
+                ]
+            },
+            "properties": {
+                "name": "Delano",
+                "earliest": "July 11 14:00",
+                "address": "631 Jefferson Street, Delano, CA 93215"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 29,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.9597,
+                    32.8168
+                ]
+            },
+            "properties": {
+                "name": "El Cajon",
+                "earliest": "July 26 09:00",
+                "address": "1450 Graves Avenue, El Cajon, CA 92021"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 30,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -115.5694,
+                    32.7948
+                ]
+            },
+            "properties": {
+                "name": "El Centro",
+                "earliest": "July 16 13:20",
+                "address": "233 N. Imperial Avenue, El Centro, CA 92243"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 31,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3107,
+                    37.9161
+                ]
+            },
+            "properties": {
+                "name": "El Cerrito",
+                "earliest": "July 30 09:00",
+                "address": "6400 Manila Avenue, El Cerrito, CA 94530"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 32,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.044722,
+                    34.080477
+                ]
+            },
+            "properties": {
+                "name": "El Monte",
+                "earliest": "August 09 13:40",
+                "address": "4000 Arden Drive, El Monte, CA 91731"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 33,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -124.1745,
+                    40.7932
+                ]
+            },
+            "properties": {
+                "name": "Eureka",
+                "earliest": "July 16 09:35",
+                "address": "322 W. 15th Street, Eureka, CA 95501"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 34,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0731,
+                    38.2467
+                ]
+            },
+            "properties": {
+                "name": "Fairfield",
+                "earliest": "August 08 12:20",
+                "address": "160 Serrano Drive, Fairfield, CA 94533"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 36,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.1681,
+                    38.6741
+                ]
+            },
+            "properties": {
+                "name": "Folsom",
+                "earliest": "August 10 11:20",
+                "address": "323 E Bidwell A, Folsom, CA 95630"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 37,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.476956,
+                    34.107862
+                ]
+            },
+            "properties": {
+                "name": "Fontana",
+                "earliest": "July 24 08:20",
+                "address": "8026 Hemlock Ave, Fontana, CA 92336"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 39,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.8042,
+                    39.4379
+                ]
+            },
+            "properties": {
+                "name": "Fort Bragg",
+                "earliest": "July 31 09:40",
+                "address": "410 S. Franklin Street, Fort Bragg, CA 95437"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 40,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0073,
+                    37.5531
+                ]
+            },
+            "properties": {
+                "name": "Fremont",
+                "earliest": "August 09 08:20",
+                "address": "4287 Central Avenue, Fremont, CA 94536"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 41,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8194,
+                    36.7575
+                ]
+            },
+            "properties": {
+                "name": "Fresno",
+                "earliest": "July 19 15:20",
+                "address": "655 W. Olive Avenue, Fresno, CA 93728"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 43,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.7901,
+                    36.830999999999996
+                ]
+            },
+            "properties": {
+                "name": "Fresno North",
+                "earliest": "July 20 13:00",
+                "address": "6420 N Blackstone Avenue, Fresno, CA 93710"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 44,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9399,
+                    33.8666
+                ]
+            },
+            "properties": {
+                "name": "Fullerton",
+                "earliest": "July 19 14:20",
+                "address": "909 W. Valencia Drive, Fullerton, CA 92832"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 45,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.800749,
+                    40.120878000000005
+                ]
+            },
+            "properties": {
+                "name": "Garberville",
+                "earliest": "August 09 10:20",
+                "address": "1180 Evergreen Rd, Redway, CA 95560"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 47,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.5606,
+                    37.0017
+                ]
+            },
+            "properties": {
+                "name": "Gilroy",
+                "earliest": "August 23 11:00",
+                "address": "6984 Chestnut Street Suite A, Gilroy, CA 95020"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 48,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2833,
+                    34.1667
+                ]
+            },
+            "properties": {
+                "name": "Glendale",
+                "earliest": "September 18 10:40",
+                "address": "1335 W. Glenoaks Boulevard, Glendale, CA 91201"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 49,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.8765,
+                    34.4285
+                ]
+            },
+            "properties": {
+                "name": "Goleta",
+                "earliest": "July 20 13:00",
+                "address": "7127 Hollister Avenue Suite 24/26, Goleta, CA 93117"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 51,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.03601,
+                    39.2321
+                ]
+            },
+            "properties": {
+                "name": "Grass Valley",
+                "earliest": "August 03 08:40",
+                "address": "890 Sutton Way, Grass Valley, CA 95945"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 52,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.6444,
+                    36.3134
+                ]
+            },
+            "properties": {
+                "name": "Hanford",
+                "earliest": "July 12 11:00",
+                "address": "701 W. Hanford Armona Road (corner of W. Armona), Hanford, CA 93230"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 53,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.3373,
+                    33.9164
+                ]
+            },
+            "properties": {
+                "name": "Hawthorne",
+                "earliest": "August 03 10:40",
+                "address": "3700 W. El Segundo Boulevard, Hawthorne, CA 90250"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 54,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0878,
+                    37.6595
+                ]
+            },
+            "properties": {
+                "name": "Hayward",
+                "earliest": "July 30 10:00",
+                "address": "150 Jackson Street, Hayward, CA 94544"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 55,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.970199,
+                    33.727792
+                ]
+            },
+            "properties": {
+                "name": "Hemet",
+                "earliest": "July 25 14:40",
+                "address": "1200 S State St, Hemet, CA 92543"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 56,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.399748,
+                    36.858174
+                ]
+            },
+            "properties": {
+                "name": "Hollister",
+                "earliest": "August 10 10:20",
+                "address": "80 N. Sally Street, Hollister, CA 95023"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 57,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.3299,
+                    34.0853
+                ]
+            },
+            "properties": {
+                "name": "Hollywood",
+                "earliest": "July 06 11:40",
+                "address": "803 Cole Avenue, Hollywood, CA 90038"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 58,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.21574199999999,
+                    33.72622
+                ]
+            },
+            "properties": {
+                "name": "Indio",
+                "earliest": "July 12 14:40",
+                "address": "44480 Jackson St, Indio, CA 92201"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 59,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.357099,
+                    33.970141999999996
+                ]
+            },
+            "properties": {
+                "name": "Inglewood",
+                "earliest": "July 25 15:20",
+                "address": "621 N La Brea Ave, Inglewood, CA 90302"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 60,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.76361999999999,
+                    38.342199
+                ]
+            },
+            "properties": {
+                "name": "Jackson",
+                "earliest": "July 25 10:20",
+                "address": "201 Clinton Road, Jackson, CA 95642"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 61,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.127305,
+                    36.222398999999996
+                ]
+            },
+            "properties": {
+                "name": "King City",
+                "earliest": "July 10 10:00",
+                "address": "101 E San Antonio Dr, King City, CA 93930"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 62,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.7316,
+                    33.6209
+                ]
+            },
+            "properties": {
+                "name": "Laguna Hills",
+                "earliest": "August 10 13:20",
+                "address": "23535 Moulton Parkway, Laguna Hills, CA 92653"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 63,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.47823600000001,
+                    35.616825
+                ]
+            },
+            "properties": {
+                "name": "Lake Isabella",
+                "earliest": "July 10 09:40",
+                "address": "5520 Lake Isabella Road G-1, Lake Isabella, CA 93240"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 64,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.927301,
+                    39.036613
+                ]
+            },
+            "properties": {
+                "name": "Lakeport",
+                "earliest": "August 17 13:40",
+                "address": "965 Parallel Drive, Lakeport, CA 95453"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 65,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.14691200000001,
+                    34.654835999999996
+                ]
+            },
+            "properties": {
+                "name": "Lancaster",
+                "earliest": "July 20 14:40",
+                "address": "721 W Ave L6, Lancaster, CA 93535"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 66,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2035,
+                    34.0673
+                ]
+            },
+            "properties": {
+                "name": "Lincoln Park",
+                "earliest": "August 02 08:20",
+                "address": "3529 N. Mission Road, Los Angeles, CA 90031"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 67,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.2522,
+                    38.1179
+                ]
+            },
+            "properties": {
+                "name": "Lodi",
+                "earliest": "August 07 14:20",
+                "address": "1222 Pixley Parkway, Lodi, CA 95240"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 68,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.45838,
+                    34.663552
+                ]
+            },
+            "properties": {
+                "name": "Lompoc",
+                "earliest": "July 13 08:50",
+                "address": "1601 N H St, Lompoc, CA 93436"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 69,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1494,
+                    33.8037
+                ]
+            },
+            "properties": {
+                "name": "Long Beach",
+                "earliest": "July 12 09:40",
+                "address": "3700 East Willow Street, Long Beach, CA 90815"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 70,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2787,
+                    34.0182
+                ]
+            },
+            "properties": {
+                "name": "Los Angeles",
+                "earliest": "July 18 15:20",
+                "address": "3615 S. Hope Street, Los Angeles, CA 90007"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 71,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.863,
+                    37.0598
+                ]
+            },
+            "properties": {
+                "name": "Los Banos",
+                "earliest": "August 30 08:50",
+                "address": "814 West L Street, Los Banos, CA 93635"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 72,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.9781,
+                    37.234
+                ]
+            },
+            "properties": {
+                "name": "Los Gatos",
+                "earliest": "September 07 09:20",
+                "address": "600 N. Santa Cruz Avenue, Los Gatos, CA 95030"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 73,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.0717,
+                    36.9501
+                ]
+            },
+            "properties": {
+                "name": "Madera",
+                "earliest": "July 16 15:00",
+                "address": "1206 Maple Street, Madera, CA 93637"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 74,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.2303,
+                    37.8006
+                ]
+            },
+            "properties": {
+                "name": "Manteca",
+                "earliest": "August 06 09:20",
+                "address": "955 Davis Street, Manteca, CA 95336"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 75,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.968383,
+                    37.494628000000006
+                ]
+            },
+            "properties": {
+                "name": "Mariposa",
+                "earliest": "July 31 09:20",
+                "address": "5264 Highway 49-North, Mariposa, CA 95338"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 76,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.3826,
+                    36.7541
+                ]
+            },
+            "properties": {
+                "name": "Mendota",
+                "earliest": "July 27 10:20",
+                "address": "655 Quince Street, Mendota, CA 93640"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 77,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.4987,
+                    37.3007
+                ]
+            },
+            "properties": {
+                "name": "Merced",
+                "earliest": "August 01 10:20",
+                "address": "1313 W. 12th Street, Merced, CA 95340"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 78,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.9888,
+                    37.6384
+                ]
+            },
+            "properties": {
+                "name": "Modesto",
+                "earliest": "July 20 13:40",
+                "address": "124 Burney Street, Modesto, CA 95354"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 79,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.1227,
+                    34.0194
+                ]
+            },
+            "properties": {
+                "name": "Montebello",
+                "earliest": "July 31 11:40",
+                "address": "424 N. Wilcox Avenue, Montebello, CA 90640"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 80,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.31703,
+                    41.310225
+                ]
+            },
+            "properties": {
+                "name": "Mt Shasta",
+                "earliest": "August 13 09:40",
+                "address": "154 Morgan Way, Mt Shasta, CA 96067"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 81,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.2739,
+                    38.2554
+                ]
+            },
+            "properties": {
+                "name": "Napa",
+                "earliest": "August 21 12:00",
+                "address": "2550 Napa Valley Corporate Drive, Napa, CA 94558"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 82,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.596291,
+                    34.825497
+                ]
+            },
+            "properties": {
+                "name": "Needles",
+                "earliest": "July 17 10:00",
+                "address": "1040 E Broadway St, Needles, CA 92363"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 83,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.5325,
+                    34.3795
+                ]
+            },
+            "properties": {
+                "name": "Newhall",
+                "earliest": "July 19 09:20",
+                "address": "24427 Newhall Avenue, Newhall, CA 91321"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.5614,
+                    33.9283
+                ]
+            },
+            "properties": {
+                "name": "Norco",
+                "earliest": "July 23 11:20",
+                "address": "3201 Horseless Carriage Drive, Norco, CA 92860"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 85,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.5787,
+                    38.1066
+                ]
+            },
+            "properties": {
+                "name": "Novato",
+                "earliest": "August 03 14:20",
+                "address": "936 7th Street A, Novato, CA 94947"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 86,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.2597,
+                    37.84
+                ]
+            },
+            "properties": {
+                "name": "Oakland",
+                "earliest": "July 27 10:20",
+                "address": "5300 Claremont Avenue, Oakland, CA 94618"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 88,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.289,
+                    33.1834
+                ]
+            },
+            "properties": {
+                "name": "Oceanside",
+                "earliest": "July 23 11:50",
+                "address": "4005 Plaza Drive, Oceanside, CA 92056"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 89,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.565331,
+                    39.504455
+                ]
+            },
+            "properties": {
+                "name": "Oroville",
+                "earliest": "July 30 14:40",
+                "address": "775 Mitchell Avenue, Oroville, CA 95965"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 90,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.1775,
+                    34.1629
+                ]
+            },
+            "properties": {
+                "name": "Oxnard",
+                "earliest": "July 02 11:40",
+                "address": "4050 Saviers Road, Oxnard, CA 93033"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 91,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.3576,
+                    33.7828
+                ]
+            },
+            "properties": {
+                "name": "Palm Desert",
+                "earliest": "July 18 11:20",
+                "address": "74-740 Technology Drive, Palm Desert, CA 92211"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 92,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.5187,
+                    33.8366
+                ]
+            },
+            "properties": {
+                "name": "Palm Springs",
+                "earliest": "July 16 15:10",
+                "address": "950 N. Farrell Drive, Palm Springs, CA 92262"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 93,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.60696999999999,
+                    39.757894
+                ]
+            },
+            "properties": {
+                "name": "Paradise",
+                "earliest": "August 09 10:20",
+                "address": "5921 Clark Road, Paradise, CA 95967"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 94,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.0742,
+                    34.1452
+                ]
+            },
+            "properties": {
+                "name": "Pasadena",
+                "earliest": "August 06 14:40",
+                "address": "49 S. Rosemead Boulevard, Pasadena, CA 91107"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 95,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.6898,
+                    35.6233
+                ]
+            },
+            "properties": {
+                "name": "Paso Robles",
+                "earliest": "July 13 14:40",
+                "address": "841 Park Street, Paso Robles, CA 93446"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 96,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6453,
+                    38.257
+                ]
+            },
+            "properties": {
+                "name": "Petaluma",
+                "earliest": "August 02 10:00",
+                "address": "715 - J Southpoint Boulevard, Petaluma, CA 94954"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 97,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.8726,
+                    37.9988
+                ]
+            },
+            "properties": {
+                "name": "Pittsburg",
+                "earliest": "August 07 13:40",
+                "address": "1399 Buchanan Road, Pittsburg, CA 94565"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 98,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.8251,
+                    38.7347
+                ]
+            },
+            "properties": {
+                "name": "Placerville",
+                "earliest": "August 02 10:40",
+                "address": "2919 Cold Springs Road, Placerville, CA 95667"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 99,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.90570600000001,
+                    37.680167
+                ]
+            },
+            "properties": {
+                "name": "Pleasanton",
+                "earliest": "August 02 10:40",
+                "address": "6300 W Las Positas Blvd, Pleasanton, CA 94588"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 100,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.7495,
+                    34.0424
+                ]
+            },
+            "properties": {
+                "name": "Pomona",
+                "earliest": "August 07 11:20",
+                "address": "1600 S. Garey Avenue, Pomona, CA 91766"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 101,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0094,
+                    36.0634
+                ]
+            },
+            "properties": {
+                "name": "Porterville",
+                "earliest": "July 06 09:40",
+                "address": "329 E. Olive Avenue, Porterville, CA 93257"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 102,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.0407,
+                    32.9602
+                ]
+            },
+            "properties": {
+                "name": "Poway",
+                "earliest": "September 04 11:00",
+                "address": "13461 Community Road, Poway, CA 92064"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 103,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.882972,
+                    39.935062
+                ]
+            },
+            "properties": {
+                "name": "Quincy",
+                "earliest": "July 11 15:50",
+                "address": "1953 E. Main Street Suite 3, Quincy, CA 95971"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 104,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.6016,
+                    34.0969
+                ]
+            },
+            "properties": {
+                "name": "Rancho Cucamonga",
+                "earliest": "August 17 10:40",
+                "address": "8629 Hellman Avenue, Rancho Cucamonga, CA 91730"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 106,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.23899999999999,
+                    40.1748
+                ]
+            },
+            "properties": {
+                "name": "Red Bluff",
+                "earliest": "July 09 09:40",
+                "address": "675 Monroe Street, Red Bluff, CA 96080"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 107,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3805,
+                    40.5759
+                ]
+            },
+            "properties": {
+                "name": "Redding",
+                "earliest": "July 17 13:40",
+                "address": "2135 Civic Center Drive, Redding, CA 96001"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 108,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.2111,
+                    34.0703
+                ]
+            },
+            "properties": {
+                "name": "Redlands",
+                "earliest": "July 23 09:40",
+                "address": "1659 W Lugonia Avenue, Redlands, CA 92374"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 109,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.229,
+                    37.4926
+                ]
+            },
+            "properties": {
+                "name": "Redwood City",
+                "earliest": "September 27 14:40",
+                "address": "300 Brewster Avenue, Redwood City, CA 94063"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 110,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.4434,
+                    36.5901
+                ]
+            },
+            "properties": {
+                "name": "Reedley",
+                "earliest": "August 10 11:10",
+                "address": "558 E. Dinuba Avenue, Reedley, CA 93654"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 111,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.679474,
+                    35.648927
+                ]
+            },
+            "properties": {
+                "name": "Ridgecrest",
+                "earliest": "July 19 10:40",
+                "address": "540A Perdew Avenue, Ridgecrest, CA 93555"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 112,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.3966,
+                    33.9575
+                ]
+            },
+            "properties": {
+                "name": "Riverside",
+                "earliest": "July 18 11:20",
+                "address": "6280 Brockton Avenue, Riverside, CA 92506"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 113,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.2992,
+                    33.9345
+                ]
+            },
+            "properties": {
+                "name": "Riverside East",
+                "earliest": "July 12 11:40",
+                "address": "6425 Sycamore Canyon Blvd., Riverside, CA 92507"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 114,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.2316,
+                    38.7874
+                ]
+            },
+            "properties": {
+                "name": "Rocklin",
+                "earliest": "August 21 08:40",
+                "address": "5245 South Grove, Rocklin, CA 95677"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 115,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.3061,
+                    38.7756
+                ]
+            },
+            "properties": {
+                "name": "Roseville",
+                "earliest": "August 07 14:00",
+                "address": "7200 Galilee Road, Roseville, CA 95678"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 116,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.4509,
+                    38.5461
+                ]
+            },
+            "properties": {
+                "name": "Sacramento",
+                "earliest": "August 07 12:40",
+                "address": "4700 Broadway, Sacramento, CA 95820"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 117,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.4263,
+                    38.4764
+                ]
+            },
+            "properties": {
+                "name": "Sacramento South",
+                "earliest": "July 30 10:20",
+                "address": "7775 La Mancha Way, Sacramento, CA 95823"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 118,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.6478,
+                    36.6979
+                ]
+            },
+            "properties": {
+                "name": "Salinas",
+                "earliest": "July 17 12:20",
+                "address": "260 E. Laurel Drive, Salinas, CA 93906"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 120,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.2788,
+                    34.1234
+                ]
+            },
+            "properties": {
+                "name": "San Bernardino",
+                "earliest": "July 17 08:20",
+                "address": "1310 N. Waterman Avenue, San Bernardino, CA 92404"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 121,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.6428,
+                    33.4428
+                ]
+            },
+            "properties": {
+                "name": "San Clemente",
+                "earliest": "July 31 10:20",
+                "address": "2727 Via Cascadita, San Clemente, CA 92672"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 122,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.149,
+                    32.7503
+                ]
+            },
+            "properties": {
+                "name": "San Diego",
+                "earliest": "July 30 11:00",
+                "address": "3960 Normal Street, San Diego, CA 92103"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 123,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.1832,
+                    32.8235
+                ]
+            },
+            "properties": {
+                "name": "San Diego Clairemont",
+                "earliest": "August 02 12:20",
+                "address": "4375 Derrick Drive, San Diego, CA 92117"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 124,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.4404,
+                    37.7736
+                ]
+            },
+            "properties": {
+                "name": "San Francisco",
+                "earliest": "July 20 08:20",
+                "address": "1377 Fell Street, San Francisco, CA 94117"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 125,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.8763,
+                    37.315
+                ]
+            },
+            "properties": {
+                "name": "San Jose",
+                "earliest": "August 14 14:20",
+                "address": "111 W. Alma Avenue, San Jose, CA 95110"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 127,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.6695,
+                    35.2575
+                ]
+            },
+            "properties": {
+                "name": "San Luis Obispo",
+                "earliest": "July 11 11:20",
+                "address": "3190 S. Higuera Street, San Luis Obispo, CA 93401"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 128,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.14974199999999,
+                    33.140079
+                ]
+            },
+            "properties": {
+                "name": "San Marcos Rancheros",
+                "earliest": "July 24 14:40",
+                "address": "590 Rancheros Dr, San Marcos, CA 92069"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 129,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.3235,
+                    37.5792
+                ]
+            },
+            "properties": {
+                "name": "San Mateo",
+                "earliest": "August 15 09:20",
+                "address": "425 N. Amphlett Boulevard, San Mateo, CA 94401"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 130,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2926,
+                    33.7588
+                ]
+            },
+            "properties": {
+                "name": "San Pedro",
+                "earliest": "July 12 10:40",
+                "address": "1511 N. Gaffey Street, San Pedro, CA 90731"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 131,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.0051,
+                    32.5693
+                ]
+            },
+            "properties": {
+                "name": "San Ysidro",
+                "earliest": "July 30 13:20",
+                "address": "6111 Business Center Court, San Diego, CA 92154"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 132,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.8506,
+                    33.7454
+                ]
+            },
+            "properties": {
+                "name": "Santa Ana",
+                "earliest": "July 18 13:20",
+                "address": "1330 E. First Street, Santa Ana, CA 92701"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 133,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.7011,
+                    34.4129
+                ]
+            },
+            "properties": {
+                "name": "Santa Barbara",
+                "earliest": "July 09 14:20",
+                "address": "535 Castillo Street, Santa Barbara, CA 93101"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 135,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.4347,
+                    34.9475
+                ]
+            },
+            "properties": {
+                "name": "Santa Maria",
+                "earliest": "July 16 09:10",
+                "address": "523 S. McClelland Street, Santa Maria, CA 93454"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 136,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.4745,
+                    34.028
+                ]
+            },
+            "properties": {
+                "name": "Santa Monica",
+                "earliest": "July 09 08:20",
+                "address": "2235 Colorado Avenue, Santa Monica, CA 90404"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 137,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.0756,
+                    34.3445
+                ]
+            },
+            "properties": {
+                "name": "Santa Paula",
+                "earliest": "July 16 10:40",
+                "address": "250 W. Harvard Boulevard A, Santa Paula, CA 93060"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 138,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.7169,
+                    38.4153
+                ]
+            },
+            "properties": {
+                "name": "Santa Rosa",
+                "earliest": "July 19 13:20",
+                "address": "2570 Corby Avenue, Santa Rosa, CA 95407"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 139,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.7785,
+                    37.2297
+                ]
+            },
+            "properties": {
+                "name": "Santa Teresa",
+                "earliest": "August 15 13:25",
+                "address": "180 Martinvale Lane, San Jose, CA 95119"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 140,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.8542,
+                    36.6033
+                ]
+            },
+            "properties": {
+                "name": "Seaside",
+                "earliest": "July 17 09:40",
+                "address": "1180 Canyon Del Rey Road, Seaside, CA 93955"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 141,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2725,
+                    35.5034
+                ]
+            },
+            "properties": {
+                "name": "Shafter",
+                "earliest": "July 25 10:40",
+                "address": "548 Walker Street, Shafter, CA 93263"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 142,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.7234,
+                    34.2864
+                ]
+            },
+            "properties": {
+                "name": "Simi Valley",
+                "earliest": "July 23 08:40",
+                "address": "3855 D - Alamo Street, Simi Valley, CA 93063"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 143,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.3702,
+                    37.9844
+                ]
+            },
+            "properties": {
+                "name": "Sonora",
+                "earliest": "July 25 15:20",
+                "address": "885 Morning Star Drive, Sonora, CA 95370"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 144,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.96988999999999,
+                    38.945747999999995
+                ]
+            },
+            "properties": {
+                "name": "South Lake Tahoe",
+                "earliest": "July 25 10:20",
+                "address": "3344 B Lake Tahoe Boulevard, South Lake Tahoe, CA 96150"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 146,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.2976,
+                    37.9513
+                ]
+            },
+            "properties": {
+                "name": "Stockton",
+                "earliest": "August 09 15:00",
+                "address": "55 South Lincoln Street, Stockton, CA 95203"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 147,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.63843,
+                    40.412221
+                ]
+            },
+            "properties": {
+                "name": "Susanville",
+                "earliest": "July 13 08:30",
+                "address": "2615 Main Street, Susanville, CA 96130"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 148,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.453756,
+                    35.139321
+                ]
+            },
+            "properties": {
+                "name": "Taft",
+                "earliest": "July 12 09:20",
+                "address": "165 Center Street, Taft, CA 93268"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 149,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.1613,
+                    33.5062
+                ]
+            },
+            "properties": {
+                "name": "Temecula",
+                "earliest": "July 26 08:40",
+                "address": "27851 Diaz Road, Temecula, CA 92590"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 150,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.845,
+                    34.2113
+                ]
+            },
+            "properties": {
+                "name": "Thousand Oaks",
+                "earliest": "July 06 11:50",
+                "address": "1810 E. Avenida De Los Arboles, Thousand Oaks, CA 91362"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 151,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.3113,
+                    33.8279
+                ]
+            },
+            "properties": {
+                "name": "Torrance",
+                "earliest": "July 23 11:20",
+                "address": "1785 W. 220th Street, Torrance, CA 90501"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 152,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.4651,
+                    37.7622
+                ]
+            },
+            "properties": {
+                "name": "Tracy",
+                "earliest": "August 09 10:20",
+                "address": "2785 Auto Plaza Drive, Tracy, CA 95304"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 153,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.21073200000001,
+                    39.32611
+                ]
+            },
+            "properties": {
+                "name": "Truckee",
+                "earliest": "July 27 09:10",
+                "address": "11357 Donner Pass Road Suite I, Truckee, CA 96162"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 154,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.3464,
+                    36.2134
+                ]
+            },
+            "properties": {
+                "name": "Tulare",
+                "earliest": "July 09 14:00",
+                "address": "274 E Cross Avenue, Tulare, CA 93274"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 156,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.83958799999999,
+                    37.521865999999996
+                ]
+            },
+            "properties": {
+                "name": "Turlock",
+                "earliest": "July 24 10:40",
+                "address": "825 E. Monte Vista Avenue, Turlock, CA 95382"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 157,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.05401599999999,
+                    34.199775
+                ]
+            },
+            "properties": {
+                "name": "Twentynine Palms",
+                "earliest": "July 12 11:10",
+                "address": "3668 Adobe Road G-J, Twentynine Palms, CA 92277"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 158,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -123.1988,
+                    39.1476
+                ]
+            },
+            "properties": {
+                "name": "Ukiah",
+                "earliest": "August 02 14:00",
+                "address": "542 S. Orchard Avenue, Ukiah, CA 95482"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 159,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.9448,
+                    38.3784
+                ]
+            },
+            "properties": {
+                "name": "Vacaville",
+                "earliest": "July 30 14:00",
+                "address": "621 Orange Drive, Vacaville, CA 95687"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 160,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.2519,
+                    38.1171
+                ]
+            },
+            "properties": {
+                "name": "Vallejo",
+                "earliest": "August 15 10:20",
+                "address": "200 Couch Street, Vallejo, CA 94590"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 161,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.4582,
+                    34.1939
+                ]
+            },
+            "properties": {
+                "name": "Van Nuys",
+                "earliest": "July 12 11:40",
+                "address": "14920 Vanowen Street, Van Nuys, CA 91405"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 162,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2363,
+                    34.2567
+                ]
+            },
+            "properties": {
+                "name": "Ventura",
+                "earliest": "July 09 13:00",
+                "address": "4260 Market Street, Ventura, CA 93003"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 163,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.3055,
+                    34.5205
+                ]
+            },
+            "properties": {
+                "name": "Victorville",
+                "earliest": "July 17 14:20",
+                "address": "14855 Corta Drive, Victorville, CA 92395"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 164,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.2739,
+                    36.3302
+                ]
+            },
+            "properties": {
+                "name": "Visalia",
+                "earliest": "July 19 14:20",
+                "address": "1711 East Main Street, Visalia, CA 93292"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 165,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.0611,
+                    37.9053
+                ]
+            },
+            "properties": {
+                "name": "Walnut Creek",
+                "earliest": "July 30 14:40",
+                "address": "1910 N. Broadway, Walnut Creek, CA 94596"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 166,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.7682,
+                    36.927
+                ]
+            },
+            "properties": {
+                "name": "Watsonville",
+                "earliest": "July 23 10:40",
+                "address": "90 Alta Vista Avenue, Watsonville, CA 95076"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 168,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9316,
+                    34.061
+                ]
+            },
+            "properties": {
+                "name": "West Covina",
+                "earliest": "July 24 14:00",
+                "address": "800 So. Glendora Avenue, West Covina, CA 91790"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 171,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9982,
+                    33.7643
+                ]
+            },
+            "properties": {
+                "name": "Westminster",
+                "earliest": "July 23 13:20",
+                "address": "13700 Hoover Street, Westminster, CA 92683"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 172,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.0432,
+                    33.9528
+                ]
+            },
+            "properties": {
+                "name": "Whittier",
+                "earliest": "July 24 10:40",
+                "address": "9338 S. Painter Avenue, Whittier, CA 90605"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 173,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.212047,
+                    39.529404
+                ]
+            },
+            "properties": {
+                "name": "Willows",
+                "earliest": "July 23 11:40",
+                "address": "815 N. Humboldt Avenue, Willows, CA 95988"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 174,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.5846,
+                    34.201
+                ]
+            },
+            "properties": {
+                "name": "Winnetka",
+                "earliest": "July 05 15:20",
+                "address": "20725 Sherman Way, Winnetka, CA 91306"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 175,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.76458500000001,
+                    38.669154999999996
+                ]
+            },
+            "properties": {
+                "name": "Woodland",
+                "earliest": "August 13 11:40",
+                "address": "825 East St, Suite 306, Woodland, CA 95776"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 176,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.645547,
+                    41.702574
+                ]
+            },
+            "properties": {
+                "name": "Yreka",
+                "earliest": "August 02 14:30",
+                "address": "1848 Fort Jones Rd, Yreka, CA 96097"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 177,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.6433,
+                    39.1439
+                ]
+            },
+            "properties": {
+                "name": "Yuba City",
+                "earliest": "August 07 09:20",
+                "address": "1570 Poole Boulevard, Yuba City, CA 95993"
+            }
+        }
+    ]
+}

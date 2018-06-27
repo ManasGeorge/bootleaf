@@ -2300,5 +2300,4 @@ function buildLabelLayer(layerConfig) {
   addLayer(labelLayer); 
   bootleaf.labelLayers.push(labelLayer);
   bootleaf.layers.push(labelLayer);
-
 }

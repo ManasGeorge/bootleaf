@@ -53,7 +53,7 @@ function afterMapLoads(){
 	});
 
 	// Detect the coordinates of the address returned by the geocoder. This can be used elsewhere as required
-	bootleaf.leafletGeocoder.on("markgeocode", function(evt){
-		console.log("Coordinates: ", evt.geocode.center.lat, ", ", evt.geocode.center.lng);
-	});
+	// bootleaf.leafletGeocoder.on("markgeocode", function(evt){
+	// 	console.log("Coordinates: ", evt.geocode.center.lat, ", ", evt.geocode.center.lng);
+	// });
 }

@@ -13,7 +13,7 @@
             },
             "properties": {
                 "name": "Alturas",
-                "earliest": "July 10 10:40",
+                "earliest": "July 10 14:00",
                 "address": "903 W C St, Alturas, CA 96101"
             }
         },
@@ -29,7 +29,7 @@
             },
             "properties": {
                 "name": "Arleta",
-                "earliest": "August 24 10:00",
+                "earliest": "August 24 14:00",
                 "address": "14400 Van Nuys Blvd, Arleta, CA 91331"
             }
         },
@@ -45,7 +45,7 @@
             },
             "properties": {
                 "name": "Arvin",
-                "earliest": "July 19 09:35",
+                "earliest": "July 19 09:55",
                 "address": "317 Campus Dr., Arvin, CA 93203"
             }
         },
@@ -61,7 +61,7 @@
             },
             "properties": {
                 "name": "Auburn",
-                "earliest": "October 01 13:30",
+                "earliest": "October 01 14:50",
                 "address": "11722 Enterprise Dr, Auburn, CA 95603"
             }
         },
@@ -77,7 +77,7 @@
             },
             "properties": {
                 "name": "Bakersfield",
-                "earliest": "July 19 09:00",
+                "earliest": "July 19 09:20",
                 "address": "3120 F Street, Bakersfield, CA 93301"
             }
         },
@@ -93,7 +93,7 @@
             },
             "properties": {
                 "name": "Bakersfield Southwest",
-                "earliest": "July 24 13:00",
+                "earliest": "July 24 13:20",
                 "address": "7000 Schirra Ct, Bakersfield, CA 93313"
             }
         },
@@ -109,7 +109,7 @@
             },
             "properties": {
                 "name": "Banning",
-                "earliest": "August 10 10:45",
+                "earliest": "August 10 13:30",
                 "address": "1034 W. Ramsey Street B, Banning, CA 92220"
             }
         },
@@ -125,7 +125,7 @@
             },
             "properties": {
                 "name": "Barstow",
-                "earliest": "July 12 08:00",
+                "earliest": "July 12 10:20",
                 "address": "528 E Virginia Way, Barstow, CA 92311"
             }
         },
@@ -141,7 +141,7 @@
             },
             "properties": {
                 "name": "Bell Gardens",
-                "earliest": "July 17 13:40",
+                "earliest": "July 17 14:00",
                 "address": "6801 South Garfield, Bell Gardens, CA 90201"
             }
         },
@@ -157,7 +157,7 @@
             },
             "properties": {
                 "name": "Bellflower",
-                "earliest": "July 17 09:40",
+                "earliest": "July 18 09:40",
                 "address": "9520 East Artesia Blvd., Bellflower, CA 90706"
             }
         },
@@ -173,7 +173,7 @@
             },
             "properties": {
                 "name": "Bishop",
-                "earliest": "June 28 14:40",
+                "earliest": "June 28 15:20",
                 "address": "1115 West Line Street, Bishop, CA 93514"
             }
         },
@@ -189,7 +189,7 @@
             },
             "properties": {
                 "name": "Blythe",
-                "earliest": "July 06 10:10",
+                "earliest": "July 09 09:50",
                 "address": "430 S Broadway, Blythe, CA 92225"
             }
         },
@@ -205,7 +205,7 @@
             },
             "properties": {
                 "name": "Brawley",
-                "earliest": "August 10 10:00",
+                "earliest": "August 10 14:00",
                 "address": "1175 East Main Street, Brawley, CA 92227"
             }
         },
@@ -221,7 +221,7 @@
             },
             "properties": {
                 "name": "Capitola",
-                "earliest": "July 31 14:20",
+                "earliest": "July 31 15:20",
                 "address": "4200 Capitola Road, Capitola, CA 95010"
             }
         },
@@ -237,7 +237,7 @@
             },
             "properties": {
                 "name": "Carmichael",
-                "earliest": "August 14 09:40",
+                "earliest": "August 14 11:20",
                 "address": "5209 North Ave, Carmichael, CA 95608"
             }
         },
@@ -253,7 +253,7 @@
             },
             "properties": {
                 "name": "Chico",
-                "earliest": "August 02 08:20",
+                "earliest": "August 02 09:00",
                 "address": "107 Parmac Rd #1, Chico, CA 95926"
             }
         },
@@ -269,7 +269,7 @@
             },
             "properties": {
                 "name": "Chula Vista",
-                "earliest": "July 18 09:20",
+                "earliest": "July 18 10:00",
                 "address": "30 N Glover Avenue, Chula Vista, CA 91910"
             }
         },
@@ -285,7 +285,7 @@
             },
             "properties": {
                 "name": "Clovis",
-                "earliest": "July 24 13:40",
+                "earliest": "July 24 14:00",
                 "address": "2103 Shaw Avenue, Clovis, CA 93611"
             }
         },
@@ -301,7 +301,7 @@
             },
             "properties": {
                 "name": "Coalinga",
-                "earliest": "July 23 15:00",
+                "earliest": "July 24 13:20",
                 "address": "406 East Elm Avenue, Coalinga, CA 93210"
             }
         },
@@ -317,7 +317,7 @@
             },
             "properties": {
                 "name": "Colusa",
-                "earliest": "July 26 09:20",
+                "earliest": "July 26 13:40",
                 "address": "1025 Bridge St. STE B, Colusa, CA 95932"
             }
         },
@@ -333,7 +333,7 @@
             },
             "properties": {
                 "name": "Compton",
-                "earliest": "July 16 09:20",
+                "earliest": "July 16 10:00",
                 "address": "2111 South Santa Fe Avenue, Compton, CA 90221"
             }
         },
@@ -349,7 +349,7 @@
             },
             "properties": {
                 "name": "Concord",
-                "earliest": "July 30 09:00",
+                "earliest": "July 30 11:00",
                 "address": "2070 Diamond Boulevard, Concord, CA 94520"
             }
         },
@@ -365,7 +365,7 @@
             },
             "properties": {
                 "name": "Corte Madera",
-                "earliest": "July 23 15:20",
+                "earliest": "July 24 08:00",
                 "address": "75 Tamal Vista Boulevard, Corte Madera, CA 94925"
             }
         },
@@ -381,7 +381,7 @@
             },
             "properties": {
                 "name": "Costa Mesa",
-                "earliest": "July 19 08:00",
+                "earliest": "July 19 08:40",
                 "address": "650 W. 19th Street, Costa Mesa, CA 92627"
             }
         },
@@ -397,7 +397,7 @@
             },
             "properties": {
                 "name": "Crescent City",
-                "earliest": "August 03 10:40",
+                "earliest": "August 06 15:20",
                 "address": "1475 Parkway Drive, Crescent City, CA 95531"
             }
         },
@@ -413,7 +413,7 @@
             },
             "properties": {
                 "name": "Culver City",
-                "earliest": "July 13 09:20",
+                "earliest": "July 13 09:40",
                 "address": "11400 W Washington Blvd, Culver City, CA 90066"
             }
         },
@@ -445,7 +445,7 @@
             },
             "properties": {
                 "name": "Davis",
-                "earliest": "July 26 08:20",
+                "earliest": "July 31 09:40",
                 "address": "505 Pole Line Road, Davis, CA 95616"
             }
         },
@@ -461,7 +461,7 @@
             },
             "properties": {
                 "name": "Delano",
-                "earliest": "July 11 15:20",
+                "earliest": "July 12 08:20",
                 "address": "631 Jefferson Street, Delano, CA 93215"
             }
         },
@@ -477,7 +477,7 @@
             },
             "properties": {
                 "name": "El Cajon",
-                "earliest": "July 26 11:00",
+                "earliest": "July 26 09:20",
                 "address": "1450 Graves Avenue, El Cajon, CA 92021"
             }
         },
@@ -493,7 +493,7 @@
             },
             "properties": {
                 "name": "El Centro",
-                "earliest": "July 17 08:00",
+                "earliest": "July 17 08:40",
                 "address": "233 N. Imperial Avenue, El Centro, CA 92243"
             }
         },
@@ -509,7 +509,7 @@
             },
             "properties": {
                 "name": "El Cerrito",
-                "earliest": "July 30 08:20",
+                "earliest": "July 30 09:00",
                 "address": "6400 Manila Avenue, El Cerrito, CA 94530"
             }
         },
@@ -525,7 +525,7 @@
             },
             "properties": {
                 "name": "El Monte",
-                "earliest": "August 09 13:40",
+                "earliest": "August 09 14:00",
                 "address": "4000 Arden Drive, El Monte, CA 91731"
             }
         },
@@ -541,7 +541,7 @@
             },
             "properties": {
                 "name": "Eureka",
-                "earliest": "July 13 15:55",
+                "earliest": "July 16 09:35",
                 "address": "322 W. 15th Street, Eureka, CA 95501"
             }
         },
@@ -557,7 +557,7 @@
             },
             "properties": {
                 "name": "Fairfield",
-                "earliest": "August 08 14:20",
+                "earliest": "August 09 14:00",
                 "address": "160 Serrano Drive, Fairfield, CA 94533"
             }
         },
@@ -573,7 +573,7 @@
             },
             "properties": {
                 "name": "Folsom",
-                "earliest": "August 10 13:20",
+                "earliest": "August 10 11:40",
                 "address": "323 E Bidwell A, Folsom, CA 95630"
             }
         },
@@ -589,7 +589,7 @@
             },
             "properties": {
                 "name": "Fontana",
-                "earliest": "July 24 09:40",
+                "earliest": "July 24 10:20",
                 "address": "8026 Hemlock Ave, Fontana, CA 92336"
             }
         },
@@ -605,7 +605,7 @@
             },
             "properties": {
                 "name": "Fort Bragg",
-                "earliest": "July 30 10:40",
+                "earliest": "July 30 14:20",
                 "address": "410 S. Franklin Street, Fort Bragg, CA 95437"
             }
         },
@@ -637,7 +637,7 @@
             },
             "properties": {
                 "name": "Fresno",
-                "earliest": "July 20 09:40",
+                "earliest": "July 20 10:20",
                 "address": "655 W. Olive Avenue, Fresno, CA 93728"
             }
         },
@@ -653,7 +653,7 @@
             },
             "properties": {
                 "name": "Fresno North",
-                "earliest": "July 20 13:00",
+                "earliest": "July 20 13:20",
                 "address": "6420 N Blackstone Avenue, Fresno, CA 93710"
             }
         },
@@ -669,7 +669,7 @@
             },
             "properties": {
                 "name": "Fullerton",
-                "earliest": "July 20 09:20",
+                "earliest": "July 20 13:20",
                 "address": "909 W. Valencia Drive, Fullerton, CA 92832"
             }
         },
@@ -685,7 +685,7 @@
             },
             "properties": {
                 "name": "Garberville",
-                "earliest": "August 02 10:20",
+                "earliest": "August 02 14:00",
                 "address": "1180 Evergreen Rd, Redway, CA 95560"
             }
         },
@@ -701,7 +701,7 @@
             },
             "properties": {
                 "name": "Gilroy",
-                "earliest": "August 23 09:00",
+                "earliest": "August 23 09:40",
                 "address": "6984 Chestnut Street Suite A, Gilroy, CA 95020"
             }
         },
@@ -717,7 +717,7 @@
             },
             "properties": {
                 "name": "Glendale",
-                "earliest": "July 13 13:40",
+                "earliest": "July 13 14:00",
                 "address": "1335 W. Glenoaks Boulevard, Glendale, CA 91201"
             }
         },
@@ -733,7 +733,7 @@
             },
             "properties": {
                 "name": "Goleta",
-                "earliest": "July 20 11:20",
+                "earliest": "July 20 13:00",
                 "address": "7127 Hollister Avenue Suite 24/26, Goleta, CA 93117"
             }
         },
@@ -749,7 +749,7 @@
             },
             "properties": {
                 "name": "Grass Valley",
-                "earliest": "August 02 14:40",
+                "earliest": "August 03 09:00",
                 "address": "890 Sutton Way, Grass Valley, CA 95945"
             }
         },
@@ -765,7 +765,7 @@
             },
             "properties": {
                 "name": "Hanford",
-                "earliest": "July 12 14:20",
+                "earliest": "July 12 15:20",
                 "address": "701 W. Hanford Armona Road (corner of W. Armona), Hanford, CA 93230"
             }
         },
@@ -781,7 +781,7 @@
             },
             "properties": {
                 "name": "Hawthorne",
-                "earliest": "August 03 11:20",
+                "earliest": "August 03 12:10",
                 "address": "3700 W. El Segundo Boulevard, Hawthorne, CA 90250"
             }
         },
@@ -797,7 +797,7 @@
             },
             "properties": {
                 "name": "Hayward",
-                "earliest": "July 25 14:00",
+                "earliest": "July 30 10:20",
                 "address": "150 Jackson Street, Hayward, CA 94544"
             }
         },
@@ -813,7 +813,7 @@
             },
             "properties": {
                 "name": "Hemet",
-                "earliest": "July 26 08:20",
+                "earliest": "July 26 09:20",
                 "address": "1200 S State St, Hemet, CA 92543"
             }
         },
@@ -829,7 +829,7 @@
             },
             "properties": {
                 "name": "Hollister",
-                "earliest": "August 09 13:00",
+                "earliest": "August 09 14:40",
                 "address": "80 N. Sally Street, Hollister, CA 95023"
             }
         },
@@ -845,7 +845,7 @@
             },
             "properties": {
                 "name": "Hollywood",
-                "earliest": "July 09 08:40",
+                "earliest": "July 09 09:20",
                 "address": "803 Cole Avenue, Hollywood, CA 90038"
             }
         },
@@ -861,7 +861,7 @@
             },
             "properties": {
                 "name": "Indio",
-                "earliest": "July 12 14:40",
+                "earliest": "July 12 15:20",
                 "address": "44480 Jackson St, Indio, CA 92201"
             }
         },
@@ -877,7 +877,7 @@
             },
             "properties": {
                 "name": "Inglewood",
-                "earliest": "July 26 08:20",
+                "earliest": "July 26 10:20",
                 "address": "621 N La Brea Ave, Inglewood, CA 90302"
             }
         },
@@ -893,7 +893,7 @@
             },
             "properties": {
                 "name": "Jackson",
-                "earliest": "July 23 15:40",
+                "earliest": "July 24 15:40",
                 "address": "201 Clinton Road, Jackson, CA 95642"
             }
         },
@@ -909,7 +909,7 @@
             },
             "properties": {
                 "name": "King City",
-                "earliest": "July 10 08:40",
+                "earliest": "July 10 10:40",
                 "address": "101 E San Antonio Dr, King City, CA 93930"
             }
         },
@@ -925,7 +925,7 @@
             },
             "properties": {
                 "name": "Laguna Hills",
-                "earliest": "August 10 14:40",
+                "earliest": "July 16 14:00",
                 "address": "23535 Moulton Parkway, Laguna Hills, CA 92653"
             }
         },
@@ -941,7 +941,7 @@
             },
             "properties": {
                 "name": "Lake Isabella",
-                "earliest": "July 03 09:00",
+                "earliest": "July 10 08:40",
                 "address": "5520 Lake Isabella Road G-1, Lake Isabella, CA 93240"
             }
         },
@@ -957,7 +957,7 @@
             },
             "properties": {
                 "name": "Lakeport",
-                "earliest": "August 15 15:40",
+                "earliest": "August 17 09:40",
                 "address": "965 Parallel Drive, Lakeport, CA 95453"
             }
         },
@@ -989,7 +989,7 @@
             },
             "properties": {
                 "name": "Lincoln Park",
-                "earliest": "August 02 09:20",
+                "earliest": "August 02 13:20",
                 "address": "3529 N. Mission Road, Los Angeles, CA 90031"
             }
         },
@@ -1005,7 +1005,7 @@
             },
             "properties": {
                 "name": "Lodi",
-                "earliest": "August 07 13:40",
+                "earliest": "August 07 14:40",
                 "address": "1222 Pixley Parkway, Lodi, CA 95240"
             }
         },
@@ -1021,7 +1021,7 @@
             },
             "properties": {
                 "name": "Lompoc",
-                "earliest": "July 12 14:30",
+                "earliest": "July 13 09:10",
                 "address": "1601 N H St, Lompoc, CA 93436"
             }
         },
@@ -1037,7 +1037,7 @@
             },
             "properties": {
                 "name": "Long Beach",
-                "earliest": "July 12 11:00",
+                "earliest": "July 12 11:20",
                 "address": "3700 East Willow Street, Long Beach, CA 90815"
             }
         },
@@ -1053,7 +1053,7 @@
             },
             "properties": {
                 "name": "Los Angeles",
-                "earliest": "July 19 08:40",
+                "earliest": "July 19 11:40",
                 "address": "3615 S. Hope Street, Los Angeles, CA 90007"
             }
         },
@@ -1069,7 +1069,7 @@
             },
             "properties": {
                 "name": "Los Banos",
-                "earliest": "August 29 10:30",
+                "earliest": "August 29 11:10",
                 "address": "814 West L Street, Los Banos, CA 93635"
             }
         },
@@ -1085,7 +1085,7 @@
             },
             "properties": {
                 "name": "Los Gatos",
-                "earliest": "September 06 09:00",
+                "earliest": "September 07 08:00",
                 "address": "600 N. Santa Cruz Avenue, Los Gatos, CA 95030"
             }
         },
@@ -1101,7 +1101,7 @@
             },
             "properties": {
                 "name": "Madera",
-                "earliest": "July 16 15:00",
+                "earliest": "July 19 10:40",
                 "address": "1206 Maple Street, Madera, CA 93637"
             }
         },
@@ -1117,7 +1117,7 @@
             },
             "properties": {
                 "name": "Manteca",
-                "earliest": "August 03 14:40",
+                "earliest": "August 06 11:00",
                 "address": "955 Davis Street, Manteca, CA 95336"
             }
         },
@@ -1133,7 +1133,7 @@
             },
             "properties": {
                 "name": "Mariposa",
-                "earliest": "July 26 14:40",
+                "earliest": "July 27 10:20",
                 "address": "5264 Highway 49-North, Mariposa, CA 95338"
             }
         },
@@ -1149,7 +1149,7 @@
             },
             "properties": {
                 "name": "Mendota",
-                "earliest": "July 26 13:20",
+                "earliest": "July 26 14:00",
                 "address": "655 Quince Street, Mendota, CA 93640"
             }
         },
@@ -1165,7 +1165,7 @@
             },
             "properties": {
                 "name": "Merced",
-                "earliest": "August 01 10:20",
+                "earliest": "August 01 11:00",
                 "address": "1313 W. 12th Street, Merced, CA 95340"
             }
         },
@@ -1197,7 +1197,7 @@
             },
             "properties": {
                 "name": "Montebello",
-                "earliest": "July 31 14:40",
+                "earliest": "July 31 14:30",
                 "address": "424 N. Wilcox Avenue, Montebello, CA 90640"
             }
         },
@@ -1213,7 +1213,7 @@
             },
             "properties": {
                 "name": "Mt Shasta",
-                "earliest": "August 08 10:20",
+                "earliest": "August 08 14:20",
                 "address": "154 Morgan Way, Mt Shasta, CA 96067"
             }
         },
@@ -1229,7 +1229,7 @@
             },
             "properties": {
                 "name": "Napa",
-                "earliest": "August 21 11:40",
+                "earliest": "August 21 12:40",
                 "address": "2550 Napa Valley Corporate Drive, Napa, CA 94558"
             }
         },
@@ -1245,7 +1245,7 @@
             },
             "properties": {
                 "name": "Needles",
-                "earliest": "July 17 09:20",
+                "earliest": "July 17 10:00",
                 "address": "1040 E Broadway St, Needles, CA 92363"
             }
         },
@@ -1261,7 +1261,7 @@
             },
             "properties": {
                 "name": "Newhall",
-                "earliest": "July 09 10:00",
+                "earliest": "July 06 14:00",
                 "address": "24427 Newhall Avenue, Newhall, CA 91321"
             }
         },
@@ -1277,7 +1277,7 @@
             },
             "properties": {
                 "name": "Norco",
-                "earliest": "July 23 13:40",
+                "earliest": "July 23 14:00",
                 "address": "3201 Horseless Carriage Drive, Norco, CA 92860"
             }
         },
@@ -1293,7 +1293,7 @@
             },
             "properties": {
                 "name": "Novato",
-                "earliest": "August 03 13:40",
+                "earliest": "August 03 14:40",
                 "address": "936 7th Street A, Novato, CA 94947"
             }
         },
@@ -1309,7 +1309,7 @@
             },
             "properties": {
                 "name": "Oakland",
-                "earliest": "July 27 14:20",
+                "earliest": "July 27 14:40",
                 "address": "5300 Claremont Avenue, Oakland, CA 94618"
             }
         },
@@ -1325,7 +1325,7 @@
             },
             "properties": {
                 "name": "Oakland Coliseum",
-                "earliest": "July 26 15:00",
+                "earliest": "July 27 09:40",
                 "address": "501 85th Ave, Oakland, CA 94621"
             }
         },
@@ -1341,7 +1341,7 @@
             },
             "properties": {
                 "name": "Oceanside",
-                "earliest": "July 23 13:20",
+                "earliest": "July 23 13:30",
                 "address": "4005 Plaza Drive, Oceanside, CA 92056"
             }
         },
@@ -1357,7 +1357,7 @@
             },
             "properties": {
                 "name": "Oroville",
-                "earliest": "July 30 09:40",
+                "earliest": "July 30 10:20",
                 "address": "775 Mitchell Avenue, Oroville, CA 95965"
             }
         },
@@ -1373,7 +1373,7 @@
             },
             "properties": {
                 "name": "Oxnard",
-                "earliest": "July 02 11:20",
+                "earliest": "July 02 12:20",
                 "address": "4050 Saviers Road, Oxnard, CA 93033"
             }
         },
@@ -1389,7 +1389,7 @@
             },
             "properties": {
                 "name": "Palm Desert",
-                "earliest": "July 17 15:00",
+                "earliest": "July 18 11:40",
                 "address": "74-740 Technology Drive, Palm Desert, CA 92211"
             }
         },
@@ -1405,7 +1405,7 @@
             },
             "properties": {
                 "name": "Palm Springs",
-                "earliest": "July 17 14:30",
+                "earliest": "July 18 09:30",
                 "address": "950 N. Farrell Drive, Palm Springs, CA 92262"
             }
         },
@@ -1421,7 +1421,7 @@
             },
             "properties": {
                 "name": "Paradise",
-                "earliest": "July 26 15:10",
+                "earliest": "August 03 10:40",
                 "address": "5921 Clark Road, Paradise, CA 95967"
             }
         },
@@ -1437,7 +1437,7 @@
             },
             "properties": {
                 "name": "Pasadena",
-                "earliest": "August 07 08:20",
+                "earliest": "August 07 11:20",
                 "address": "49 S. Rosemead Boulevard, Pasadena, CA 91107"
             }
         },
@@ -1453,7 +1453,7 @@
             },
             "properties": {
                 "name": "Paso Robles",
-                "earliest": "July 13 11:20",
+                "earliest": "July 13 12:00",
                 "address": "841 Park Street, Paso Robles, CA 93446"
             }
         },
@@ -1469,7 +1469,7 @@
             },
             "properties": {
                 "name": "Petaluma",
-                "earliest": "August 02 08:20",
+                "earliest": "August 02 09:20",
                 "address": "715 - J Southpoint Boulevard, Petaluma, CA 94954"
             }
         },
@@ -1485,7 +1485,7 @@
             },
             "properties": {
                 "name": "Pittsburg",
-                "earliest": "August 07 15:20",
+                "earliest": "August 07 15:40",
                 "address": "1399 Buchanan Road, Pittsburg, CA 94565"
             }
         },
@@ -1501,7 +1501,7 @@
             },
             "properties": {
                 "name": "Placerville",
-                "earliest": "August 01 14:20",
+                "earliest": "August 01 16:00",
                 "address": "2919 Cold Springs Road, Placerville, CA 95667"
             }
         },
@@ -1517,7 +1517,7 @@
             },
             "properties": {
                 "name": "Pleasanton",
-                "earliest": "August 02 10:20",
+                "earliest": "August 02 14:20",
                 "address": "6300 W Las Positas Blvd, Pleasanton, CA 94588"
             }
         },
@@ -1533,7 +1533,7 @@
             },
             "properties": {
                 "name": "Pomona",
-                "earliest": "August 07 12:40",
+                "earliest": "August 06 14:00",
                 "address": "1600 S. Garey Avenue, Pomona, CA 91766"
             }
         },
@@ -1549,7 +1549,7 @@
             },
             "properties": {
                 "name": "Porterville",
-                "earliest": "July 06 09:20",
+                "earliest": "July 06 14:20",
                 "address": "329 E. Olive Avenue, Porterville, CA 93257"
             }
         },
@@ -1565,7 +1565,7 @@
             },
             "properties": {
                 "name": "Poway",
-                "earliest": "July 13 13:40",
+                "earliest": "July 13 14:00",
                 "address": "13461 Community Road, Poway, CA 92064"
             }
         },
@@ -1581,7 +1581,7 @@
             },
             "properties": {
                 "name": "Rancho Cucamonga",
-                "earliest": "August 17 10:20",
+                "earliest": "August 17 13:00",
                 "address": "8629 Hellman Avenue, Rancho Cucamonga, CA 91730"
             }
         },
@@ -1597,7 +1597,7 @@
             },
             "properties": {
                 "name": "Red Bluff",
-                "earliest": "July 09 09:00",
+                "earliest": "July 09 09:40",
                 "address": "675 Monroe Street, Red Bluff, CA 96080"
             }
         },
@@ -1613,7 +1613,7 @@
             },
             "properties": {
                 "name": "Redding",
-                "earliest": "July 16 15:20",
+                "earliest": "July 17 09:00",
                 "address": "2135 Civic Center Drive, Redding, CA 96001"
             }
         },
@@ -1629,7 +1629,7 @@
             },
             "properties": {
                 "name": "Redlands",
-                "earliest": "July 23 09:40",
+                "earliest": "July 23 11:40",
                 "address": "1659 W Lugonia Avenue, Redlands, CA 92374"
             }
         },
@@ -1645,7 +1645,7 @@
             },
             "properties": {
                 "name": "Redwood City",
-                "earliest": "September 27 10:20",
+                "earliest": "September 27 13:20",
                 "address": "300 Brewster Avenue, Redwood City, CA 94063"
             }
         },
@@ -1661,7 +1661,7 @@
             },
             "properties": {
                 "name": "Reedley",
-                "earliest": "August 09 13:50",
+                "earliest": "August 09 14:30",
                 "address": "558 E. Dinuba Avenue, Reedley, CA 93654"
             }
         },
@@ -1677,7 +1677,7 @@
             },
             "properties": {
                 "name": "Ridgecrest",
-                "earliest": "July 18 15:20",
+                "earliest": "July 19 09:20",
                 "address": "540A Perdew Avenue, Ridgecrest, CA 93555"
             }
         },
@@ -1709,7 +1709,7 @@
             },
             "properties": {
                 "name": "Riverside East",
-                "earliest": "July 12 14:20",
+                "earliest": "July 12 14:40",
                 "address": "6425 Sycamore Canyon Blvd., Riverside, CA 92507"
             }
         },
@@ -1725,7 +1725,7 @@
             },
             "properties": {
                 "name": "Rocklin",
-                "earliest": "August 20 15:20",
+                "earliest": "August 21 08:20",
                 "address": "5245 South Grove, Rocklin, CA 95677"
             }
         },
@@ -1741,7 +1741,7 @@
             },
             "properties": {
                 "name": "Roseville",
-                "earliest": "August 07 14:20",
+                "earliest": "August 08 09:20",
                 "address": "7200 Galilee Road, Roseville, CA 95678"
             }
         },
@@ -1757,7 +1757,7 @@
             },
             "properties": {
                 "name": "Sacramento",
-                "earliest": "August 07 13:20",
+                "earliest": "August 07 14:00",
                 "address": "4700 Broadway, Sacramento, CA 95820"
             }
         },
@@ -1789,7 +1789,7 @@
             },
             "properties": {
                 "name": "Salinas",
-                "earliest": "July 18 09:40",
+                "earliest": "July 18 10:20",
                 "address": "260 E. Laurel Drive, Salinas, CA 93906"
             }
         },
@@ -1805,7 +1805,7 @@
             },
             "properties": {
                 "name": "San Bernardino",
-                "earliest": "July 10 13:40",
+                "earliest": "July 17 08:20",
                 "address": "1310 N. Waterman Avenue, San Bernardino, CA 92404"
             }
         },
@@ -1821,7 +1821,7 @@
             },
             "properties": {
                 "name": "San Clemente",
-                "earliest": "July 31 08:20",
+                "earliest": "July 31 10:20",
                 "address": "2727 Via Cascadita, San Clemente, CA 92672"
             }
         },
@@ -1837,7 +1837,7 @@
             },
             "properties": {
                 "name": "San Diego",
-                "earliest": "July 30 10:40",
+                "earliest": "July 30 11:20",
                 "address": "3960 Normal Street, San Diego, CA 92103"
             }
         },
@@ -1853,7 +1853,7 @@
             },
             "properties": {
                 "name": "San Diego Clairemont",
-                "earliest": "August 02 12:20",
+                "earliest": "August 02 14:40",
                 "address": "4375 Derrick Drive, San Diego, CA 92117"
             }
         },
@@ -1885,7 +1885,7 @@
             },
             "properties": {
                 "name": "San Jose",
-                "earliest": "August 14 15:20",
+                "earliest": "August 15 09:20",
                 "address": "111 W. Alma Avenue, San Jose, CA 95110"
             }
         },
@@ -1901,7 +1901,7 @@
             },
             "properties": {
                 "name": "San Luis Obispo",
-                "earliest": "July 11 10:20",
+                "earliest": "July 11 11:20",
                 "address": "3190 S. Higuera Street, San Luis Obispo, CA 93401"
             }
         },
@@ -1933,7 +1933,7 @@
             },
             "properties": {
                 "name": "San Mateo",
-                "earliest": "July 16 13:50",
+                "earliest": "July 19 10:40",
                 "address": "425 N. Amphlett Boulevard, San Mateo, CA 94401"
             }
         },
@@ -1949,7 +1949,7 @@
             },
             "properties": {
                 "name": "San Pedro",
-                "earliest": "July 12 13:00",
+                "earliest": "July 12 13:40",
                 "address": "1511 N. Gaffey Street, San Pedro, CA 90731"
             }
         },
@@ -1965,7 +1965,7 @@
             },
             "properties": {
                 "name": "San Ysidro",
-                "earliest": "July 30 14:00",
+                "earliest": "July 30 14:20",
                 "address": "6111 Business Center Court, San Diego, CA 92154"
             }
         },
@@ -1981,7 +1981,7 @@
             },
             "properties": {
                 "name": "Santa Ana",
-                "earliest": "June 28 14:30",
+                "earliest": "July 18 14:25",
                 "address": "1330 E. First Street, Santa Ana, CA 92701"
             }
         },
@@ -1997,7 +1997,7 @@
             },
             "properties": {
                 "name": "Santa Barbara",
-                "earliest": "July 09 11:00",
+                "earliest": "July 09 13:00",
                 "address": "535 Castillo Street, Santa Barbara, CA 93101"
             }
         },
@@ -2013,7 +2013,7 @@
             },
             "properties": {
                 "name": "Santa Clara",
-                "earliest": "August 21 10:40",
+                "earliest": "August 21 14:20",
                 "address": "3665 Flora Vista Ave, Santa Clara, CA 95051"
             }
         },
@@ -2029,7 +2029,7 @@
             },
             "properties": {
                 "name": "Santa Maria",
-                "earliest": "July 13 14:30",
+                "earliest": "July 16 10:20",
                 "address": "523 S. McClelland Street, Santa Maria, CA 93454"
             }
         },
@@ -2061,7 +2061,7 @@
             },
             "properties": {
                 "name": "Santa Paula",
-                "earliest": "July 16 09:40",
+                "earliest": "July 16 12:00",
                 "address": "250 W. Harvard Boulevard A, Santa Paula, CA 93060"
             }
         },
@@ -2077,7 +2077,7 @@
             },
             "properties": {
                 "name": "Santa Rosa",
-                "earliest": "July 19 14:20",
+                "earliest": "July 19 14:30",
                 "address": "2570 Corby Avenue, Santa Rosa, CA 95407"
             }
         },
@@ -2093,7 +2093,7 @@
             },
             "properties": {
                 "name": "Santa Teresa",
-                "earliest": "August 15 13:45",
+                "earliest": "August 15 14:05",
                 "address": "180 Martinvale Lane, San Jose, CA 95119"
             }
         },
@@ -2109,7 +2109,7 @@
             },
             "properties": {
                 "name": "Seaside",
-                "earliest": "July 17 13:40",
+                "earliest": "July 17 14:40",
                 "address": "1180 Canyon Del Rey Road, Seaside, CA 93955"
             }
         },
@@ -2125,7 +2125,7 @@
             },
             "properties": {
                 "name": "Shafter",
-                "earliest": "July 24 14:40",
+                "earliest": "July 24 15:00",
                 "address": "548 Walker Street, Shafter, CA 93263"
             }
         },
@@ -2141,7 +2141,7 @@
             },
             "properties": {
                 "name": "Simi Valley",
-                "earliest": "July 23 09:00",
+                "earliest": "July 23 12:40",
                 "address": "3855 D - Alamo Street, Simi Valley, CA 93063"
             }
         },
@@ -2157,7 +2157,7 @@
             },
             "properties": {
                 "name": "Sonora",
-                "earliest": "July 24 14:40",
+                "earliest": "July 25 13:40",
                 "address": "885 Morning Star Drive, Sonora, CA 95370"
             }
         },
@@ -2173,7 +2173,7 @@
             },
             "properties": {
                 "name": "South Lake Tahoe",
-                "earliest": "July 24 10:20",
+                "earliest": "July 24 14:00",
                 "address": "3344 B Lake Tahoe Boulevard, South Lake Tahoe, CA 96150"
             }
         },
@@ -2189,7 +2189,7 @@
             },
             "properties": {
                 "name": "Stockton",
-                "earliest": "August 09 13:40",
+                "earliest": "August 10 10:20",
                 "address": "55 South Lincoln Street, Stockton, CA 95203"
             }
         },
@@ -2205,7 +2205,7 @@
             },
             "properties": {
                 "name": "Susanville",
-                "earliest": "July 11 13:50",
+                "earliest": "July 12 08:50",
                 "address": "2615 Main Street, Susanville, CA 96130"
             }
         },
@@ -2221,7 +2221,7 @@
             },
             "properties": {
                 "name": "Taft",
-                "earliest": "July 10 14:40",
+                "earliest": "July 11 15:20",
                 "address": "165 Center Street, Taft, CA 93268"
             }
         },
@@ -2237,7 +2237,7 @@
             },
             "properties": {
                 "name": "Temecula",
-                "earliest": "July 03 14:40",
+                "earliest": "July 05 11:00",
                 "address": "27851 Diaz Road, Temecula, CA 92590"
             }
         },
@@ -2253,7 +2253,7 @@
             },
             "properties": {
                 "name": "Thousand Oaks",
-                "earliest": "July 27 11:10",
+                "earliest": "July 27 13:30",
                 "address": "1810 E. Avenida De Los Arboles, Thousand Oaks, CA 91362"
             }
         },
@@ -2269,7 +2269,7 @@
             },
             "properties": {
                 "name": "Torrance",
-                "earliest": "July 23 11:40",
+                "earliest": "July 23 12:20",
                 "address": "1785 W. 220th Street, Torrance, CA 90501"
             }
         },
@@ -2285,7 +2285,7 @@
             },
             "properties": {
                 "name": "Tracy",
-                "earliest": "August 09 13:20",
+                "earliest": "August 09 14:00",
                 "address": "2785 Auto Plaza Drive, Tracy, CA 95304"
             }
         },
@@ -2301,7 +2301,7 @@
             },
             "properties": {
                 "name": "Truckee",
-                "earliest": "July 26 10:30",
+                "earliest": "July 27 08:50",
                 "address": "11357 Donner Pass Road Suite I, Truckee, CA 96162"
             }
         },
@@ -2317,7 +2317,7 @@
             },
             "properties": {
                 "name": "Tulare",
-                "earliest": "July 09 14:00",
+                "earliest": "July 10 09:20",
                 "address": "274 E Cross Avenue, Tulare, CA 93274"
             }
         },
@@ -2333,7 +2333,7 @@
             },
             "properties": {
                 "name": "Turlock",
-                "earliest": "July 24 13:20",
+                "earliest": "July 24 14:20",
                 "address": "825 E. Monte Vista Avenue, Turlock, CA 95382"
             }
         },
@@ -2349,7 +2349,7 @@
             },
             "properties": {
                 "name": "Twentynine Palms",
-                "earliest": "July 11 14:50",
+                "earliest": "July 12 08:50",
                 "address": "3668 Adobe Road G-J, Twentynine Palms, CA 92277"
             }
         },
@@ -2365,7 +2365,7 @@
             },
             "properties": {
                 "name": "Ukiah",
-                "earliest": "August 01 15:20",
+                "earliest": "August 02 13:20",
                 "address": "542 S. Orchard Avenue, Ukiah, CA 95482"
             }
         },
@@ -2381,7 +2381,7 @@
             },
             "properties": {
                 "name": "Vacaville",
-                "earliest": "July 30 14:20",
+                "earliest": "July 30 15:00",
                 "address": "621 Orange Drive, Vacaville, CA 95687"
             }
         },
@@ -2397,7 +2397,7 @@
             },
             "properties": {
                 "name": "Vallejo",
-                "earliest": "August 15 10:40",
+                "earliest": "August 15 11:00",
                 "address": "200 Couch Street, Vallejo, CA 94590"
             }
         },
@@ -2413,7 +2413,7 @@
             },
             "properties": {
                 "name": "Van Nuys",
-                "earliest": "July 12 14:40",
+                "earliest": "July 12 15:00",
                 "address": "14920 Vanowen Street, Van Nuys, CA 91405"
             }
         },
@@ -2429,7 +2429,7 @@
             },
             "properties": {
                 "name": "Ventura",
-                "earliest": "July 09 11:00",
+                "earliest": "July 09 13:00",
                 "address": "4260 Market Street, Ventura, CA 93003"
             }
         },
@@ -2445,7 +2445,7 @@
             },
             "properties": {
                 "name": "Victorville",
-                "earliest": "July 17 14:20",
+                "earliest": "July 18 09:00",
                 "address": "14855 Corta Drive, Victorville, CA 92395"
             }
         },
@@ -2461,7 +2461,7 @@
             },
             "properties": {
                 "name": "Visalia",
-                "earliest": "July 19 11:00",
+                "earliest": "July 19 11:40",
                 "address": "1711 East Main Street, Visalia, CA 93292"
             }
         },
@@ -2477,7 +2477,7 @@
             },
             "properties": {
                 "name": "Walnut Creek",
-                "earliest": "July 30 14:40",
+                "earliest": "July 30 15:20",
                 "address": "1910 N. Broadway, Walnut Creek, CA 94596"
             }
         },
@@ -2493,7 +2493,7 @@
             },
             "properties": {
                 "name": "Watsonville",
-                "earliest": "July 23 09:40",
+                "earliest": "July 23 10:20",
                 "address": "90 Alta Vista Avenue, Watsonville, CA 95076"
             }
         },
@@ -2509,7 +2509,7 @@
             },
             "properties": {
                 "name": "West Covina",
-                "earliest": "July 24 14:40",
+                "earliest": "July 24 15:20",
                 "address": "800 So. Glendora Avenue, West Covina, CA 91790"
             }
         },
@@ -2525,7 +2525,7 @@
             },
             "properties": {
                 "name": "Westminster",
-                "earliest": "July 23 14:40",
+                "earliest": "July 23 15:20",
                 "address": "13700 Hoover Street, Westminster, CA 92683"
             }
         },
@@ -2541,7 +2541,7 @@
             },
             "properties": {
                 "name": "Whittier",
-                "earliest": "July 24 14:20",
+                "earliest": "July 24 15:00",
                 "address": "9338 S. Painter Avenue, Whittier, CA 90605"
             }
         },
@@ -2557,7 +2557,7 @@
             },
             "properties": {
                 "name": "Willows",
-                "earliest": "July 20 15:00",
+                "earliest": "July 23 11:20",
                 "address": "815 N. Humboldt Avenue, Willows, CA 95988"
             }
         },
@@ -2573,7 +2573,7 @@
             },
             "properties": {
                 "name": "Winnetka",
-                "earliest": "July 06 13:20",
+                "earliest": "July 06 13:40",
                 "address": "20725 Sherman Way, Winnetka, CA 91306"
             }
         },
@@ -2589,7 +2589,7 @@
             },
             "properties": {
                 "name": "Woodland",
-                "earliest": "August 13 13:40",
+                "earliest": "August 13 14:20",
                 "address": "825 East St, Suite 306, Woodland, CA 95776"
             }
         },
@@ -2605,7 +2605,7 @@
             },
             "properties": {
                 "name": "Yreka",
-                "earliest": "July 31 14:30",
+                "earliest": "August 02 10:30",
                 "address": "1848 Fort Jones Rd, Yreka, CA 96097"
             }
         },
@@ -2621,7 +2621,7 @@
             },
             "properties": {
                 "name": "Yuba City",
-                "earliest": "August 06 11:40",
+                "earliest": "August 06 14:40",
                 "address": "1570 Poole Boulevard, Yuba City, CA 95993"
             }
         }

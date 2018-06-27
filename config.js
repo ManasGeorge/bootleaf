@@ -81,7 +81,7 @@ var config = {
 	          "visible": true,
 	          "label": {
 	  	          "name": "earliest",
-	  	          "minZoom": 10,
+	  	          "minZoom": 8,
 	          },
             "tooltipField": "name",
             "popup": true,

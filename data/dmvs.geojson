@@ -13,10 +13,10 @@
             },
             "properties": {
                 "name": "Alturas",
-                "RID": "Jul 02, 02:00",
-                "CID": "Jul 02, 03:30",
-                "VR": "Jun 29, 03:00",
-                "DT": "Jul 10, 10:40",
+                "RID": "Jul 03, 09:00",
+                "CID": "NaT",
+                "VR": "Jun 29, 03:45",
+                "DT": "Jul 10, 02:00",
                 "address": "903 W C St, Alturas, CA 96101"
             }
         },
@@ -32,10 +32,10 @@
             },
             "properties": {
                 "name": "Arleta",
-                "RID": "Aug 17, 02:40",
-                "CID": "Aug 22, 10:20",
-                "VR": "Jul 18, 02:50",
-                "DT": "Aug 03, 02:20",
+                "RID": "Aug 22, 01:40",
+                "CID": "Aug 23, 09:40",
+                "VR": "Jul 19, 09:20",
+                "DT": "Aug 03, 02:35",
                 "address": "14400 Van Nuys Blvd, Arleta, CA 91331"
             }
         },
@@ -51,11 +51,30 @@
             },
             "properties": {
                 "name": "Arvin",
-                "RID": "Aug 02, 09:40",
-                "CID": "Aug 03, 11:00",
-                "VR": "Jul 13, 02:45",
-                "DT": "Jul 20, 09:35",
+                "RID": "Aug 03, 11:10",
+                "CID": "Aug 03, 11:20",
+                "VR": "Jul 13, 02:55",
+                "DT": "Jul 20, 09:55",
                 "address": "317 Campus Dr., Arvin, CA 93203"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.08393000000001,
+                    38.907416
+                ]
+            },
+            "properties": {
+                "name": "Auburn",
+                "RID": "Jul 27, 12:40",
+                "CID": "Jul 27, 03:00",
+                "VR": "Jul 20, 02:30",
+                "DT": "NaT",
+                "address": "11722 Enterprise Dr, Auburn, CA 95603"
             }
         },
         {
@@ -70,10 +89,10 @@
             },
             "properties": {
                 "name": "Bakersfield",
-                "RID": "Aug 03, 10:20",
+                "RID": "Aug 03, 11:00",
                 "CID": "Aug 03, 11:00",
-                "VR": "Jul 27, 10:20",
-                "DT": "Jul 20, 08:30",
+                "VR": "Jul 27, 10:30",
+                "DT": "Jul 20, 08:40",
                 "address": "3120 F Street, Bakersfield, CA 93301"
             }
         },
@@ -89,10 +108,10 @@
             },
             "properties": {
                 "name": "Bakersfield Southwest",
-                "RID": "Aug 15, 09:00",
-                "CID": "Aug 15, 09:20",
+                "RID": "Aug 15, 09:20",
+                "CID": "Aug 14, 02:40",
                 "VR": "Jul 25, 09:20",
-                "DT": "Jul 24, 02:40",
+                "DT": "Jul 25, 11:20",
                 "address": "7000 Schirra Ct, Bakersfield, CA 93313"
             }
         },
@@ -108,10 +127,10 @@
             },
             "properties": {
                 "name": "Banning",
-                "RID": "Aug 15, 01:20",
-                "CID": "Aug 16, 08:20",
-                "VR": "Jul 17, 11:10",
-                "DT": "Aug 10, 02:30",
+                "RID": "Aug 16, 08:20",
+                "CID": "Aug 16, 08:30",
+                "VR": "Jul 17, 11:50",
+                "DT": "Aug 13, 08:00",
                 "address": "1034 W. Ramsey Street B, Banning, CA 92220"
             }
         },
@@ -127,10 +146,10 @@
             },
             "properties": {
                 "name": "Barstow",
-                "RID": "Aug 08, 10:20",
-                "CID": "Aug 08, 10:40",
-                "VR": "Jul 03, 02:10",
-                "DT": "Jul 13, 09:40",
+                "RID": "Aug 08, 10:40",
+                "CID": "Aug 08, 02:00",
+                "VR": "Jul 12, 08:30",
+                "DT": "Jul 13, 10:20",
                 "address": "528 E Virginia Way, Barstow, CA 92311"
             }
         },
@@ -146,10 +165,10 @@
             },
             "properties": {
                 "name": "Bell Gardens",
-                "RID": "Aug 07, 12:20",
-                "CID": "Aug 07, 03:20",
-                "VR": "Aug 06, 09:50",
-                "DT": "Jul 19, 11:00",
+                "RID": "Aug 07, 03:20",
+                "CID": "Aug 08, 09:20",
+                "VR": "Aug 06, 10:20",
+                "DT": "Jul 19, 11:20",
                 "address": "6801 South Garfield, Bell Gardens, CA 90201"
             }
         },
@@ -167,8 +186,8 @@
                 "name": "Bellflower",
                 "RID": "Aug 08, 10:20",
                 "CID": "Aug 08, 10:20",
-                "VR": "Aug 01, 03:40",
-                "DT": "Jul 19, 10:40",
+                "VR": "Aug 01, 03:50",
+                "DT": "Jul 19, 11:20",
                 "address": "9520 East Artesia Blvd., Bellflower, CA 90706"
             }
         },
@@ -184,10 +203,10 @@
             },
             "properties": {
                 "name": "Bishop",
-                "RID": "Jul 27, 03:40",
-                "CID": "Jul 30, 08:40",
-                "VR": "Jul 16, 08:00",
-                "DT": "Jul 02, 02:40",
+                "RID": "Jul 30, 03:20",
+                "CID": "Jul 30, 03:40",
+                "VR": "Jul 16, 08:10",
+                "DT": "Jul 02, 03:20",
                 "address": "1115 West Line Street, Bishop, CA 93514"
             }
         },
@@ -203,10 +222,10 @@
             },
             "properties": {
                 "name": "Blythe",
-                "RID": "Jul 09, 10:00",
-                "CID": "Jul 13, 03:00",
-                "VR": "Jun 29, 10:10",
-                "DT": "Jul 09, 10:50",
+                "RID": "Jul 16, 09:20",
+                "CID": "Jul 16, 09:40",
+                "VR": "Jun 29, 10:20",
+                "DT": "Jul 10, 12:50",
                 "address": "430 S Broadway, Blythe, CA 92225"
             }
         },
@@ -222,10 +241,10 @@
             },
             "properties": {
                 "name": "Brawley",
-                "RID": "Jul 26, 08:40",
-                "CID": "Jul 26, 02:40",
-                "VR": "Jul 06, 09:40",
-                "DT": "Aug 30, 09:00",
+                "RID": "Jul 26, 03:00",
+                "CID": "Jul 26, 03:00",
+                "VR": "Jul 06, 09:50",
+                "DT": "Aug 30, 09:20",
                 "address": "1175 East Main Street, Brawley, CA 92227"
             }
         },
@@ -241,10 +260,10 @@
             },
             "properties": {
                 "name": "Capitola",
-                "RID": "Aug 14, 01:20",
-                "CID": "Aug 15, 09:40",
-                "VR": "Jul 13, 02:10",
-                "DT": "Aug 02, 10:20",
+                "RID": "Aug 15, 10:00",
+                "CID": "Aug 15, 10:20",
+                "VR": "Jul 13, 02:20",
+                "DT": "Aug 02, 10:40",
                 "address": "4200 Capitola Road, Capitola, CA 95010"
             }
         },
@@ -260,10 +279,10 @@
             },
             "properties": {
                 "name": "Carmichael",
-                "RID": "Aug 10, 03:20",
-                "CID": "Aug 10, 03:20",
-                "VR": "Jul 30, 09:50",
-                "DT": "Aug 15, 02:40",
+                "RID": "Aug 13, 09:00",
+                "CID": "Aug 13, 09:00",
+                "VR": "Jul 30, 10:00",
+                "DT": "Aug 15, 03:00",
                 "address": "5209 North Ave, Carmichael, CA 95608"
             }
         },
@@ -279,10 +298,10 @@
             },
             "properties": {
                 "name": "Chico",
-                "RID": "Jul 30, 10:20",
-                "CID": "Jul 31, 09:00",
-                "VR": "Jul 13, 08:20",
-                "DT": "Aug 02, 09:40",
+                "RID": "Jul 31, 09:40",
+                "CID": "Jul 31, 10:20",
+                "VR": "Jul 13, 09:50",
+                "DT": "Aug 02, 10:20",
                 "address": "107 Parmac Rd #1, Chico, CA 95926"
             }
         },
@@ -298,9 +317,9 @@
             },
             "properties": {
                 "name": "Chula Vista",
-                "RID": "Aug 29, 09:40",
-                "CID": "Aug 29, 02:30",
-                "VR": "Jul 19, 11:50",
+                "RID": "Aug 30, 09:50",
+                "CID": "Aug 30, 10:10",
+                "VR": "Jul 19, 12:10",
                 "DT": "Jul 30, 09:00",
                 "address": "30 N Glover Avenue, Chula Vista, CA 91910"
             }
@@ -317,9 +336,9 @@
             },
             "properties": {
                 "name": "Clovis",
-                "RID": "Jul 26, 10:40",
+                "RID": "Jul 26, 02:20",
                 "CID": "Jul 26, 02:20",
-                "VR": "Jul 20, 09:55",
+                "VR": "Jul 20, 10:15",
                 "DT": "Jul 25, 02:20",
                 "address": "2103 Shaw Avenue, Clovis, CA 93611"
             }
@@ -336,10 +355,10 @@
             },
             "properties": {
                 "name": "Coalinga",
-                "RID": "Jul 26, 10:40",
-                "CID": "Jul 26, 02:40",
+                "RID": "Jul 26, 03:00",
+                "CID": "Jul 26, 03:20",
                 "VR": "Jul 16, 08:30",
-                "DT": "Jul 24, 01:40",
+                "DT": "Jul 24, 02:00",
                 "address": "406 East Elm Avenue, Coalinga, CA 93210"
             }
         },
@@ -355,10 +374,10 @@
             },
             "properties": {
                 "name": "Colusa",
-                "RID": "Aug 01, 02:40",
-                "CID": "Aug 01, 03:00",
-                "VR": "Jul 16, 03:10",
-                "DT": "Jul 27, 02:20",
+                "RID": "Aug 01, 03:20",
+                "CID": "Aug 02, 08:20",
+                "VR": "Jul 16, 03:20",
+                "DT": "Jul 30, 10:40",
                 "address": "1025 Bridge St. STE B, Colusa, CA 95932"
             }
         },
@@ -374,9 +393,9 @@
             },
             "properties": {
                 "name": "Compton",
-                "RID": "Aug 07, 11:20",
-                "CID": "Aug 07, 11:20",
-                "VR": "Aug 01, 11:10",
+                "RID": "Aug 07, 11:40",
+                "CID": "Aug 07, 12:00",
+                "VR": "Aug 01, 11:20",
                 "DT": "Jul 17, 10:20",
                 "address": "2111 South Santa Fe Avenue, Compton, CA 90221"
             }
@@ -393,11 +412,30 @@
             },
             "properties": {
                 "name": "Concord",
-                "RID": "Aug 22, 10:20",
+                "RID": "Aug 22, 10:40",
                 "CID": "Aug 22, 10:40",
-                "VR": "Jul 24, 02:30",
-                "DT": "Aug 01, 09:40",
+                "VR": "Jul 24, 02:40",
+                "DT": "Aug 01, 10:40",
                 "address": "2070 Diamond Boulevard, Concord, CA 94520"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 22,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.5177,
+                    37.9347
+                ]
+            },
+            "properties": {
+                "name": "Corte Madera",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Jul 20, 02:30",
+                "DT": "Jul 26, 09:40",
+                "address": "75 Tamal Vista Boulevard, Corte Madera, CA 94925"
             }
         },
         {
@@ -412,10 +450,10 @@
             },
             "properties": {
                 "name": "Costa Mesa",
-                "RID": "Aug 24, 10:30",
-                "CID": "Aug 24, 11:10",
-                "VR": "Jul 20, 01:20",
-                "DT": "Jul 24, 01:40",
+                "RID": "Aug 24, 02:30",
+                "CID": "Aug 24, 02:50",
+                "VR": "Jul 20, 01:40",
+                "DT": "Jul 24, 02:40",
                 "address": "650 W. 19th Street, Costa Mesa, CA 92627"
             }
         },
@@ -431,10 +469,10 @@
             },
             "properties": {
                 "name": "Crescent City",
-                "RID": "Jul 12, 02:00",
-                "CID": "Jul 24, 02:20",
-                "VR": "Jul 16, 10:00",
-                "DT": "Aug 03, 10:40",
+                "RID": "Jul 26, 02:40",
+                "CID": "Jul 27, 02:20",
+                "VR": "Jul 16, 10:10",
+                "DT": "Aug 06, 02:40",
                 "address": "1475 Parkway Drive, Crescent City, CA 95531"
             }
         },
@@ -450,8 +488,8 @@
             },
             "properties": {
                 "name": "Culver City",
-                "RID": "Aug 14, 10:40",
-                "CID": "Aug 14, 01:20",
+                "RID": "Aug 14, 01:20",
+                "CID": "Aug 14, 01:40",
                 "VR": "Jul 16, 02:20",
                 "DT": "Jul 16, 02:20",
                 "address": "11400 W Washington Blvd, Culver City, CA 90066"
@@ -471,8 +509,8 @@
                 "name": "Daly City",
                 "RID": "Aug 28, 09:20",
                 "CID": "Aug 28, 09:20",
-                "VR": "Jul 20, 09:40",
-                "DT": "Sep 07, 10:20",
+                "VR": "Jul 20, 10:00",
+                "DT": "Sep 07, 02:20",
                 "address": "1500 Sullivan Avenue, Daly City, CA 94015"
             }
         },
@@ -488,10 +526,10 @@
             },
             "properties": {
                 "name": "Davis",
-                "RID": "Aug 06, 02:20",
+                "RID": "Aug 06, 02:40",
                 "CID": "Aug 06, 02:40",
-                "VR": "Jul 18, 03:20",
-                "DT": "Aug 02, 09:20",
+                "VR": "Jul 18, 03:40",
+                "DT": "Aug 02, 09:40",
                 "address": "505 Pole Line Road, Davis, CA 95616"
             }
         },
@@ -507,10 +545,10 @@
             },
             "properties": {
                 "name": "Delano",
-                "RID": "Jul 25, 02:20",
-                "CID": "Jul 26, 01:20",
-                "VR": "Jul 10, 02:40",
-                "DT": "Jul 13, 01:20",
+                "RID": "Jul 26, 01:40",
+                "CID": "Jul 26, 01:40",
+                "VR": "Jul 10, 02:50",
+                "DT": "Jul 13, 02:40",
                 "address": "631 Jefferson Street, Delano, CA 93215"
             }
         },
@@ -528,8 +566,8 @@
                 "name": "El Cajon",
                 "RID": "Aug 24, 01:20",
                 "CID": "Aug 24, 01:20",
-                "VR": "Jul 20, 12:50",
-                "DT": "Jul 27, 11:00",
+                "VR": "Jul 20, 01:00",
+                "DT": "Jul 27, 11:40",
                 "address": "1450 Graves Avenue, El Cajon, CA 92021"
             }
         },
@@ -545,10 +583,10 @@
             },
             "properties": {
                 "name": "El Centro",
-                "RID": "Aug 06, 10:40",
-                "CID": "Aug 06, 11:20",
+                "RID": "Aug 06, 12:00",
+                "CID": "Aug 06, 12:20",
                 "VR": "Jul 11, 10:20",
-                "DT": "Jul 18, 01:20",
+                "DT": "Jul 18, 01:40",
                 "address": "233 N. Imperial Avenue, El Centro, CA 92243"
             }
         },
@@ -564,10 +602,10 @@
             },
             "properties": {
                 "name": "El Cerrito",
-                "RID": "Aug 16, 10:20",
-                "CID": "Aug 16, 10:40",
-                "VR": "Jul 13, 09:40",
-                "DT": "Jul 31, 08:40",
+                "RID": "Aug 16, 11:00",
+                "CID": "Aug 16, 11:20",
+                "VR": "Jul 13, 09:50",
+                "DT": "Jul 31, 09:00",
                 "address": "6400 Manila Avenue, El Cerrito, CA 94530"
             }
         },
@@ -583,9 +621,9 @@
             },
             "properties": {
                 "name": "El Monte",
-                "RID": "Aug 10, 12:40",
-                "CID": "Aug 10, 02:00",
-                "VR": "Jul 25, 02:10",
+                "RID": "Aug 10, 02:20",
+                "CID": "Aug 10, 02:20",
+                "VR": "Jul 25, 02:20",
                 "DT": "Aug 13, 11:40",
                 "address": "4000 Arden Drive, El Monte, CA 91731"
             }
@@ -602,10 +640,10 @@
             },
             "properties": {
                 "name": "Eureka",
-                "RID": "Jul 19, 03:40",
-                "CID": "Jul 20, 09:00",
-                "VR": "Jul 10, 01:35",
-                "DT": "Jul 16, 10:35",
+                "RID": "Jul 20, 09:10",
+                "CID": "Jul 20, 09:20",
+                "VR": "Jul 10, 01:55",
+                "DT": "Jul 16, 01:35",
                 "address": "322 W. 15th Street, Eureka, CA 95501"
             }
         },
@@ -621,11 +659,30 @@
             },
             "properties": {
                 "name": "Fairfield",
-                "RID": "Aug 14, 08:20",
-                "CID": "Aug 14, 10:00",
-                "VR": "Jul 26, 10:40",
-                "DT": "Aug 10, 08:40",
+                "RID": "Aug 14, 10:00",
+                "CID": "Aug 14, 10:20",
+                "VR": "Jul 27, 10:20",
+                "DT": "Aug 10, 09:40",
                 "address": "160 Serrano Drive, Fairfield, CA 94533"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 35,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.42798700000002,
+                    41.019824
+                ]
+            },
+            "properties": {
+                "name": "Fall River Mills",
+                "RID": "Aug 07, 11:10",
+                "CID": "Aug 09, 11:10",
+                "VR": "Jul 17, 03:00",
+                "DT": "NaT",
+                "address": "43467 Hwy 299E, Fall River Mills, CA 96028"
             }
         },
         {
@@ -640,9 +697,9 @@
             },
             "properties": {
                 "name": "Folsom",
-                "RID": "Aug 16, 09:20",
-                "CID": "Aug 16, 10:20",
-                "VR": "Jul 25, 01:20",
+                "RID": "Aug 16, 10:20",
+                "CID": "Aug 16, 10:40",
+                "VR": "Jul 25, 02:40",
                 "DT": "Aug 13, 09:20",
                 "address": "323 E Bidwell A, Folsom, CA 95630"
             }
@@ -659,11 +716,30 @@
             },
             "properties": {
                 "name": "Fontana",
-                "RID": "Aug 16, 08:40",
+                "RID": "Aug 16, 11:00",
                 "CID": "Aug 16, 11:00",
-                "VR": "Jul 18, 11:20",
+                "VR": "Jul 18, 01:50",
                 "DT": "Jul 26, 08:20",
                 "address": "8026 Hemlock Ave, Fontana, CA 92336"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 38,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.461396,
+                    34.067682
+                ]
+            },
+            "properties": {
+                "name": "Fontana Commercial Drive Test Center",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "10207 Poplar Ave, Fontana, CA 92335"
             }
         },
         {
@@ -678,10 +754,10 @@
             },
             "properties": {
                 "name": "Fort Bragg",
-                "RID": "Aug 03, 09:30",
-                "CID": "Aug 03, 09:50",
-                "VR": "Jul 16, 03:50",
-                "DT": "Jul 30, 10:40",
+                "RID": "Aug 03, 10:10",
+                "CID": "Aug 03, 10:30",
+                "VR": "Jul 17, 09:40",
+                "DT": "Jul 30, 02:20",
                 "address": "410 S. Franklin Street, Fort Bragg, CA 95437"
             }
         },
@@ -697,10 +773,10 @@
             },
             "properties": {
                 "name": "Fremont",
-                "RID": "Aug 17, 03:00",
-                "CID": "Aug 20, 10:00",
+                "RID": "Aug 20, 10:20",
+                "CID": "Aug 20, 10:20",
                 "VR": "Jul 23, 09:30",
-                "DT": "Aug 13, 03:20",
+                "DT": "Aug 14, 08:00",
                 "address": "4287 Central Avenue, Fremont, CA 94536"
             }
         },
@@ -716,11 +792,30 @@
             },
             "properties": {
                 "name": "Fresno",
-                "RID": "Jul 25, 10:00",
+                "RID": "Jul 25, 10:20",
                 "CID": "Jul 25, 10:20",
                 "VR": "Jul 10, 02:30",
-                "DT": "Jul 23, 11:00",
+                "DT": "Jul 23, 01:00",
                 "address": "655 W. Olive Avenue, Fresno, CA 93728"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 42,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.778029,
+                    36.692246000000004
+                ]
+            },
+            "properties": {
+                "name": "Fresno Commercial Drive Test Center",
+                "RID": "Jul 02, 02:00",
+                "CID": "Jul 02, 02:20",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "735 E North Ave, Fresno, CA 93725"
             }
         },
         {
@@ -735,10 +830,10 @@
             },
             "properties": {
                 "name": "Fresno North",
-                "RID": "Jul 20, 03:00",
-                "CID": "Jul 26, 09:00",
-                "VR": "Jul 24, 02:50",
-                "DT": "Jul 23, 11:20",
+                "RID": "Jul 26, 09:20",
+                "CID": "Jul 26, 09:20",
+                "VR": "Jul 25, 09:20",
+                "DT": "Jul 23, 11:40",
                 "address": "6420 N Blackstone Avenue, Fresno, CA 93710"
             }
         },
@@ -754,8 +849,8 @@
             },
             "properties": {
                 "name": "Fullerton",
-                "RID": "Aug 06, 09:40",
-                "CID": "Aug 06, 03:20",
+                "RID": "Aug 06, 03:40",
+                "CID": "Aug 07, 09:20",
                 "VR": "Jul 21, 10:20",
                 "DT": "Jul 24, 07:20",
                 "address": "909 W. Valencia Drive, Fullerton, CA 92832"
@@ -773,11 +868,30 @@
             },
             "properties": {
                 "name": "Garberville",
-                "RID": "Jul 19, 10:40",
-                "CID": "Jul 24, 10:00",
-                "VR": "Jul 03, 01:40",
-                "DT": "Aug 02, 10:20",
+                "RID": "Jul 24, 10:20",
+                "CID": "Jul 24, 10:40",
+                "VR": "Jul 03, 01:50",
+                "DT": "Aug 07, 10:20",
                 "address": "1180 Evergreen Rd, Redway, CA 95560"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 46,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.265943,
+                    33.897043
+                ]
+            },
+            "properties": {
+                "name": "Gardena Commercial Drive Test Center",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "14825 S Avalon Blvd, Gardena, CA 90248"
             }
         },
         {
@@ -792,11 +906,30 @@
             },
             "properties": {
                 "name": "Gilroy",
-                "RID": "Aug 21, 02:00",
-                "CID": "Aug 21, 02:30",
-                "VR": "Jul 18, 10:50",
-                "DT": "Aug 24, 01:20",
+                "RID": "Aug 22, 01:30",
+                "CID": "Aug 22, 01:30",
+                "VR": "Jul 18, 01:50",
+                "DT": "Aug 24, 01:40",
                 "address": "6984 Chestnut Street Suite A, Gilroy, CA 95020"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 48,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2833,
+                    34.1667
+                ]
+            },
+            "properties": {
+                "name": "Glendale",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Aug 07, 12:20",
+                "DT": "Sep 19, 02:40",
+                "address": "1335 W. Glenoaks Boulevard, Glendale, CA 91201"
             }
         },
         {
@@ -811,11 +944,30 @@
             },
             "properties": {
                 "name": "Goleta",
-                "RID": "Aug 03, 03:40",
-                "CID": "Aug 06, 09:20",
-                "VR": "Jul 06, 03:50",
-                "DT": "Jul 23, 10:40",
+                "RID": "Aug 06, 09:20",
+                "CID": "Aug 06, 09:40",
+                "VR": "Jul 09, 09:40",
+                "DT": "Jul 23, 01:00",
                 "address": "7127 Hollister Avenue Suite 24/26, Goleta, CA 93117"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 50,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.48586599999999,
+                    34.273035
+                ]
+            },
+            "properties": {
+                "name": "Granada Hills Driver License Processing Center (DL Only)",
+                "RID": "Aug 14, 11:00",
+                "CID": "Aug 14, 11:00",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "16201 San Fernando Mission Blvd, Granada Hills, CA 91344"
             }
         },
         {
@@ -830,10 +982,10 @@
             },
             "properties": {
                 "name": "Grass Valley",
-                "RID": "Aug 10, 10:20",
-                "CID": "Aug 13, 01:50",
-                "VR": "Jul 27, 02:00",
-                "DT": "Jul 27, 03:20",
+                "RID": "Aug 13, 02:00",
+                "CID": "Aug 13, 03:00",
+                "VR": "Jul 27, 02:20",
+                "DT": "Aug 03, 02:40",
                 "address": "890 Sutton Way, Grass Valley, CA 95945"
             }
         },
@@ -849,10 +1001,10 @@
             },
             "properties": {
                 "name": "Hanford",
-                "RID": "Jul 25, 10:40",
-                "CID": "Jul 26, 10:40",
+                "RID": "Jul 26, 12:20",
+                "CID": "Jul 26, 12:40",
                 "VR": "Jul 17, 03:00",
-                "DT": "Jul 13, 03:20",
+                "DT": "Jul 13, 03:40",
                 "address": "701 W. Hanford Armona Road (corner of W. Armona), Hanford, CA 93230"
             }
         },
@@ -870,8 +1022,8 @@
                 "name": "Hawthorne",
                 "RID": "Aug 07, 02:00",
                 "CID": "Aug 07, 02:00",
-                "VR": "Aug 08, 01:40",
-                "DT": "Aug 06, 11:40",
+                "VR": "Aug 08, 01:50",
+                "DT": "Aug 06, 01:20",
                 "address": "3700 W. El Segundo Boulevard, Hawthorne, CA 90250"
             }
         },
@@ -887,10 +1039,10 @@
             },
             "properties": {
                 "name": "Hayward",
-                "RID": "Aug 17, 01:00",
-                "CID": "Aug 21, 02:40",
-                "VR": "Jul 18, 03:30",
-                "DT": "Jul 31, 10:20",
+                "RID": "Aug 21, 03:20",
+                "CID": "Aug 21, 03:20",
+                "VR": "Jul 19, 08:50",
+                "DT": "Jul 31, 01:20",
                 "address": "150 Jackson Street, Hayward, CA 94544"
             }
         },
@@ -906,9 +1058,9 @@
             },
             "properties": {
                 "name": "Hemet",
-                "RID": "Aug 16, 09:00",
-                "CID": "Aug 16, 09:20",
-                "VR": "Jul 30, 10:30",
+                "RID": "Aug 16, 09:20",
+                "CID": "Aug 16, 09:40",
+                "VR": "Jul 30, 02:50",
                 "DT": "Jul 27, 01:00",
                 "address": "1200 S State St, Hemet, CA 92543"
             }
@@ -925,11 +1077,30 @@
             },
             "properties": {
                 "name": "Hollister",
-                "RID": "Aug 13, 03:00",
-                "CID": "Aug 13, 03:20",
-                "VR": "Jul 19, 09:00",
-                "DT": "Aug 10, 02:40",
+                "RID": "Aug 14, 09:50",
+                "CID": "Aug 14, 10:00",
+                "VR": "Jul 19, 09:30",
+                "DT": "Aug 13, 08:40",
                 "address": "80 N. Sally Street, Hollister, CA 95023"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 57,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.3299,
+                    34.0853
+                ]
+            },
+            "properties": {
+                "name": "Hollywood",
+                "RID": "Sep 19, 10:40",
+                "CID": "Sep 19, 11:00",
+                "VR": "NaT",
+                "DT": "Jul 10, 03:20",
+                "address": "803 Cole Avenue, Hollywood, CA 90038"
             }
         },
         {
@@ -944,9 +1115,9 @@
             },
             "properties": {
                 "name": "Indio",
-                "RID": "Jul 31, 08:40",
-                "CID": "Jul 31, 08:50",
-                "VR": "Jul 11, 10:40",
+                "RID": "Jul 31, 09:00",
+                "CID": "Jul 31, 09:00",
+                "VR": "Jul 11, 02:20",
                 "DT": "Jul 13, 01:40",
                 "address": "44480 Jackson St, Indio, CA 92201"
             }
@@ -963,10 +1134,10 @@
             },
             "properties": {
                 "name": "Inglewood",
-                "RID": "Aug 07, 02:40",
-                "CID": "Aug 07, 03:00",
-                "VR": "Jul 19, 02:10",
-                "DT": "Jul 27, 01:20",
+                "RID": "Aug 07, 03:20",
+                "CID": "Aug 07, 03:20",
+                "VR": "Jul 19, 02:20",
+                "DT": "Jul 27, 01:40",
                 "address": "621 N La Brea Ave, Inglewood, CA 90302"
             }
         },
@@ -982,10 +1153,10 @@
             },
             "properties": {
                 "name": "Jackson",
-                "RID": "Aug 14, 02:20",
-                "CID": "Aug 14, 02:40",
-                "VR": "Jul 24, 02:50",
-                "DT": "Jul 26, 08:40",
+                "RID": "Aug 14, 03:00",
+                "CID": "Aug 15, 10:20",
+                "VR": "Jul 25, 09:30",
+                "DT": "Jul 26, 03:00",
                 "address": "201 Clinton Road, Jackson, CA 95642"
             }
         },
@@ -1001,10 +1172,10 @@
             },
             "properties": {
                 "name": "King City",
-                "RID": "Jul 24, 02:30",
-                "CID": "Jul 25, 02:00",
-                "VR": "Jul 03, 10:20",
-                "DT": "Jul 12, 11:20",
+                "RID": "Jul 25, 02:40",
+                "CID": "Jul 26, 08:30",
+                "VR": "Jul 03, 02:10",
+                "DT": "Jul 12, 11:40",
                 "address": "101 E San Antonio Dr, King City, CA 93930"
             }
         },
@@ -1020,9 +1191,9 @@
             },
             "properties": {
                 "name": "Laguna Hills",
-                "RID": "Aug 30, 10:00",
-                "CID": "Sep 12, 02:10",
-                "VR": "Aug 14, 11:20",
+                "RID": "Sep 12, 02:20",
+                "CID": "Sep 12, 02:40",
+                "VR": "Aug 14, 02:30",
                 "DT": "Aug 15, 01:40",
                 "address": "23535 Moulton Parkway, Laguna Hills, CA 92653"
             }
@@ -1039,10 +1210,10 @@
             },
             "properties": {
                 "name": "Lake Isabella",
-                "RID": "Jul 31, 02:00",
-                "CID": "Jul 31, 03:00",
-                "VR": "Jul 05, 10:50",
-                "DT": "Jul 10, 10:40",
+                "RID": "Aug 01, 09:40",
+                "CID": "Aug 01, 10:00",
+                "VR": "Jul 10, 10:10",
+                "DT": "Jul 11, 09:20",
                 "address": "5520 Lake Isabella Road G-1, Lake Isabella, CA 93240"
             }
         },
@@ -1058,10 +1229,10 @@
             },
             "properties": {
                 "name": "Lakeport",
-                "RID": "Aug 06, 10:40",
-                "CID": "Aug 06, 01:00",
-                "VR": "Jul 24, 02:50",
-                "DT": "Aug 17, 02:00",
+                "RID": "Aug 06, 01:20",
+                "CID": "Aug 06, 01:40",
+                "VR": "Jul 25, 02:00",
+                "DT": "Aug 17, 02:20",
                 "address": "965 Parallel Drive, Lakeport, CA 95453"
             }
         },
@@ -1077,10 +1248,10 @@
             },
             "properties": {
                 "name": "Lancaster",
-                "RID": "Aug 06, 03:00",
+                "RID": "Aug 06, 03:20",
                 "CID": "Aug 06, 03:00",
-                "VR": "Jul 16, 11:00",
-                "DT": "Jul 24, 02:20",
+                "VR": "Jul 16, 11:10",
+                "DT": "Jul 24, 02:30",
                 "address": "721 W Ave L6, Lancaster, CA 93535"
             }
         },
@@ -1096,10 +1267,10 @@
             },
             "properties": {
                 "name": "Lincoln Park",
-                "RID": "Aug 09, 09:40",
-                "CID": "Aug 09, 10:00",
-                "VR": "Jul 23, 11:00",
-                "DT": "Aug 03, 02:20",
+                "RID": "Aug 09, 10:00",
+                "CID": "Aug 09, 10:20",
+                "VR": "Jul 23, 11:20",
+                "DT": "Aug 03, 02:40",
                 "address": "3529 N. Mission Road, Los Angeles, CA 90031"
             }
         },
@@ -1116,9 +1287,9 @@
             "properties": {
                 "name": "Lodi",
                 "RID": "Aug 18, 10:40",
-                "CID": "Aug 17, 03:00",
-                "VR": "Jul 19, 11:30",
-                "DT": "Aug 09, 11:20",
+                "CID": "Aug 18, 11:00",
+                "VR": "Jul 19, 11:40",
+                "DT": "Aug 09, 11:40",
                 "address": "1222 Pixley Parkway, Lodi, CA 95240"
             }
         },
@@ -1134,10 +1305,10 @@
             },
             "properties": {
                 "name": "Lompoc",
-                "RID": "Aug 01, 11:40",
-                "CID": "Aug 01, 01:00",
-                "VR": "Jul 06, 03:20",
-                "DT": "Jul 13, 02:50",
+                "RID": "Aug 01, 01:20",
+                "CID": "Aug 01, 01:40",
+                "VR": "Jul 09, 09:00",
+                "DT": "Jul 13, 03:30",
                 "address": "1601 N H St, Lompoc, CA 93436"
             }
         },
@@ -1153,11 +1324,30 @@
             },
             "properties": {
                 "name": "Long Beach",
-                "RID": "Aug 13, 11:00",
+                "RID": "Aug 13, 03:20",
                 "CID": "Aug 13, 03:20",
-                "VR": "Jul 23, 12:20",
+                "VR": "Jul 23, 02:00",
                 "DT": "Jul 16, 01:40",
                 "address": "3700 East Willow Street, Long Beach, CA 90815"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 70,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2787,
+                    34.0182
+                ]
+            },
+            "properties": {
+                "name": "Los Angeles",
+                "RID": "Aug 09, 03:20",
+                "CID": "Aug 09, 03:20",
+                "VR": "Jul 26, 03:45",
+                "DT": "Jul 20, 02:20",
+                "address": "3615 S. Hope Street, Los Angeles, CA 90007"
             }
         },
         {
@@ -1172,10 +1362,10 @@
             },
             "properties": {
                 "name": "Los Banos",
-                "RID": "Aug 02, 01:30",
-                "CID": "Aug 02, 10:30",
-                "VR": "Jul 06, 01:50",
-                "DT": "Aug 29, 11:10",
+                "RID": "Aug 02, 02:10",
+                "CID": "Aug 02, 02:10",
+                "VR": "Jul 09, 08:50",
+                "DT": "Aug 30, 08:30",
                 "address": "814 West L Street, Los Banos, CA 93635"
             }
         },
@@ -1191,10 +1381,10 @@
             },
             "properties": {
                 "name": "Los Gatos",
-                "RID": "Sep 07, 11:40",
-                "CID": "Aug 31, 11:20",
-                "VR": "Jul 11, 11:10",
-                "DT": "Sep 14, 08:00",
+                "RID": "Sep 10, 02:00",
+                "CID": "Sep 10, 11:20",
+                "VR": "Jul 12, 09:30",
+                "DT": "Sep 14, 10:40",
                 "address": "600 N. Santa Cruz Avenue, Los Gatos, CA 95030"
             }
         },
@@ -1210,9 +1400,9 @@
             },
             "properties": {
                 "name": "Madera",
-                "RID": "Jul 31, 03:00",
+                "RID": "Aug 01, 01:20",
                 "CID": "Aug 01, 01:00",
-                "VR": "Jul 26, 09:20",
+                "VR": "Jul 26, 09:40",
                 "DT": "Jul 23, 10:20",
                 "address": "1206 Maple Street, Madera, CA 93637"
             }
@@ -1229,10 +1419,10 @@
             },
             "properties": {
                 "name": "Manteca",
-                "RID": "Aug 03, 02:00",
-                "CID": "Aug 06, 09:20",
+                "RID": "Aug 06, 10:20",
+                "CID": "Aug 06, 09:40",
                 "VR": "Jul 24, 09:30",
-                "DT": "Aug 09, 11:40",
+                "DT": "Aug 09, 01:20",
                 "address": "955 Davis Street, Manteca, CA 95336"
             }
         },
@@ -1248,10 +1438,10 @@
             },
             "properties": {
                 "name": "Mariposa",
-                "RID": "Jul 30, 03:20",
-                "CID": "Jul 30, 10:40",
-                "VR": "Jul 17, 01:30",
-                "DT": "Jul 27, 10:40",
+                "RID": "Jul 31, 10:40",
+                "CID": "Jul 31, 01:40",
+                "VR": "Jul 17, 01:40",
+                "DT": "Jul 27, 02:40",
                 "address": "5264 Highway 49-North, Mariposa, CA 95338"
             }
         },
@@ -1267,10 +1457,10 @@
             },
             "properties": {
                 "name": "Mendota",
-                "RID": "Aug 02, 02:40",
-                "CID": "Aug 02, 02:20",
-                "VR": "Jul 05, 09:30",
-                "DT": "Jul 27, 10:20",
+                "RID": "Aug 03, 09:40",
+                "CID": "Aug 03, 09:20",
+                "VR": "Jul 05, 10:20",
+                "DT": "Jul 27, 10:40",
                 "address": "655 Quince Street, Mendota, CA 93640"
             }
         },
@@ -1286,10 +1476,10 @@
             },
             "properties": {
                 "name": "Merced",
-                "RID": "Aug 02, 11:10",
-                "CID": "Aug 02, 11:40",
+                "RID": "Aug 02, 12:00",
+                "CID": "Aug 02, 12:20",
                 "VR": "Jul 09, 10:20",
-                "DT": "Aug 02, 08:20",
+                "DT": "Aug 02, 08:40",
                 "address": "1313 W. 12th Street, Merced, CA 95340"
             }
         },
@@ -1305,9 +1495,9 @@
             },
             "properties": {
                 "name": "Modesto",
-                "RID": "Aug 06, 12:40",
-                "CID": "Aug 06, 12:40",
-                "VR": "Jul 12, 03:20",
+                "RID": "Aug 06, 01:40",
+                "CID": "Aug 06, 01:20",
+                "VR": "Jul 12, 03:40",
                 "DT": "Jul 24, 09:20",
                 "address": "124 Burney Street, Modesto, CA 95354"
             }
@@ -1324,9 +1514,9 @@
             },
             "properties": {
                 "name": "Montebello",
-                "RID": "Aug 09, 11:00",
-                "CID": "Aug 09, 10:40",
-                "VR": "Jul 23, 11:20",
+                "RID": "Aug 09, 11:20",
+                "CID": "Aug 09, 11:20",
+                "VR": "Jul 23, 11:40",
                 "DT": "Aug 02, 09:40",
                 "address": "424 N. Wilcox Avenue, Montebello, CA 90640"
             }
@@ -1343,10 +1533,10 @@
             },
             "properties": {
                 "name": "Mt Shasta",
-                "RID": "Jul 20, 10:10",
-                "CID": "Jul 19, 02:50",
-                "VR": "Jul 03, 10:50",
-                "DT": "Aug 08, 02:20",
+                "RID": "Jul 20, 02:30",
+                "CID": "Jul 20, 02:50",
+                "VR": "Jul 03, 02:00",
+                "DT": "Aug 10, 09:20",
                 "address": "154 Morgan Way, Mt Shasta, CA 96067"
             }
         },
@@ -1362,10 +1552,10 @@
             },
             "properties": {
                 "name": "Napa",
-                "RID": "Aug 13, 11:20",
-                "CID": "Aug 13, 11:20",
-                "VR": "Jul 18, 10:50",
-                "DT": "Aug 23, 09:40",
+                "RID": "Aug 13, 01:00",
+                "CID": "Aug 13, 01:00",
+                "VR": "Jul 18, 03:30",
+                "DT": "Aug 23, 10:00",
                 "address": "2550 Napa Valley Corporate Drive, Napa, CA 94558"
             }
         },
@@ -1381,10 +1571,10 @@
             },
             "properties": {
                 "name": "Needles",
-                "RID": "Jul 12, 08:30",
-                "CID": "Jul 17, 08:30",
-                "VR": "Jul 02, 09:40",
-                "DT": "Jul 17, 10:00",
+                "RID": "Jul 17, 09:30",
+                "CID": "Jul 17, 09:00",
+                "VR": "Jul 02, 10:00",
+                "DT": "Jul 17, 10:20",
                 "address": "1040 E Broadway St, Needles, CA 92363"
             }
         },
@@ -1400,11 +1590,30 @@
             },
             "properties": {
                 "name": "Newhall",
-                "RID": "Aug 08, 11:30",
-                "CID": "Aug 06, 09:20",
-                "VR": "Jul 20, 09:15",
-                "DT": "Jul 20, 01:40",
+                "RID": "Aug 08, 01:30",
+                "CID": "Aug 08, 12:30",
+                "VR": "Jul 20, 09:50",
+                "DT": "Jul 20, 02:40",
                 "address": "24427 Newhall Avenue, Newhall, CA 91321"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 84,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.5614,
+                    33.9283
+                ]
+            },
+            "properties": {
+                "name": "Norco",
+                "RID": "Aug 09, 10:00",
+                "CID": "Aug 09, 10:00",
+                "VR": "Jul 30, 02:40",
+                "DT": "Jul 24, 11:00",
+                "address": "3201 Horseless Carriage Drive, Norco, CA 92860"
             }
         },
         {
@@ -1419,10 +1628,10 @@
             },
             "properties": {
                 "name": "Novato",
-                "RID": "Aug 23, 02:35",
-                "CID": "Aug 23, 08:40",
-                "VR": "Jul 17, 03:40",
-                "DT": "Aug 07, 08:40",
+                "RID": "Aug 23, 03:40",
+                "CID": "Aug 24, 01:35",
+                "VR": "Jul 18, 09:30",
+                "DT": "Aug 07, 09:00",
                 "address": "936 7th Street A, Novato, CA 94947"
             }
         },
@@ -1438,10 +1647,10 @@
             },
             "properties": {
                 "name": "Oakland",
-                "RID": "Aug 27, 11:10",
-                "CID": "Aug 27, 01:50",
-                "VR": "Jul 30, 09:50",
-                "DT": "Jul 30, 10:40",
+                "RID": "Aug 27, 02:10",
+                "CID": "Aug 27, 02:10",
+                "VR": "Jul 30, 10:10",
+                "DT": "Jul 30, 11:20",
                 "address": "5300 Claremont Avenue, Oakland, CA 94618"
             }
         },
@@ -1476,10 +1685,10 @@
             },
             "properties": {
                 "name": "Oceanside",
-                "RID": "Aug 31, 10:20",
-                "CID": "Aug 31, 09:40",
-                "VR": "Jul 25, 09:20",
-                "DT": "Jul 24, 02:10",
+                "RID": "Aug 31, 10:40",
+                "CID": "Aug 31, 02:20",
+                "VR": "Jul 25, 09:30",
+                "DT": "Jul 24, 02:20",
                 "address": "4005 Plaza Drive, Oceanside, CA 92056"
             }
         },
@@ -1495,10 +1704,10 @@
             },
             "properties": {
                 "name": "Oroville",
-                "RID": "Aug 02, 11:20",
-                "CID": "Aug 02, 02:00",
-                "VR": "Jul 12, 09:50",
-                "DT": "Jul 31, 02:20",
+                "RID": "Aug 02, 02:20",
+                "CID": "Aug 02, 02:20",
+                "VR": "Jul 16, 09:50",
+                "DT": "Jul 31, 02:00",
                 "address": "775 Mitchell Avenue, Oroville, CA 95965"
             }
         },
@@ -1514,10 +1723,10 @@
             },
             "properties": {
                 "name": "Oxnard",
-                "RID": "Aug 02, 11:40",
-                "CID": "Aug 03, 08:20",
-                "VR": "Jul 05, 08:20",
-                "DT": "Jul 06, 03:00",
+                "RID": "Aug 03, 08:40",
+                "CID": "Aug 03, 08:40",
+                "VR": "Jul 05, 08:30",
+                "DT": "Jul 06, 03:20",
                 "address": "4050 Saviers Road, Oxnard, CA 93033"
             }
         },
@@ -1533,10 +1742,10 @@
             },
             "properties": {
                 "name": "Palm Desert",
-                "RID": "Aug 09, 10:20",
-                "CID": "Aug 09, 02:00",
-                "VR": "Jul 16, 01:40",
-                "DT": "Jul 18, 01:40",
+                "RID": "Aug 09, 02:20",
+                "CID": "Aug 09, 02:20",
+                "VR": "Jul 16, 01:50",
+                "DT": "Jul 18, 02:20",
                 "address": "74-740 Technology Drive, Palm Desert, CA 92211"
             }
         },
@@ -1552,10 +1761,10 @@
             },
             "properties": {
                 "name": "Palm Springs",
-                "RID": "Aug 07, 02:00",
-                "CID": "Aug 07, 02:00",
-                "VR": "Jul 17, 10:00",
-                "DT": "Jul 18, 10:30",
+                "RID": "Aug 07, 02:20",
+                "CID": "Aug 07, 02:20",
+                "VR": "Jul 17, 10:10",
+                "DT": "Jul 18, 10:50",
                 "address": "950 N. Farrell Drive, Palm Springs, CA 92262"
             }
         },
@@ -1571,10 +1780,10 @@
             },
             "properties": {
                 "name": "Paradise",
-                "RID": "Aug 08, 02:40",
-                "CID": "Aug 08, 02:20",
-                "VR": "Aug 03, 02:50",
-                "DT": "Aug 03, 10:20",
+                "RID": "Aug 08, 03:00",
+                "CID": "Aug 08, 03:20",
+                "VR": "Aug 03, 03:00",
+                "DT": "Aug 03, 10:40",
                 "address": "5921 Clark Road, Paradise, CA 95967"
             }
         },
@@ -1590,9 +1799,9 @@
             },
             "properties": {
                 "name": "Pasadena",
-                "RID": "Aug 14, 03:20",
-                "CID": "Aug 08, 10:20",
-                "VR": "Aug 07, 10:20",
+                "RID": "Aug 14, 03:40",
+                "CID": "Aug 14, 03:40",
+                "VR": "Aug 07, 10:30",
                 "DT": "Jun 29, 11:00",
                 "address": "49 S. Rosemead Boulevard, Pasadena, CA 91107"
             }
@@ -1609,11 +1818,30 @@
             },
             "properties": {
                 "name": "Paso Robles",
-                "RID": "Jul 31, 10:20",
-                "CID": "Jul 31, 10:00",
-                "VR": "Jul 11, 02:40",
-                "DT": "Jul 13, 02:40",
+                "RID": "Jul 31, 11:20",
+                "CID": "Jul 31, 11:40",
+                "VR": "Jul 11, 02:50",
+                "DT": "Jul 16, 09:00",
                 "address": "841 Park Street, Paso Robles, CA 93446"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 96,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.6453,
+                    38.257
+                ]
+            },
+            "properties": {
+                "name": "Petaluma",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Jul 17, 10:20",
+                "DT": "Aug 02, 11:40",
+                "address": "715 - J Southpoint Boulevard, Petaluma, CA 94954"
             }
         },
         {
@@ -1628,10 +1856,10 @@
             },
             "properties": {
                 "name": "Pittsburg",
-                "RID": "Aug 30, 03:40",
-                "CID": "Aug 30, 03:00",
-                "VR": "Jul 25, 02:00",
-                "DT": "Aug 08, 03:20",
+                "RID": "Aug 31, 09:20",
+                "CID": "Aug 31, 09:40",
+                "VR": "Jul 25, 03:00",
+                "DT": "Aug 09, 09:20",
                 "address": "1399 Buchanan Road, Pittsburg, CA 94565"
             }
         },
@@ -1647,10 +1875,10 @@
             },
             "properties": {
                 "name": "Placerville",
-                "RID": "Aug 14, 02:20",
-                "CID": "Aug 14, 10:20",
-                "VR": "Jul 31, 10:20",
-                "DT": "Aug 02, 02:00",
+                "RID": "Aug 14, 03:20",
+                "CID": "Aug 14, 03:20",
+                "VR": "Jul 31, 11:00",
+                "DT": "Aug 02, 02:20",
                 "address": "2919 Cold Springs Road, Placerville, CA 95667"
             }
         },
@@ -1666,8 +1894,8 @@
             },
             "properties": {
                 "name": "Pleasanton",
-                "RID": "Sep 05, 10:00",
-                "CID": "Sep 05, 10:20",
+                "RID": "Sep 05, 10:40",
+                "CID": "Sep 05, 10:40",
                 "VR": "Jul 24, 10:30",
                 "DT": "Aug 06, 10:00",
                 "address": "6300 W Las Positas Blvd, Pleasanton, CA 94588"
@@ -1685,10 +1913,10 @@
             },
             "properties": {
                 "name": "Pomona",
-                "RID": "Aug 14, 12:40",
-                "CID": "Aug 09, 03:20",
-                "VR": "Jul 24, 11:40",
-                "DT": "Aug 09, 02:20",
+                "RID": "Aug 14, 01:20",
+                "CID": "Aug 14, 01:20",
+                "VR": "Jul 24, 11:50",
+                "DT": "Aug 10, 11:20",
                 "address": "1600 S. Garey Avenue, Pomona, CA 91766"
             }
         },
@@ -1704,10 +1932,10 @@
             },
             "properties": {
                 "name": "Porterville",
-                "RID": "Jul 26, 09:00",
-                "CID": "Jul 26, 10:00",
-                "VR": "Jul 11, 09:45",
-                "DT": "Jul 10, 02:40",
+                "RID": "Jul 26, 10:40",
+                "CID": "Jul 26, 10:20",
+                "VR": "Jul 11, 09:55",
+                "DT": "Jul 10, 03:20",
                 "address": "329 E. Olive Avenue, Porterville, CA 93257"
             }
         },
@@ -1723,11 +1951,30 @@
             },
             "properties": {
                 "name": "Poway",
-                "RID": "Aug 30, 10:20",
-                "CID": "Aug 30, 01:50",
-                "VR": "Aug 01, 10:40",
-                "DT": "Sep 04, 01:00",
+                "RID": "Aug 30, 02:30",
+                "CID": "NaT",
+                "VR": "Aug 01, 10:50",
+                "DT": "Sep 04, 01:20",
                 "address": "13461 Community Road, Poway, CA 92064"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 103,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.882972,
+                    39.935062
+                ]
+            },
+            "properties": {
+                "name": "Quincy",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Jul 10, 02:10",
+                "DT": "Jul 11, 03:50",
+                "address": "1953 E. Main Street Suite 3, Quincy, CA 95971"
             }
         },
         {
@@ -1742,11 +1989,30 @@
             },
             "properties": {
                 "name": "Rancho Cucamonga",
-                "RID": "Aug 16, 10:20",
-                "CID": "Aug 16, 09:40",
-                "VR": "Jul 24, 11:20",
-                "DT": "Aug 21, 10:20",
+                "RID": "Aug 16, 10:40",
+                "CID": "Aug 16, 10:40",
+                "VR": "Jul 24, 03:00",
+                "DT": "Aug 21, 11:40",
                 "address": "8629 Hellman Avenue, Rancho Cucamonga, CA 91730"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 105,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -116.92734399999999,
+                    32.756415000000004
+                ]
+            },
+            "properties": {
+                "name": "Rancho San Diego Industry Business Center",
+                "RID": "Jul 02, 02:40",
+                "CID": "Jul 02, 03:00",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "1901 Jamacha Road, El Cajon, CA 92019"
             }
         },
         {
@@ -1761,10 +2027,10 @@
             },
             "properties": {
                 "name": "Red Bluff",
-                "RID": "Jul 06, 09:20",
-                "CID": "Jul 05, 01:50",
-                "VR": "Jul 02, 01:10",
-                "DT": "Jul 16, 09:40",
+                "RID": "Jul 09, 08:50",
+                "CID": "Jul 09, 09:50",
+                "VR": "Jul 02, 01:20",
+                "DT": "Jul 19, 09:20",
                 "address": "675 Monroe Street, Red Bluff, CA 96080"
             }
         },
@@ -1781,9 +2047,9 @@
             "properties": {
                 "name": "Redding",
                 "RID": "Jul 26, 02:20",
-                "CID": "Jul 26, 01:40",
-                "VR": "Jul 05, 02:10",
-                "DT": "Jul 17, 02:20",
+                "CID": "Jul 26, 02:40",
+                "VR": "Jul 05, 02:20",
+                "DT": "Jul 17, 02:40",
                 "address": "2135 Civic Center Drive, Redding, CA 96001"
             }
         },
@@ -1799,9 +2065,9 @@
             },
             "properties": {
                 "name": "Redlands",
-                "RID": "Aug 16, 02:20",
+                "RID": "Aug 15, 10:20",
                 "CID": "Aug 16, 02:40",
-                "VR": "Jul 25, 11:20",
+                "VR": "Jul 25, 11:30",
                 "DT": "Jul 24, 11:20",
                 "address": "1659 W Lugonia Avenue, Redlands, CA 92374"
             }
@@ -1818,11 +2084,30 @@
             },
             "properties": {
                 "name": "Redwood City",
-                "RID": "Oct 01, 10:40",
-                "CID": "Oct 01, 11:00",
-                "VR": "Aug 07, 10:40",
-                "DT": "Sep 28, 12:40",
+                "RID": "Oct 01, 11:00",
+                "CID": "Oct 01, 11:20",
+                "VR": "Aug 07, 12:00",
+                "DT": "Sep 28, 01:40",
                 "address": "300 Brewster Avenue, Redwood City, CA 94063"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 110,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -119.4434,
+                    36.5901
+                ]
+            },
+            "properties": {
+                "name": "Reedley",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Jul 23, 08:50",
+                "DT": "Aug 14, 11:30",
+                "address": "558 E. Dinuba Avenue, Reedley, CA 93654"
             }
         },
         {
@@ -1837,10 +2122,10 @@
             },
             "properties": {
                 "name": "Ridgecrest",
-                "RID": "Jul 31, 03:00",
-                "CID": "Aug 03, 03:00",
-                "VR": "Jul 19, 11:25",
-                "DT": "Jul 19, 02:20",
+                "RID": "Aug 06, 10:40",
+                "CID": "Aug 06, 11:00",
+                "VR": "Jul 19, 11:35",
+                "DT": "Jul 19, 02:40",
                 "address": "540A Perdew Avenue, Ridgecrest, CA 93555"
             }
         },
@@ -1857,8 +2142,8 @@
             "properties": {
                 "name": "Riverside",
                 "RID": "Aug 13, 09:40",
-                "CID": "Aug 13, 09:40",
-                "VR": "Jul 24, 09:50",
+                "CID": "Aug 13, 10:00",
+                "VR": "Jul 24, 10:20",
                 "DT": "Jul 19, 03:20",
                 "address": "6280 Brockton Avenue, Riverside, CA 92506"
             }
@@ -1876,8 +2161,8 @@
             "properties": {
                 "name": "Riverside East",
                 "RID": "Aug 14, 08:20",
-                "CID": "Aug 14, 08:20",
-                "VR": "Jul 21, 11:40",
+                "CID": "Aug 14, 08:40",
+                "VR": "Jul 23, 12:00",
                 "DT": "Jul 16, 01:40",
                 "address": "6425 Sycamore Canyon Blvd., Riverside, CA 92507"
             }
@@ -1894,10 +2179,10 @@
             },
             "properties": {
                 "name": "Rocklin",
-                "RID": "Aug 07, 03:20",
-                "CID": "Aug 08, 11:20",
-                "VR": "Jul 23, 11:40",
-                "DT": "Aug 21, 10:40",
+                "RID": "Aug 08, 01:40",
+                "CID": "Aug 08, 12:20",
+                "VR": "Jul 23, 11:50",
+                "DT": "Aug 21, 11:00",
                 "address": "5245 South Grove, Rocklin, CA 95677"
             }
         },
@@ -1913,10 +2198,10 @@
             },
             "properties": {
                 "name": "Roseville",
-                "RID": "Aug 10, 12:40",
-                "CID": "Aug 10, 12:00",
-                "VR": "Jul 20, 11:00",
-                "DT": "Aug 10, 10:20",
+                "RID": "Aug 10, 01:00",
+                "CID": "Aug 10, 01:00",
+                "VR": "Jul 20, 11:10",
+                "DT": "Aug 10, 10:40",
                 "address": "7200 Galilee Road, Roseville, CA 95678"
             }
         },
@@ -1932,10 +2217,10 @@
             },
             "properties": {
                 "name": "Sacramento",
-                "RID": "Aug 13, 02:40",
-                "CID": "Aug 13, 02:20",
-                "VR": "Jul 23, 10:20",
-                "DT": "Aug 07, 03:20",
+                "RID": "Aug 13, 03:00",
+                "CID": "Aug 13, 03:00",
+                "VR": "Jul 23, 10:30",
+                "DT": "Aug 08, 03:20",
                 "address": "4700 Broadway, Sacramento, CA 95820"
             }
         },
@@ -1952,9 +2237,9 @@
             "properties": {
                 "name": "Sacramento South",
                 "RID": "Aug 14, 12:40",
-                "CID": "Aug 14, 12:20",
-                "VR": "Jul 23, 09:40",
-                "DT": "Aug 01, 10:00",
+                "CID": "Aug 14, 01:00",
+                "VR": "Jul 23, 09:50",
+                "DT": "Aug 01, 10:20",
                 "address": "7775 La Mancha Way, Sacramento, CA 95823"
             }
         },
@@ -1970,11 +2255,49 @@
             },
             "properties": {
                 "name": "Salinas",
-                "RID": "Aug 02, 11:00",
-                "CID": "Aug 02, 11:20",
+                "RID": "Aug 02, 11:40",
+                "CID": "Aug 02, 12:00",
                 "VR": "Jul 09, 01:00",
-                "DT": "Jul 19, 12:40",
+                "DT": "Jul 19, 01:20",
                 "address": "260 E. Laurel Drive, Salinas, CA 93906"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 119,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -120.67118700000002,
+                    38.191088
+                ]
+            },
+            "properties": {
+                "name": "San Andreas",
+                "RID": "Aug 07, 10:40",
+                "CID": "Aug 07, 11:40",
+                "VR": "Jul 25, 09:40",
+                "DT": "NaT",
+                "address": "745 Mountain Ranch Rd, San Andreas, CA 95249"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 120,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.2788,
+                    34.1234
+                ]
+            },
+            "properties": {
+                "name": "San Bernardino",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Jul 17, 09:50",
+                "DT": "Jul 18, 11:20",
+                "address": "1310 N. Waterman Avenue, San Bernardino, CA 92404"
             }
         },
         {
@@ -1989,9 +2312,9 @@
             },
             "properties": {
                 "name": "San Clemente",
-                "RID": "Aug 21, 11:00",
-                "CID": "Aug 22, 09:40",
-                "VR": "Aug 08, 09:40",
+                "RID": "Aug 22, 10:00",
+                "CID": "Aug 22, 10:20",
+                "VR": "Aug 08, 09:50",
                 "DT": "Aug 01, 01:20",
                 "address": "2727 Via Cascadita, San Clemente, CA 92672"
             }
@@ -2008,10 +2331,10 @@
             },
             "properties": {
                 "name": "San Diego",
-                "RID": "Aug 28, 02:30",
-                "CID": "Aug 28, 12:50",
-                "VR": "Jul 16, 12:40",
-                "DT": "Jul 31, 10:40",
+                "RID": "Aug 28, 02:50",
+                "CID": "Aug 28, 03:30",
+                "VR": "Jul 19, 01:40",
+                "DT": "Jul 31, 11:20",
                 "address": "3960 Normal Street, San Diego, CA 92103"
             }
         },
@@ -2027,10 +2350,10 @@
             },
             "properties": {
                 "name": "San Diego Clairemont",
-                "RID": "Sep 04, 01:40",
-                "CID": "Sep 05, 09:00",
-                "VR": "Jul 30, 10:50",
-                "DT": "Aug 07, 12:20",
+                "RID": "Sep 05, 10:00",
+                "CID": "Sep 05, 10:20",
+                "VR": "Jul 30, 11:40",
+                "DT": "Aug 07, 01:20",
                 "address": "4375 Derrick Drive, San Diego, CA 92117"
             }
         },
@@ -2046,10 +2369,10 @@
             },
             "properties": {
                 "name": "San Francisco",
-                "RID": "Aug 27, 02:40",
-                "CID": "Aug 24, 10:20",
+                "RID": "Aug 28, 02:00",
+                "CID": "Aug 28, 02:00",
                 "VR": "Jul 11, 03:40",
-                "DT": "Jul 23, 02:20",
+                "DT": "Jul 23, 02:40",
                 "address": "1377 Fell Street, San Francisco, CA 94117"
             }
         },
@@ -2065,11 +2388,30 @@
             },
             "properties": {
                 "name": "San Jose",
-                "RID": "Aug 21, 03:20",
-                "CID": "Aug 21, 01:40",
-                "VR": "Jul 17, 09:10",
-                "DT": "Aug 16, 03:20",
+                "RID": "Aug 22, 09:00",
+                "CID": "Aug 22, 09:20",
+                "VR": "Jul 17, 09:20",
+                "DT": "Aug 17, 11:20",
                 "address": "111 W. Alma Avenue, San Jose, CA 95110"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 126,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.849985,
+                    37.311335
+                ]
+            },
+            "properties": {
+                "name": "San Jose Driver License Processing Center (DL Only)",
+                "RID": "Aug 17, 10:20",
+                "CID": "Aug 17, 10:20",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "2222 Senter Rd, San Jose, CA 95112"
             }
         },
         {
@@ -2084,11 +2426,30 @@
             },
             "properties": {
                 "name": "San Luis Obispo",
-                "RID": "Jul 27, 11:20",
-                "CID": "Jul 27, 01:00",
-                "VR": "Jul 11, 01:50",
-                "DT": "Jul 11, 02:00",
+                "RID": "Jul 27, 01:20",
+                "CID": "Jul 27, 01:20",
+                "VR": "Jul 11, 02:20",
+                "DT": "Jul 11, 02:20",
                 "address": "3190 S. Higuera Street, San Luis Obispo, CA 93401"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 128,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.14974199999999,
+                    33.140079
+                ]
+            },
+            "properties": {
+                "name": "San Marcos Rancheros",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Aug 07, 09:30",
+                "DT": "Jul 26, 11:40",
+                "address": "590 Rancheros Dr, San Marcos, CA 92069"
             }
         },
         {
@@ -2103,9 +2464,9 @@
             },
             "properties": {
                 "name": "San Mateo",
-                "RID": "Sep 25, 10:40",
-                "CID": "Sep 26, 10:20",
-                "VR": "Jul 23, 09:45",
+                "RID": "Sep 26, 10:20",
+                "CID": "Sep 26, 10:40",
+                "VR": "Jul 23, 10:00",
                 "DT": "Jul 24, 10:20",
                 "address": "425 N. Amphlett Boulevard, San Mateo, CA 94401"
             }
@@ -2122,9 +2483,9 @@
             },
             "properties": {
                 "name": "San Pedro",
-                "RID": "Aug 08, 10:00",
-                "CID": "Aug 08, 11:40",
-                "VR": "Aug 01, 10:40",
+                "RID": "Aug 08, 01:20",
+                "CID": "Aug 08, 01:20",
+                "VR": "Aug 01, 10:50",
                 "DT": "Jul 16, 10:40",
                 "address": "1511 N. Gaffey Street, San Pedro, CA 90731"
             }
@@ -2141,10 +2502,10 @@
             },
             "properties": {
                 "name": "San Ysidro",
-                "RID": "Aug 17, 03:20",
-                "CID": "Aug 17, 03:40",
+                "RID": "Aug 17, 03:40",
+                "CID": "Aug 20, 08:20",
                 "VR": "Jul 17, 09:10",
-                "DT": "Aug 01, 10:40",
+                "DT": "Aug 01, 11:00",
                 "address": "6111 Business Center Court, San Diego, CA 92154"
             }
         },
@@ -2160,10 +2521,10 @@
             },
             "properties": {
                 "name": "Santa Ana",
-                "RID": "Aug 20, 10:40",
+                "RID": "Aug 20, 01:40",
                 "CID": "Aug 20, 11:00",
-                "VR": "Jul 24, 09:20",
-                "DT": "Jul 19, 02:50",
+                "VR": "Jul 24, 09:30",
+                "DT": "Jul 19, 03:10",
                 "address": "1330 E. First Street, Santa Ana, CA 92701"
             }
         },
@@ -2179,10 +2540,10 @@
             },
             "properties": {
                 "name": "Santa Barbara",
-                "RID": "Aug 01, 01:40",
-                "CID": "Aug 01, 01:40",
-                "VR": "Jul 05, 03:15",
-                "DT": "Jul 09, 03:00",
+                "RID": "Aug 01, 02:00",
+                "CID": "Aug 01, 02:00",
+                "VR": "Jul 06, 08:45",
+                "DT": "Jul 09, 03:20",
                 "address": "535 Castillo Street, Santa Barbara, CA 93101"
             }
         },
@@ -2198,10 +2559,10 @@
             },
             "properties": {
                 "name": "Santa Clara",
-                "RID": "Aug 28, 09:20",
-                "CID": "Aug 28, 09:40",
+                "RID": "Aug 28, 11:00",
+                "CID": "Aug 28, 11:20",
                 "VR": "Jul 18, 11:10",
-                "DT": "Aug 23, 03:00",
+                "DT": "Aug 24, 09:20",
                 "address": "3665 Flora Vista Ave, Santa Clara, CA 95051"
             }
         },
@@ -2217,10 +2578,10 @@
             },
             "properties": {
                 "name": "Santa Maria",
-                "RID": "Jul 24, 09:20",
-                "CID": "Jul 24, 09:40",
-                "VR": "Jul 13, 08:40",
-                "DT": "Jul 16, 01:00",
+                "RID": "Jul 24, 09:40",
+                "CID": "Jul 24, 10:00",
+                "VR": "Jul 13, 08:50",
+                "DT": "Jul 16, 01:10",
                 "address": "523 S. McClelland Street, Santa Maria, CA 93454"
             }
         },
@@ -2236,10 +2597,10 @@
             },
             "properties": {
                 "name": "Santa Monica",
-                "RID": "Aug 21, 01:40",
-                "CID": "Aug 21, 02:20",
-                "VR": "Jul 24, 03:05",
-                "DT": "Jul 10, 02:40",
+                "RID": "Aug 21, 02:40",
+                "CID": "Aug 21, 03:00",
+                "VR": "Jul 25, 10:20",
+                "DT": "Jul 10, 03:00",
                 "address": "2235 Colorado Avenue, Santa Monica, CA 90404"
             }
         },
@@ -2256,9 +2617,9 @@
             "properties": {
                 "name": "Santa Paula",
                 "RID": "Aug 03, 03:00",
-                "CID": "Aug 01, 11:00",
-                "VR": "Jul 09, 09:50",
-                "DT": "Jul 17, 03:20",
+                "CID": "Aug 03, 03:20",
+                "VR": "Jul 09, 10:20",
+                "DT": "Jul 17, 03:40",
                 "address": "250 W. Harvard Boulevard A, Santa Paula, CA 93060"
             }
         },
@@ -2276,8 +2637,8 @@
                 "name": "Santa Rosa",
                 "RID": "Aug 03, 09:40",
                 "CID": "Aug 03, 09:40",
-                "VR": "Jul 23, 09:50",
-                "DT": "Jul 23, 10:20",
+                "VR": "Jul 23, 12:00",
+                "DT": "Jul 23, 10:40",
                 "address": "2570 Corby Avenue, Santa Rosa, CA 95407"
             }
         },
@@ -2293,10 +2654,10 @@
             },
             "properties": {
                 "name": "Santa Teresa",
-                "RID": "Aug 20, 12:40",
+                "RID": "Aug 20, 01:00",
                 "CID": "Aug 20, 01:00",
-                "VR": "Jul 06, 02:20",
-                "DT": "Aug 17, 08:05",
+                "VR": "Jul 06, 02:30",
+                "DT": "Aug 17, 08:25",
                 "address": "180 Martinvale Lane, San Jose, CA 95119"
             }
         },
@@ -2312,10 +2673,10 @@
             },
             "properties": {
                 "name": "Seaside",
-                "RID": "Aug 03, 09:20",
-                "CID": "Aug 03, 12:20",
-                "VR": "Jul 13, 12:40",
-                "DT": "Jul 19, 10:00",
+                "RID": "Aug 03, 02:00",
+                "CID": "Aug 03, 02:00",
+                "VR": "Jul 13, 12:50",
+                "DT": "Jul 19, 10:20",
                 "address": "1180 Canyon Del Rey Road, Seaside, CA 93955"
             }
         },
@@ -2331,10 +2692,10 @@
             },
             "properties": {
                 "name": "Shafter",
-                "RID": "Jul 31, 09:40",
+                "RID": "Jul 31, 10:20",
                 "CID": "Jul 31, 10:20",
-                "VR": "Jul 18, 02:40",
-                "DT": "Jul 25, 03:20",
+                "VR": "Jul 18, 03:10",
+                "DT": "Jul 26, 09:00",
                 "address": "548 Walker Street, Shafter, CA 93263"
             }
         },
@@ -2350,10 +2711,10 @@
             },
             "properties": {
                 "name": "Simi Valley",
-                "RID": "Aug 21, 09:30",
+                "RID": "NaT",
                 "CID": "Aug 21, 09:30",
-                "VR": "Jul 13, 12:40",
-                "DT": "Jul 24, 10:20",
+                "VR": "Jul 13, 01:40",
+                "DT": "Jul 24, 10:40",
                 "address": "3855 D - Alamo Street, Simi Valley, CA 93063"
             }
         },
@@ -2369,10 +2730,10 @@
             },
             "properties": {
                 "name": "Sonora",
-                "RID": "Aug 09, 09:00",
+                "RID": "Aug 09, 09:40",
                 "CID": "Aug 09, 09:20",
-                "VR": "Jul 19, 02:00",
-                "DT": "Jul 26, 12:00",
+                "VR": "Jul 23, 02:00",
+                "DT": "Jul 26, 01:40",
                 "address": "885 Morning Star Drive, Sonora, CA 95370"
             }
         },
@@ -2388,11 +2749,30 @@
             },
             "properties": {
                 "name": "South Lake Tahoe",
-                "RID": "Aug 10, 08:40",
-                "CID": "Aug 09, 03:20",
-                "VR": "Jul 10, 01:20",
-                "DT": "Jul 24, 02:00",
+                "RID": "Aug 10, 02:00",
+                "CID": "Aug 10, 02:20",
+                "VR": "Jul 10, 01:30",
+                "DT": "Jul 24, 02:20",
                 "address": "3344 B Lake Tahoe Boulevard, South Lake Tahoe, CA 96150"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 145,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.994127,
+                    33.778428999999996
+                ]
+            },
+            "properties": {
+                "name": "Stanton Driver License Processing Center (DL Only)",
+                "RID": "Aug 06, 10:40",
+                "CID": "Aug 06, 11:00",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "12645 Beach Blvd, Stanton, CA 90680"
             }
         },
         {
@@ -2408,9 +2788,9 @@
             "properties": {
                 "name": "Stockton",
                 "RID": "Aug 03, 10:30",
-                "CID": "Aug 03, 10:30",
+                "CID": "NaT",
                 "VR": "Jul 13, 08:10",
-                "DT": "Aug 13, 10:40",
+                "DT": "Aug 13, 01:20",
                 "address": "55 South Lincoln Street, Stockton, CA 95203"
             }
         },
@@ -2426,10 +2806,10 @@
             },
             "properties": {
                 "name": "Susanville",
-                "RID": "Jul 30, 01:00",
-                "CID": "Jul 27, 11:40",
+                "RID": "Jul 30, 01:40",
+                "CID": "Jul 30, 01:20",
                 "VR": "Jul 16, 01:00",
-                "DT": "Jul 13, 08:30",
+                "DT": "Jul 13, 08:50",
                 "address": "2615 Main Street, Susanville, CA 96130"
             }
         },
@@ -2445,10 +2825,10 @@
             },
             "properties": {
                 "name": "Taft",
-                "RID": "Jul 30, 10:20",
-                "CID": "Jul 31, 11:20",
-                "VR": "Jul 12, 01:20",
-                "DT": "Jul 30, 10:00",
+                "RID": "Jul 31, 01:00",
+                "CID": "Jul 31, 01:20",
+                "VR": "Jul 12, 03:00",
+                "DT": "Jul 30, 10:20",
                 "address": "165 Center Street, Taft, CA 93268"
             }
         },
@@ -2464,10 +2844,10 @@
             },
             "properties": {
                 "name": "Temecula",
-                "RID": "Aug 23, 08:20",
+                "RID": "Aug 23, 10:00",
                 "CID": "Aug 23, 10:00",
-                "VR": "Jul 27, 02:20",
-                "DT": "Jul 17, 02:20",
+                "VR": "Jul 30, 09:40",
+                "DT": "Jul 17, 02:40",
                 "address": "27851 Diaz Road, Temecula, CA 92590"
             }
         },
@@ -2483,10 +2863,10 @@
             },
             "properties": {
                 "name": "Thousand Oaks",
-                "RID": "Aug 30, 09:40",
-                "CID": "Sep 04, 09:40",
-                "VR": "Jul 18, 02:30",
-                "DT": "Jul 30, 04:30",
+                "RID": "Sep 07, 09:40",
+                "CID": "Sep 10, 09:20",
+                "VR": "Jul 18, 02:40",
+                "DT": "Jul 31, 07:50",
                 "address": "1810 E. Avenida De Los Arboles, Thousand Oaks, CA 91362"
             }
         },
@@ -2502,10 +2882,10 @@
             },
             "properties": {
                 "name": "Torrance",
-                "RID": "Aug 08, 03:00",
-                "CID": "Aug 08, 02:40",
-                "VR": "Jul 26, 11:30",
-                "DT": "Jul 24, 02:40",
+                "RID": "Aug 08, 03:20",
+                "CID": "Aug 08, 03:20",
+                "VR": "Jul 26, 11:40",
+                "DT": "Jul 24, 03:20",
                 "address": "1785 W. 220th Street, Torrance, CA 90501"
             }
         },
@@ -2521,10 +2901,10 @@
             },
             "properties": {
                 "name": "Tracy",
-                "RID": "Aug 23, 09:40",
-                "CID": "Aug 23, 10:20",
-                "VR": "Aug 04, 12:30",
-                "DT": "Aug 10, 08:40",
+                "RID": "Aug 23, 10:20",
+                "CID": "Aug 23, 10:40",
+                "VR": "Aug 07, 10:10",
+                "DT": "Aug 10, 09:00",
                 "address": "2785 Auto Plaza Drive, Tracy, CA 95304"
             }
         },
@@ -2540,10 +2920,10 @@
             },
             "properties": {
                 "name": "Truckee",
-                "RID": "Aug 10, 10:20",
-                "CID": "Aug 09, 03:20",
-                "VR": "Jul 17, 01:20",
-                "DT": "Jul 27, 09:10",
+                "RID": "Aug 10, 10:40",
+                "CID": "Aug 10, 11:00",
+                "VR": "Jul 17, 01:30",
+                "DT": "Jul 27, 09:30",
                 "address": "11357 Donner Pass Road Suite I, Truckee, CA 96162"
             }
         },
@@ -2559,11 +2939,30 @@
             },
             "properties": {
                 "name": "Tulare",
-                "RID": "Jul 24, 08:50",
+                "RID": "Jul 25, 10:20",
                 "CID": "Jul 25, 10:20",
                 "VR": "Jul 24, 10:50",
-                "DT": "Jul 11, 09:20",
+                "DT": "Jul 11, 09:40",
                 "address": "274 E Cross Avenue, Tulare, CA 93274"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 155,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.4771,
+                    41.9562
+                ]
+            },
+            "properties": {
+                "name": "Tulelake",
+                "RID": "Jul 03, 02:00",
+                "CID": "Jul 03, 01:40",
+                "VR": "Jul 03, 02:20",
+                "DT": "NaT",
+                "address": "399 Main Street, Tulelake, CA 96134"
             }
         },
         {
@@ -2578,9 +2977,9 @@
             },
             "properties": {
                 "name": "Turlock",
-                "RID": "Aug 07, 02:40",
-                "CID": "Aug 08, 09:40",
-                "VR": "Jul 16, 10:40",
+                "RID": "Aug 08, 10:20",
+                "CID": "Aug 08, 10:00",
+                "VR": "Jul 16, 10:50",
                 "DT": "Jul 25, 01:20",
                 "address": "825 E. Monte Vista Avenue, Turlock, CA 95382"
             }
@@ -2597,10 +2996,10 @@
             },
             "properties": {
                 "name": "Twentynine Palms",
-                "RID": "Jul 26, 02:40",
-                "CID": "Jul 27, 09:40",
-                "VR": "Jul 05, 11:50",
-                "DT": "Jul 12, 09:30",
+                "RID": "Jul 27, 02:40",
+                "CID": "Jul 27, 03:00",
+                "VR": "Jul 24, 11:40",
+                "DT": "Jul 12, 11:30",
                 "address": "3668 Adobe Road G-J, Twentynine Palms, CA 92277"
             }
         },
@@ -2616,10 +3015,10 @@
             },
             "properties": {
                 "name": "Ukiah",
-                "RID": "Aug 07, 11:10",
-                "CID": "Aug 07, 10:10",
-                "VR": "Jul 12, 08:50",
-                "DT": "Aug 02, 02:00",
+                "RID": "Aug 07, 11:30",
+                "CID": "Aug 08, 01:10",
+                "VR": "Jul 12, 10:50",
+                "DT": "Aug 03, 01:00",
                 "address": "542 S. Orchard Avenue, Ukiah, CA 95482"
             }
         },
@@ -2635,10 +3034,10 @@
             },
             "properties": {
                 "name": "Vacaville",
-                "RID": "Aug 09, 09:00",
+                "RID": "Aug 09, 09:20",
                 "CID": "Aug 09, 09:20",
-                "VR": "Jul 24, 09:00",
-                "DT": "Aug 01, 01:00",
+                "VR": "Jul 24, 09:10",
+                "DT": "Aug 01, 01:20",
                 "address": "621 Orange Drive, Vacaville, CA 95687"
             }
         },
@@ -2656,9 +3055,28 @@
                 "name": "Vallejo",
                 "RID": "Aug 13, 10:20",
                 "CID": "Aug 13, 10:20",
-                "VR": "Jul 19, 09:10",
+                "VR": "Jul 19, 09:20",
                 "DT": "Aug 16, 10:40",
                 "address": "200 Couch Street, Vallejo, CA 94590"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 161,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.4582,
+                    34.1939
+                ]
+            },
+            "properties": {
+                "name": "Van Nuys",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Jul 30, 10:30",
+                "DT": "Jul 16, 11:40",
+                "address": "14920 Vanowen Street, Van Nuys, CA 91405"
             }
         },
         {
@@ -2673,10 +3091,10 @@
             },
             "properties": {
                 "name": "Ventura",
-                "RID": "Aug 02, 08:20",
-                "CID": "Aug 02, 08:35",
+                "RID": "Aug 02, 08:40",
+                "CID": "Aug 02, 08:40",
                 "VR": "Jul 10, 09:50",
-                "DT": "Jul 10, 02:20",
+                "DT": "Jul 10, 03:00",
                 "address": "4260 Market Street, Ventura, CA 93003"
             }
         },
@@ -2693,8 +3111,8 @@
             "properties": {
                 "name": "Victorville",
                 "RID": "Aug 13, 09:40",
-                "CID": "Aug 13, 09:00",
-                "VR": "Jul 18, 12:50",
+                "CID": "NaT",
+                "VR": "Jul 18, 01:50",
                 "DT": "Jul 19, 09:40",
                 "address": "14855 Corta Drive, Victorville, CA 92395"
             }
@@ -2711,9 +3129,9 @@
             },
             "properties": {
                 "name": "Visalia",
-                "RID": "Aug 01, 10:20",
-                "CID": "Jul 31, 03:00",
-                "VR": "Jul 16, 03:20",
+                "RID": "Aug 01, 10:40",
+                "CID": "Aug 01, 11:00",
+                "VR": "Jul 16, 03:30",
                 "DT": "Jul 20, 10:20",
                 "address": "1711 East Main Street, Visalia, CA 93292"
             }
@@ -2730,8 +3148,8 @@
             },
             "properties": {
                 "name": "Walnut Creek",
-                "RID": "Aug 30, 08:40",
-                "CID": "Aug 30, 10:00",
+                "RID": "Aug 30, 10:00",
+                "CID": "Aug 30, 10:20",
                 "VR": "Jul 25, 01:10",
                 "DT": "Aug 01, 10:20",
                 "address": "1910 N. Broadway, Walnut Creek, CA 94596"
@@ -2749,11 +3167,87 @@
             },
             "properties": {
                 "name": "Watsonville",
-                "RID": "Aug 07, 10:40",
-                "CID": "Aug 08, 11:20",
-                "VR": "Jul 11, 11:20",
-                "DT": "Jul 24, 01:20",
+                "RID": "Aug 08, 11:20",
+                "CID": "Aug 08, 02:20",
+                "VR": "Jul 11, 11:40",
+                "DT": "Jul 24, 01:40",
                 "address": "90 Alta Vista Avenue, Watsonville, CA 95076"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 167,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.9331,
+                    40.7256
+                ]
+            },
+            "properties": {
+                "name": "Weaverville",
+                "RID": "Aug 21, 09:20",
+                "CID": "Aug 20, 09:20",
+                "VR": "Jul 05, 10:20",
+                "DT": "NaT",
+                "address": "1511 Main Street, Weaverville, CA 96093"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 168,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -117.9316,
+                    34.061
+                ]
+            },
+            "properties": {
+                "name": "West Covina",
+                "RID": "Aug 10, 10:40",
+                "CID": "Aug 10, 10:40",
+                "VR": "Aug 13, 10:20",
+                "DT": "Jul 26, 03:00",
+                "address": "800 So. Glendora Avenue, West Covina, CA 91790"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 169,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.34586499999999,
+                    34.088257
+                ]
+            },
+            "properties": {
+                "name": "West Hollywood",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Jul 16, 08:50",
+                "DT": "NaT",
+                "address": "936 N Formosa Ave, West Hollywood, CA 90046"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 170,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -121.544,
+                    38.577
+                ]
+            },
+            "properties": {
+                "name": "West Sacramento Commercial Drive Test Center",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "NaT",
+                "DT": "NaT",
+                "address": "2528 Evergreen Avenue, West Sacramento, CA 95691"
             }
         },
         {
@@ -2768,10 +3262,10 @@
             },
             "properties": {
                 "name": "Westminster",
-                "RID": "Aug 14, 09:20",
-                "CID": "Aug 14, 10:00",
-                "VR": "Jul 23, 10:50",
-                "DT": "Jul 24, 11:40",
+                "RID": "Aug 14, 10:20",
+                "CID": "Aug 14, 10:20",
+                "VR": "Jul 23, 11:20",
+                "DT": "Jul 25, 01:40",
                 "address": "13700 Hoover Street, Westminster, CA 92683"
             }
         },
@@ -2787,11 +3281,49 @@
             },
             "properties": {
                 "name": "Whittier",
-                "RID": "Aug 13, 10:00",
-                "CID": "Aug 10, 01:20",
-                "VR": "Jul 26, 03:20",
+                "RID": "Aug 13, 10:40",
+                "CID": "Aug 13, 10:40",
+                "VR": "Jul 27, 10:10",
                 "DT": "Jul 26, 08:40",
                 "address": "9338 S. Painter Avenue, Whittier, CA 90605"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 173,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -122.212047,
+                    39.529404
+                ]
+            },
+            "properties": {
+                "name": "Willows",
+                "RID": "Jul 24, 08:40",
+                "CID": "Jul 23, 02:40",
+                "VR": "Jul 02, 10:50",
+                "DT": "NaT",
+                "address": "815 N. Humboldt Avenue, Willows, CA 95988"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 174,
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.5846,
+                    34.201
+                ]
+            },
+            "properties": {
+                "name": "Winnetka",
+                "RID": "NaT",
+                "CID": "NaT",
+                "VR": "Aug 07, 02:50",
+                "DT": "Jul 10, 02:00",
+                "address": "20725 Sherman Way, Winnetka, CA 91306"
             }
         },
         {
@@ -2806,10 +3338,10 @@
             },
             "properties": {
                 "name": "Woodland",
-                "RID": "Aug 10, 11:40",
-                "CID": "Aug 10, 12:20",
-                "VR": "Jul 17, 11:30",
-                "DT": "Aug 14, 03:00",
+                "RID": "Aug 10, 01:20",
+                "CID": "Aug 10, 02:00",
+                "VR": "Jul 17, 11:40",
+                "DT": "Aug 14, 03:20",
                 "address": "825 East St, Suite 306, Woodland, CA 95776"
             }
         },
@@ -2825,10 +3357,10 @@
             },
             "properties": {
                 "name": "Yreka",
-                "RID": "Jul 19, 09:10",
-                "CID": "Jul 20, 02:10",
-                "VR": "Jul 11, 10:30",
-                "DT": "Aug 02, 10:00",
+                "RID": "Jul 24, 09:30",
+                "CID": "Jul 23, 02:10",
+                "VR": "Jul 11, 10:50",
+                "DT": "Aug 02, 02:00",
                 "address": "1848 Fort Jones Rd, Yreka, CA 96097"
             }
         },
@@ -2844,10 +3376,10 @@
             },
             "properties": {
                 "name": "Yuba City",
-                "RID": "Jul 24, 10:40",
-                "CID": "Jul 24, 10:20",
+                "RID": "Jul 24, 11:20",
+                "CID": "Jul 24, 02:40",
                 "VR": "Jul 06, 03:40",
-                "DT": "Aug 08, 02:00",
+                "DT": "Aug 08, 02:20",
                 "address": "1570 Poole Boulevard, Yuba City, CA 95993"
             }
         }

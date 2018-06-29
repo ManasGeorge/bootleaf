@@ -3,7 +3,7 @@ var bootleaf = {
     "layerTOC": {},
     "tocOptions": {
         "exclusiveGroups": [],
-        "groupCheckboxes": true
+        "groupCheckboxes": false
     },
     "activeTool": null,
     "identifyLayers": [],
@@ -96,7 +96,8 @@ $(document).ready(function(){
 
     // Override the default icon if an icon is specified. See http://leafletjs.com/reference-1.1.0.html#icon-default
     if (config.defaultIcon !== undefined){
-        var options = ["imagePath", "iconUrl", "iconSize", "iconAnchor", "popupAnchor", "shadowUrl", "shadowSize", "shadowAnchor"];
+        var options = ["imagePath", "iconUrl", "iconSize", "iconAnchor",
+                       "popupAnchor", "shadowUrl", "shadowSize", "shadowAnchor"];
         for (var o = 0; o < options.length; o++){
             var option = options[o];
             if (config.defaultIcon[option] !== undefined){
@@ -120,7 +121,7 @@ $(document).ready(function(){
             if (layerConfig.style){
                 layerConfig.pointToLayer = function (feature, latlng) {
                     return L.circleMarker(latlng);
-                }
+                };
             }
 
             // Enable the icon if specified
@@ -134,138 +135,7 @@ $(document).ready(function(){
                 };
             }
             
-            if (layerType === "agsFeatureLayer") {
-
-                // If the config file includes 'outFields', convert it to 'fields' - a simple listing of field names
-                // which is required by the Esri-Leaflet API
-                if (layerConfig.outFields !== undefined && layerConfig.outFields.length > 0) {
-                    layerConfig.fields = $.map( layerConfig.outFields, function( val, i ) {
-                        return val['name'];
-                    });
-                }
-
-                if (layerConfig.cluster !== undefined) {
-                    layer = L.esri.Cluster.featureLayer(layerConfig);
-                } else {
-                    layer = L.esri.featureLayer(layerConfig);
-                }
-
-                // Configure a popup for this layer, if specified in the config
-                if (layerConfig.popup) {
-                    layer.on("click", function(evt){
-                        var output = '<table class="table table-condensed table-bordered">';
-                        var layerConfig = this.layerConfig;
-                        for (key in evt.layer.feature.properties){
-                            // Ignore ID fields
-                            if (["FID", "OBJECTID", "OID", "id", "ID", "ObjectID"].indexOf(key) < 0){
-                                var val = evt.layer.feature.properties[key];
-
-                                // Use the field alias if supplied in the outFields parameter
-                                if (layerConfig.outFields !== undefined){
-                                    var outFields = layerConfig.outFields;
-                                    var outputs = formatPopup(key, val, outFields);
-                                    key = outputs[0];
-                                    val = outputs[1];
-                                }
-                                if (key !== null){
-                                    output += "<tr><td>" + key + "</td><td>" + val + "</td></tr>";
-                                }
-                            }
-                        }
-                        output += "</table>"
-                        bootleaf.map.openPopup(output, evt.latlng)
-                    });
-                }
-
-                // Configure a tooltip for this layer, if specified in the config
-                if (layerConfig.tooltipField !== undefined) {
-                    layer.on("mouseover", function(evt){
-                        try{
-                            var tooltipContent = evt.layer.feature.properties[this.layerConfig.tooltipField];
-                            bootleaf.map.openTooltip(tooltipContent, evt.latlng);
-                        } catch(err){
-                            console.log("problem opening tooltip");
-                        }
-                    });
-                    layer.on("mouseout", function(evt){
-                        try{
-                            bootleaf.map.eachLayer(function(layer) {
-                                if(layer.options.pane === "tooltipPane") layer.removeFrom(bootleaf.map);
-                            });
-                        } catch(err){
-                            console.log("problem closing tooltip");
-                        }
-                    });
-                }
-
-            } else if (layerType === "agsTiledLayer") {
-                layer = L.esri.tiledMapLayer(layerConfig);
-            } else if (layerType === 'agsDynamicLayer') {
-                layer = L.esri.dynamicMapLayer(layerConfig);
-            } else if (layerType === "wmsTiledLayer") {
-                if (layerConfig.where) {
-                    layerConfig['CQL_FILTER'] = layerConfig.where;
-                }
-                layer = L.tileLayer.wms(layerConfig.url, layerConfig);
-            } else if (layerType === 'WFS') {
-                // If the config file includes 'outFields', convert it to 'fields' - a simple listing of field names
-                // which is required by the Esri-Leaflet API
-                if (layerConfig.outFields !== undefined && layerConfig.outFields.length > 0) {
-                    layerConfig.fields = $.map( layerConfig.outFields, function( val, i ) {
-                        return val['name'];
-                    });
-                }
-                // Configure tooltip or popup
-                if (layerConfig.popup !== undefined || layerConfig.tooltipField !== undefined){layerConfig.onEachFeature = configurePopup;}
-
-                if (layerConfig.cluster) {
-                    if (layerConfig.clusterIconClass !== undefined){
-                        layerConfig.iconCreateFunction = function (cluster) {
-                            // If the user has over-ridden the default cluster markers, create new markers
-                            // with the class name specified, scaling them based on the number of markers
-                            var numMarkers = cluster.getAllChildMarkers().length;
-                            var iconSize;
-                            if (numMarkers < 10) {
-                                iconSize = 25;
-                            } else if (numMarkers >= 10 && numMarkers < 100) {
-                                iconSize = 35;
-                            } else if (numMarkers >= 100 && numMarkers < 1000) {
-                                iconSize = 45;
-                            } else if (numMarkers >= 1000) {
-                                iconSize = 55
-                            }
-                            var icon = {
-                                "className": "marker-cluster span ",
-                                "iconSize": L.point(iconSize, iconSize),
-                                "html": "<div class='cluster-" + iconSize + "'><span >" + numMarkers + "</span></div>"
-                            }
-                            icon.className += cluster._group.layerConfig.clusterIconClass;
-                            return L.divIcon(icon);
-                        }
-                    }
-                    layer = L.markerClusterGroup(layerConfig);
-                } else {
-                    layer = L.geoJSON(null, layerConfig);
-                }
-
-                // If this layer has a tooltip and a popup, close it when showing the popup
-                if (layerConfig.tooltipField !== undefined && layerConfig.popup !== undefined && layerConfig.popup === true) {
-                    layer.on("click", function(evt){
-                        evt.layer.closeTooltip()
-                    })
-                }
-                layer.layerConfig = layerConfig;
-                bootleaf.wfsLayers.push(layer);
-
-                // If the layer has labels configured, create an empty label layer. It will be populated later
-                if (layerConfig.label !== undefined){
-                    buildLabelLayer(layerConfig);
-                }
-                
-            } else if (layerType === "tileLayer") {
-                layer = L.tileLayer(layerConfig.url, layerConfig);
-            } else if (layerType === "geoJSON") {
-
+            if (layerType === "geoJSON") {
                 $.ajax({
                     dataType: "json",
                     type: 'GET',
@@ -275,14 +145,13 @@ $(document).ready(function(){
                         jqXHR.layerConfig = layerConfig;
                     },
                     success: function(data, textStatus, jqXHR) {
-
-                        // If the layer has labels configured, create an empty label layer. It will be populated later
+                        // If the layer has labels configured, create an empty label layer.
+                        // It will be populated later
                         if (jqXHR.layerConfig.label !== undefined){
                             buildLabelLayer(jqXHR.layerConfig);
                         }
 
                         // Handle cluster/normal layers differently
-
                         if (jqXHR.layerConfig.icon !== undefined){
                             jqXHR.layerConfig.pointToLayer = function (feature, latlng) {
                                 var marker = L.marker(latlng,{
@@ -309,23 +178,24 @@ $(document).ready(function(){
                         }
                         
                         jqXHR.layer.layerConfig = jqXHR.layerConfig;
-                        addLayer(jqXHR.layer);
-
+                        if (!jqXHR.layerConfig.hidden) {addLayer(jqXHR.layer);}
                         // Display labels if configured for this layer
                         if (jqXHR.layer.layerConfig.label !== undefined){
-                            createLabels(jqXHR.layer.layerConfig, data)
+                            createLabels(jqXHR.layer.layerConfig, data);
                         }
 
-
+                        updateScaleThresholds();
+                        afterMapLoads();
                     },
                     error: function(jqXHR, textStatus, error) {
-                        $.growl.warning({ message: "There was a problem fetching the features for " + jqXHR.layerConfig.id});
+                        $.growl.warning({ message: "There was a problem fetching the features for " +
+                                          jqXHR.layerConfig.id});
 
                         // Remove this layer from the map, TOC and Visible Layers array
                         if(jqXHR.layer !== undefined) {
                             try{
                                 bootleaf.map.removeLayer(jqXHR.layer);
-                                bootleaf.visibleLayers.splice(bootleaf.visibleLayers.indexOf(jqXHR.layer.id), 1)
+                                bootleaf.visibleLayers.splice(bootleaf.visibleLayers.indexOf(jqXHR.layer.id), 1);
                                 bootleaf.TOCcontrol.removeLayer(jqXHR.layer);
                             } catch(err){
                                 console.log("There was a problem removing this layer from the map");
@@ -334,24 +204,6 @@ $(document).ready(function(){
                     }
                 });
             }
-
-            // Configure the Query Widget for this layer, if specified in the config
-            if (layerConfig.queryWidget !== undefined && layerConfig.queryWidget.queries && layerConfig.queryWidget.queries.length > 0) {
-                var queries = []
-                for (var queryIdx = 0; queryIdx < layerConfig.queryWidget.queries.length; queryIdx ++){
-                    var query = layerConfig.queryWidget.queries[queryIdx];
-                    query.layerId = layerConfig.id;
-                    queries.push(query);
-                }
-                bootleaf.queryTasks.push({"layerName": layerConfig.name, "layerId": layerConfig.id, "queries": queries});                    
-            }
-
-            if (layer !== undefined) {
-                // Persist the layer's config options with the layer itself
-                layer.layerConfig = layerConfig;
-                if (!layerConfig.hidden) {addLayer(layer);} 
-            }
-
         } catch(err) {
             $.growl.error({ message: err.message});
         }
@@ -360,34 +212,6 @@ $(document).ready(function(){
     // Initialise the map using the start parameters from the config file, and the visibleAtStart layers
     if(config.start.maxZoom === undefined){config.start.maxZoom = 19;} // Required for the Marker Clusterer
     bootleaf.map = L.map("map", config.start);
-
-    // Enable the draw tool if there are any query layers. The tool is enabled and disabled with the Query Widget
-    if (bootleaf.queryTasks.length > 0){
-        bootleaf.drawControl = new L.Control.Draw({
-            position: 'topright',
-            draw: {
-                polygon: true,
-                polyline: false,
-                circle: false,
-                marker: false,
-                rectangle: false
-            }
-        });
-
-        // Add a graphics layer to hold polygons drawn in the QueryWidget draw tool
-        bootleaf.queryPolygon = new L.FeatureGroup();
-        bootleaf.map.addLayer(bootleaf.queryPolygon);
-        bootleaf.map.on(L.Draw.Event.CREATED, function (e) {
-            var layer = e.layer;
-            bootleaf.queryPolygon.addLayer(layer);
-        });
-
-        bootleaf.map.on('draw:drawstart', function (e) {
-            bootleaf.queryPolygon.clearLayers();
-            $("#queryDrawControlHelp").hide();
-        });
-
-    }
 
     // Set default projections and load any user-defined projections. Create proj4 definitions from these
     bootleaf.projections = {
@@ -408,33 +232,14 @@ $(document).ready(function(){
     /* Highlight layer, used for Identify and Query results */
     bootleaf.highlightLayer = L.geoJson(null);
 
-    // When the visible layers change, check whether the new layers are identifiable/queryable
-    bootleaf.map.on("layeradd", function(evt) {
-        if (evt.layer.layerConfig !== undefined){
-            updateIdentifyLayers();
-            reorderLayers();
-        }
-    });
-
-    bootleaf.map.on("layerremove", function(evt) {
-        if (evt.layer.layerConfig !== undefined){
-            updateIdentifyLayers();
-            reorderLayers();
-        }
-    });
-
     // When the map loads, or its extent changes, update any WFS layers
     bootleaf.map.on("moveend", function() {
         updateScaleThresholds();
-        fetchWFS();
     });
     updateScaleThresholds();
-    fetchWFS();
 
-    // Add map controls:
-
-    // Zoom Control
     if(config.controls){
+        // Zoom Control
         if(config.controls.zoom) {
             if (navigator.userAgent.match(/iPad/i) === null){
                 bootleaf.zoomControl = L.control.zoom({
@@ -498,91 +303,64 @@ $(document).ready(function(){
             }).addTo(bootleaf.map);
 
         }
+    }
 
-        if (config.controls.bookmarks) {
-            var bookmarkOptions = {
-                "localStorage": true,
-                "position": "topleft"
+    // Basemap setup
+    {
+        // Add basemaps to the dropdown. If the basemaps option is used in the config file,
+        // only load those basemaps, otherwise load them all
+        $.map( bootleaf.basemaps || [], function( basemap, i ) {
+            if(config.basemaps === undefined || $.inArray(basemap.id, config.basemaps) > -1){
+                var html = '<li data-basemapId="' + basemap.id + '">';
+                html += '<a href="#" data-toggle="collapse" data-target=".navbase-collapse.in" class="liBasemap" data-type="' + basemap.type + '" data-theme="' + basemap.theme + '"';
+                if(basemap.url){
+                    html += 'data-url="' + basemap.url + '"';
+                }
+                html += ' data-id="' + basemap.id + '">' + basemap.label + '</a></li>';
+                $("#ulBasemap").append(html);
             }
-            bootleaf.bookmarkControl = new L.Control.Bookmarks(bookmarkOptions).addTo(bootleaf.map);
 
-            // Check if each bookmark has already been added via local storage, to avoid duplicate bookmarks
-            localBookmarks = $.map( bootleaf.bookmarkControl._data || [], function( val, i ) {
-                return val.id;
-            });
-
-            if (config.controls.bookmarks.places !== undefined && config.controls.bookmarks.places.length !== undefined){
-                for(var bmIdx = 0; bmIdx < config.controls.bookmarks.places.length; bmIdx++){
-                    var bm = config.controls.bookmarks.places[bmIdx];
-                    if($.inArray(bm.id, localBookmarks) === -1) {
-                        bootleaf.map.fire('bookmark:add', {data: config.controls.bookmarks.places[bmIdx]});
-                    }
+            // Set the default basemap. It's either the first in the config.basemaps list,
+            // or the first in the default list
+            if(bootleaf.defaultBasemap && basemap.id === bootleaf.defaultBasemap){
+                setBasemap(basemap);
+            } else if (bootleaf.defaultBasemap === undefined){
+                if(config.basemaps && config.basemaps[0] === basemap.id){
+                    setBasemap(basemap);
                 }
             }
-        }
-    }
-
-    // Add basemaps to the dropdown. If the basemaps option is used in the config file, only load those basemaps, otherwise load them all
-    $.map( bootleaf.basemaps || [], function( basemap, i ) {
-        if(config.basemaps === undefined || $.inArray(basemap.id, config.basemaps) > -1){
-            var html = '<li data-basemapId="' + basemap.id + '">';
-            html += '<a href="#" data-toggle="collapse" data-target=".navbase-collapse.in" class="liBasemap" data-type="' + basemap.type + '" data-theme="' + basemap.theme + '"';
-            if(basemap.url){
-                html += 'data-url="' + basemap.url + '"';
-            }
-            html += ' data-id="' + basemap.id + '">' + basemap.label + '</a></li>';
-            $("#ulBasemap").append(html);
-        }
-
-        // Set the default basemap. It's either the first in the config.basemaps list, or the first in the default list
-        if(bootleaf.defaultBasemap && basemap.id === bootleaf.defaultBasemap){
-            setBasemap(basemap);
-        } else if (bootleaf.defaultBasemap === undefined){
-            if(config.basemaps && config.basemaps[0] === basemap.id){
-                setBasemap(basemap);
-            }
-        }
-    });
-
-    // Specify the default basemap if it wasn't set above
-    if(!config.basemaps && !bootleaf.defaultBasemap){
-        setBasemap(bootleaf.basemaps[0]);
-    }
-
-    if(config.basemaps === undefined || (config.basemaps !== undefined && config.basemaps.length > 1)){
-        $('*[data-basemapId="' + bootleaf.defaultBasemapId + '"]').addClass("active");
-
-        // Change the basemap when the user changes the dropdown
-        $(".liBasemap").click(function(evt) {
-            // Update the Active class for this basemap
-            $("#ulBasemap li").removeClass("active");
-            $('*[data-basemapId="' + this.id + '"]').addClass("active");
-            var basemap = {
-                "type": this.dataset['type'],
-                "id": this.dataset.id,
-                "theme": this.dataset.theme
-            };
-            if (this.dataset['url']) {basemap.url = this.dataset['url']}
-            setBasemap(basemap);
         });
 
-    } else {
-        $("#basemapDropdown").hide();
-    } 
+        // Specify the default basemap if it wasn't set above
+        if(!config.basemaps && !bootleaf.defaultBasemap){
+            setBasemap(bootleaf.basemaps[0]);
+        }
+
+        if(config.basemaps === undefined || (config.basemaps !== undefined && config.basemaps.length > 1)){
+            $('*[data-basemapId="' + bootleaf.defaultBasemapId + '"]').addClass("active");
+
+            // Change the basemap when the user changes the dropdown
+            $(".liBasemap").click(function(evt) {
+                // Update the Active class for this basemap
+                $("#ulBasemap li").removeClass("active");
+                $('*[data-basemapId="' + this.id + '"]').addClass("active");
+                var basemap = {
+                    "type": this.dataset['type'],
+                    "id": this.dataset.id,
+                    "theme": this.dataset.theme
+                };
+                if (this.dataset['url']) {basemap.url = this.dataset['url']}
+                setBasemap(basemap);
+            });
+
+        } else {
+            $("#basemapDropdown").hide();
+        } 
+    }
     
     // Hide the loading indicator
     // TODO - show the loading indicator when something happens
     $("#loading").hide();
-
-    // Decide whether to enable the queryWidget tool
-    if (!bootleaf.queryTasks || bootleaf.queryTasks.length === 0){
-        $("#liQueryWidget").addClass('disabled');
-    } else {
-        $("#liQueryWidget").removeClass('disabled');
-    }
-
-    // Enable Identify if any identifiable layers are present
-    updateIdentifyLayers();
 
     // Set the active tool, if applicable and supported by the current layers
     if (config.activeTool !== undefined){
@@ -593,7 +371,6 @@ $(document).ready(function(){
                 configureIdentifyTool();
                 $('*[data-tool="' +  config.activeTool + '"]').addClass("active");
             }
-            
         } else if (config.activeTool === 'coordinates') {
             configureCoordinatesTool();
             $('*[data-tool="' +  config.activeTool + '"]').addClass("active");
@@ -620,7 +397,6 @@ $(document).ready(function(){
 });
 
 function reorderLayers(){
-
     // If any layers are tagged as showOnTop, bring them to the top of the map
     for (var i = 0; i < bootleaf.layers.length; i++){
         var layer = bootleaf.layers[i];
@@ -632,7 +408,6 @@ function reorderLayers(){
 }
 
 function addLayer(layer){
-
     // Once the layer has been created, add it to the map and the applicable TOC category
     var layerConfig = layer.layerConfig;
     layer.name = layerConfig.name || layerConfig.id || "unknown layer name";
@@ -717,7 +492,7 @@ function setBasemap(basemap){
         "maxZoomLevel": 23,
         "maxZoom": 23,
         "maxNativeZoom": 19,
-    }
+    };
     if (basemap.type === "esri") {
         if ($.inArray(basemap.id, ["esriGray", "esriDarkGray"]) > -1) {
             options.maxNativeZoom = 16;
@@ -734,7 +509,7 @@ function setBasemap(basemap){
         var mapboxTheme = basemap.theme || "streets";
         bootleaf.basemapLayer = L.tileLayer("http://a.tiles.mapbox.com/v4/mapbox." + mapboxTheme + "/{z}/{x}/{y}.png?access_token=" + mapboxKey, options);
     }
-    bootleaf.map.addLayer(bootleaf.basemapLayer)
+    bootleaf.map.addLayer(bootleaf.basemapLayer);
     // bootleaf.basemapLayer.bringToBack();
     bootleaf.currentBasemap = basemap.id;
     $('*[data-basemapId="' + basemap.id + '"]').addClass("active");
@@ -746,9 +521,9 @@ function configurePopup(feature, layer) {
             var popupContent = "<table class='table table-condensed'>";
             for (key in feature.properties){
                 var val = feature.properties[key];
-                // Ignore nulls, and GeoServer default attributes such as bbox, geom and gid. Add others to this list if required
+                // Ignore nulls, and GeoServer default attributes such as bbox,
+                // geom and gid. Add others to this list if required
                 if (val !== null && val !== undefined && $.inArray(key, ["bbox", "geom", "gid"]) < 0) {
-
                     // Use the field alias if supplied in the outFields parameter
                     if (this.outFields !== undefined) {
                         var outFields = this.outFields;
@@ -843,7 +618,7 @@ function updateIdentifyLayers(){
     bootleaf.identifyLayers = $.map( bootleaf.map._layers || [], function( val, i ) {
         if (val.layerConfig && val.layerConfig.identify !== undefined) {
             return val;
-        }
+        };
     });
 
     if(bootleaf.identifyLayers.length > 0) {
@@ -875,947 +650,6 @@ function switchOffTools(){
         bootleaf.queryPolygon.clearLayers();
     }
 }
-
-/**************************************************************************************************/
-// QUERY WIDGET START
-/**************************************************************************************************/
-
-function configureQueryWidget(){
-    switchOffTools();
-    // resetSidebar("Query Widget");
-    bootleaf.activeTool = "queryWidget";
-
-    if (bootleaf.queryTasks) {
-        if (bootleaf.queryTasks.length > 0){
-
-            $("#liQueryWidget").removeClass('disabled');
-
-            // Configure the handlebars template for the Query Widget. The layer names are inserted here,
-            // while the field and operator values are inserted elsewhere
-            var querySource = $("#query-template").html();
-            bootleaf.queryTemplate = Handlebars.compile(querySource);
-
-            var layerNames = $.map(bootleaf.queryTasks, function( val, i ) {
-                var name = val.layerName;
-                if (name === undefined || name === '') {
-                    name = val.layerId;
-                }
-
-                var output = {
-                    "id": val.layerId,
-                    "name": name
-                }
-                return output;
-            });
-
-            var html = bootleaf.queryTemplate(layerNames);
-            resetSidebar("Query", html);
-
-            // Seed the query field dropdown based on the selected layer
-            updateQueryFields($("#queryWidgetLayer option:selected" ).val());
-
-            $("#btnRunQuery").on('click', runQueryWidget);
-            // Display the Draw tool when its option is chosen, and disable the extent tool
-            $('#chkQueryWithinPolygon').change(function() {
-                if($(this).is(":checked")) {
-                    $("#drawQueryWidget").show();
-                    $("#queryDrawControlHelp").show();
-                    $("#chkQueryWithinMapExtent").attr('checked', false);
-                } else {
-                    $("#drawQueryWidget").hide();
-                    bootleaf.queryPolygon.clearLayers()
-                }    
-            });
-            $('#chkQueryWithinMapExtent').change(function() {
-                if($(this).is(":checked")) {
-                    $("#chkQueryWithinPolygon").attr('checked', false);
-                    $("#drawQueryWidget").hide();
-                    bootleaf.queryPolygon.clearLayers()
-                }    
-            });
-
-        } else {
-            $("#sidebarContents").html("<p><span class='info'>There are no query-able layers in the map</span></p>");
-            $("#btnRunQuery").off('click', runQueryWidget);
-            $("#liQueryWidget").addClass('disabled');
-        }
-
-    } else {
-        $("#sidebarContents").html("<p><span class='info'>There are no query-able layers in the map</span></p>");
-        $("#btnRunQuery").off('click', runQueryWidget);
-        $("#liQueryWidget").addClass('disabled');
-    }  
-
-    // Update the query field names when the query layer selection changes
-    $("#queryWidgetLayer").off("change")
-    $("#queryWidgetLayer").on("change", function(e){
-        updateQueryFields(e.target.value);
-    });
-
-    $("#sidebar").show("slow");
-
-    // Display the Draw control on the Query Widget panel
-    if (bootleaf.drawControl._map === null || bootleaf.drawControl._map === undefined){
-        bootleaf.map.addControl(bootleaf.drawControl);
-        var htmlObject = bootleaf.drawControl.getContainer();
-        var a = document.getElementById('queryDrawControl');
-        setParent(htmlObject, a);
-    }
-}
-
-function updateQueryFields(layerId){
-    // Update the Fields dropdown on the Query widget with the query fields for this layer
-    $("#queryWidgetField").empty();
-    $("#queryWidgetValue").val("");
-    resetQueryOutputTable();
-
-    var fieldOptions = [];
-
-    for (var i=0; i < bootleaf.queryTasks.length; i++){
-        var queryTask = bootleaf.queryTasks[i];
-        if (queryTask.layerId === layerId){
-            var queries = queryTask.queries;
-            for (var j=0; j < queries.length; j++){
-                var query = queries[j];
-                var fieldName = query.name;
-                var fieldAlias = query.alias || fieldName;
-                var fieldType = query.type || "text";
-                var fieldDefaultOperator = query.defaultOperator || "=";
-                var option = '<option value="' + fieldName + '" data-fieldtype="';
-                option += fieldType + '" + data-defaultoperator ="' + fieldDefaultOperator + '"';
-                option += '>' + fieldAlias + "</option>"        
-                fieldOptions.push(option);
-            }
-        }
-    }
-    $("#queryWidgetField").append(fieldOptions);
-
-    // Update the query operator when the query field selection changes
-    updateQueryOperator($("#queryWidgetField option:selected")[0]);
-    $("#queryWidgetField").off("change");
-    $("#queryWidgetField").on("change", function(){
-        updateQueryOperator(this.options[this.selectedIndex]);
-    });
-}  
-
-function updateQueryOperator(option){
-    // Update the Operators dropdown on the Query widget with the applicable options for this field type
-    $("#queryWidgetOperator").empty();
-    $("#queryWidgetValue").val("");
-    var defaultOperator = option.dataset['defaultoperator'] || '=';
-
-    var operators = [
-        {"value": "=", "alias": "is"},
-        {"value": "starts with"},
-        {"value": "ends with"},
-        {"value": "contains"}
-    ];
-    if (option !== undefined && option.dataset['fieldtype'] !== undefined){
-        var fieldType = option.dataset["fieldtype"];
-        if (fieldType === 'numeric'){
-            operators = [
-                {"value": "<", "alias": "is less than"},
-                {"value": "=", "alias": "is equal to"},
-                {"value": ">", "alias": "is greater than"}
-            ];
-        }
-        // TODO: add other field types, eg date, etc
-    }
-
-    var operatorOptions = $.map( operators, function( val, i ) {
-        var alias = val.alias || val.value;
-        var opt = '<option value="' + val.value + '"';
-        if (defaultOperator === val.value) {
-            opt += " selected='selected'";
-        }
-        opt += '>' + alias + "</option>"
-        return opt;
-    });
-    $("#queryWidgetOperator").append(operatorOptions);
-
-}
-
-function runQueryWidget() {
-    resetQueryOutputTable();
-    $("#ajaxLoading").show();
-    var layerId = $("#queryWidgetLayer option:selected").val()
-    var fieldName = $("#queryWidgetField option:selected").val();
-    var fieldType = $("#queryWidgetField option:selected")[0].dataset['fieldtype'];
-    var operator = $("#queryWidgetOperator option:selected").val();
-    var queryText = $("#queryWidgetValue").val().toUpperCase();
-    bootleaf.map.removeLayer(bootleaf.highlightLayer);
-
-    // Obtain the query URL for this layer
-    var queryUrl;
-    var outFields = '*';
-    var maxAllowableOffset = 0.1;
-    for(var layerIdx=0; layerIdx < config.layers.length; layerIdx++){
-        var layer = config.layers[layerIdx];
-        if (layer.id === layerId){
-            
-            if (layer.type === 'agsFeatureLayer'){
-                if(layer.url[layer.url.length - 1] === "/") {
-                    queryUrl = layer.url + "query?";
-                } else {
-                    queryUrl = layer.url + "/query?";
-                }
-            } else if (layer.type === 'agsDynamicLayer'){
-                var layerIndex = layer.queryWidget.layerIndex;
-                if(layer.url[layer.url.length - 1] === "/") {
-                    queryUrl = layer.url + layerIndex + "/query?";
-                } else {
-                    queryUrl = layer.url + "/" + layerIndex + "/query?";
-                }
-            } else if (layer.type === 'wmsTiledLayer' || layer.type === 'WFS') {
-                // Use the WFS form of the URL for querying. This code ensures that the correct suffix is used.
-                var queryUrl = layer.url;
-                var tokens = queryUrl.split("/");
-                var suffix = tokens[tokens.length - 1];
-                if (suffix !== 'ows') {
-                    queryUrl = queryUrl.replace(suffix, 'ows');
-                }
-            }
-            if(layer.queryWidget != undefined) {
-
-                if (layer.queryWidget.maxAllowableOffset !== undefined) {
-                    maxAllowableOffset = layer.queryWidget.maxAllowableOffset;
-                }
-            }
-            break;
-        }
-    }
-
-    if (queryUrl === undefined){
-        handleQueryError("Unable to find the URL to query this layer");
-        return null;
-    }
-
-    // Ensure that any hard-coded where clause is honoured here
-    var where;
-    var query;
-    if (layer.layerDefs !== undefined){
-        for (var key in layer.layerDefs){
-            var layerDefQuery = layer.layerDefs[key];
-            if (where === undefined){
-                where = "(" + layerDefQuery + ")";
-            } else {
-                where += " and (" + layerDefQuery + ")";
-            }
-        }
-    } else if (layer.where !== undefined){
-        where = layer.where;
-    }
-
-    // the QueryWidget may have its own outFields, otherwise use the layer's outFields, otherwise use all fields
-    var outFields = [];
-    if (layer.queryWidget.outFields !== undefined) {
-        outFields = layer.queryWidget.outFields;
-    } else if (layer.outFields !== undefined) {
-        outFields = layer.outFields;
-    }
-
-    // ArcGIS and GeoServer queries use very different syntax, to treat them differently from this point
-    if (layer.type === 'agsDynamicLayer' || layer.type === 'agsFeatureLayer') {
-
-        // Run a query using this layer's URL and this field name, with the entered query text
-        var queryData = {
-            "f": "json",
-            "returnGeometry": true,
-            "maxAllowableOffset": maxAllowableOffset,
-            "useCors": false
-        }
-
-        if (outFields.length > 0) {
-            queryData['outFields'] = outFields[0].name;
-            for (var qIdx = 0; qIdx < outFields.length; qIdx ++){
-                queryData['outFields'] += "," + outFields[qIdx].name;
-            }
-        }
-
-        // Add or use any query parameters entered by the user
-        if (fieldType === 'numeric'){
-            query = fieldName + operator + queryText;
-        } else {
-            
-            if(queryText === "*" || queryText === "") {
-                if (where === undefined) {
-                    query = "1=1";
-                }
-            } else if (operator === "starts with"){
-                query = 'upper(' + fieldName + ") like '" + queryText + "%'";
-            } else if (operator === "ends with"){
-                query = 'upper(' + fieldName + ") like '%" + queryText + "'";
-            } else if (operator === "contains"){
-                query = 'upper(' + fieldName + ") like '%" + queryText + "%'";
-            } else {
-                query = 'upper(' + fieldName + ') ' + operator + "'" + queryText + "'";
-            }
-        }
-
-        if (where === undefined){
-            where = "(" + query + ")";
-        } else if (query !== undefined) {
-            where += " and (" + query + ")";
-        }
-        queryData["where"] = where;
-        //TODO: add other field types, eg date, etc
-
-        if($("#chkQueryWithinMapExtent").is(':checked')) {
-            queryData.inSr = 4326;
-            var bounds = bootleaf.map.getBounds();
-            var geometry = {"xmin": bounds._southWest.lng,"ymin": bounds._southWest.lat,"xmax": bounds._northEast.lng,"ymax": bounds._northEast.lat,"spatialReference":{"wkid":4326}}
-            queryData.geometry = JSON.stringify(geometry);
-            queryData.geometryType="esriGeometryEnvelope";
-            queryData.spatialRelationship="SPATIAL_REL_OVERLAPS"
-        } else if($("#chkQueryWithinPolygon").is(':checked')) {
-            // Ensure there is a valid polygon
-            if (bootleaf.queryPolygon.toGeoJSON().features.length > 0){
-                queryData.inSr = 4326;
-                var geometry = {
-                    "rings": bootleaf.queryPolygon.toGeoJSON().features[0].geometry.coordinates,
-                    "spatialReference": {"wkid":4326}
-                }
-                queryData.geometry = JSON.stringify(geometry);
-                queryData.geometryType="esriGeometryPolygon";
-                queryData.spatialRelationship="SPATIAL_REL_OVERLAPS";
-            }
-        }
-
-        $.ajax({
-            dataType: "jsonp",
-            type: 'POST',
-            data: queryData,
-            url: queryUrl,
-            beforeSend: function (jqXHR, settings) {
-                jqXHR.layerConfig = layer;
-            },
-            success: function(data, textStatus, jqXHR) {
-                try {
-                    handleQueryResults(data, jqXHR.layerConfig, outFields);
-                } catch(err) {
-                    handleQueryError("There was a problem running the query");
-                }
-            },
-            error: function(jqXHR, textStatus, error) {
-                handleQueryError("There was a problem running the query")
-                
-            }
-        });
-
-    } else if (layer.type === 'wmsTiledLayer' || layer.type === 'WFS') {
-        var queryData = {
-            service: "WFS",
-            version: "1.0.0",
-            request: "GetFeature",
-            outputFormat: 'application/json',
-            maxFeatures: 1000,
-            sortBy: fieldName
-        }
-        //TODO - make maxFeatures a parameter from the config file
-
-        if (outFields.length > 0){
-            var geomField = layer.geomField || "geom";
-            queryData['propertyName'] = geomField;
-            for (var oIdx=0; oIdx < outFields.length; oIdx ++){
-                queryData['propertyName'] += "," + outFields[oIdx].name;
-            }
-        }
-        
-        var query;
-        if (fieldType === 'numeric'){
-            query = fieldName + operator + queryText;
-        } else {
-            if(queryText === "*" || queryText === ""){
-                query = "1=1";
-            } else if (operator === "starts with"){
-                query = "strToUpperCase(" + fieldName + ") like '" + queryText + "%'";
-            } else if (operator === "ends with"){
-                query = 'strToUpperCase(' + fieldName + ") like '%" + queryText + "'";
-            } else if (operator === "contains"){
-                query = 'strToUpperCase(' + fieldName + ") like '%" + queryText + "%'";
-            } else {
-                query = 'strToUpperCase(' + fieldName + ') ' + operator + "'" + queryText + "'";
-            }
-        }
-        //TODO: add other field types, eg date, etc
-
-        if (where === undefined) {
-            where = query;
-        } else {
-            where += " and " + query;
-        }
-        queryData["CQL_FILTER"] = where;
-
-        // Search within the map extent or a polygon
-        if($("#chkQueryWithinMapExtent").is(':checked')) {
-            var bounds = bootleaf.map.getBounds();
-            queryData.CQL_FILTER += "and BBOX(" + geomField + "," + bounds._southWest.lng + "," + bounds._southWest.lat + "," +  bounds._northEast.lng + "," + bounds._northEast.lat + ")"
-        } else if($("#chkQueryWithinPolygon").is(':checked')) {
-            var vertices = bootleaf.queryPolygon.toGeoJSON().features[0].geometry.coordinates[0];
-            var polygon = vertices[0][0] + " " + vertices[0][1]
-            for (var vIdx = 1; vIdx < vertices.length; vIdx ++){
-                polygon += "," + vertices[vIdx][0] + " " + vertices[vIdx][1]
-            }
-            queryData.CQL_FILTER += "and INTERSECTS(" + geomField + ",POLYGON((" + polygon + ")))";
-        }
-
-        if (layer.type === 'wmsTiledLayer'){
-            queryData.typeName = layer.layers;
-        } else if (layer.type === 'WFS') {
-            queryData.typeName = layer.typeName;
-        }
-
-        $.ajax({
-            url: queryUrl,
-            data: queryData,
-            dataType: 'json',
-            type: 'GET',
-            beforeSend: function (jqXHR, settings) {
-                jqXHR.layerConfig = layer;
-            },
-            success: function(data, jqXHR, response) {
-                try {
-                    handleQueryResults(data, response.layerConfig, outFields);
-                } catch(err) {
-                    handleQueryError("There was a problem running the query");
-                }
-            },
-            error: function() {
-                handleQueryError("There was a problem running the query")
-                
-            }
-        }); 
-
-    }
-
-}
-
-function handleQueryResults(data, layerConfig, outFields){
-    // This function formats the results of an ArcGIS/WFS query into a table
-    // Slightly different syntax is used depending on the query source
-
-    if (data.features.length ===0 ){
-        handleQueryError("No features found");
-        return;
-    }
-
-    var fields = data.fields;
-    var features = data.features;
-
-    // Reset the query results
-    bootleaf.queryResults = {}
-    if (data.geometryType !== undefined) {
-        bootleaf.queryResults["geometryType"] = data.geometryType;
-    }
-    if (data.spatialReference !== undefined && data.spatialReference.wkid !== undefined){
-        bootleaf.queryResults["wkid"] = data.spatialReference.wkid;
-    } else if (data.crs !== undefined && data.crs.properties !== undefined && data.crs.properties.name !== undefined) {
-        var crs = data.crs.properties.name;
-        bootleaf.queryResults["wkid"] = parseInt(crs.substr(crs.length - 4));
-    }
-
-    // Add the column names to the output table
-    var thead = "<thead><tr>" 
-    thead += $.map(outFields, function( field, i ) {
-        var name = field.alias || field.name;
-        return "<th>" + name + "</th>";
-    });
-    thead = thead.replace(/>,</g,"><");
-    thead += "</tr></thead>";
-    $("#tblQueryResults").append(thead);
-
-    // Add the data
-    var tbody = "<tbody>";
-    var features = data.features;
-    for (var fIdx = 0; fIdx < features.length; fIdx++){
-        var feature = features[fIdx];
-
-        tbody += "<tr class='feature-row' data-idx=" + fIdx + ">";
-        for (var aIdx = 0; aIdx < outFields.length; aIdx++){
-            var field = outFields[aIdx];
-            var val;
-            if (feature.attributes !== undefined){
-                val = feature.attributes[field.name];
-            } else if (feature.properties !== undefined) {
-                val = feature.properties[field.name];
-            }
-
-            // Apply any required field formatting
-            val = formatValue(val, field);
-
-            tbody += "<td data-idx=" + fIdx + ">" + val + "</td>";
-
-            // Replace the field name with its alias if specified, or remove the field if hidden
-            try{
-                if (field.hidden !== undefined && field.hidden === true){
-                    if (feature.attributes !== undefined){
-                        if (feature.attributes[field.name] !== undefined){
-                            delete feature.attributes[field.name];
-                        }
-                    } else if (feature.properties !== undefined) {
-                        if (feature.properties[field.name] !== undefined){
-                            delete feature.properties[field.name];
-                        }
-                    }
-                } else {
-                    if (field.alias !== undefined){
-                        if (feature.attributes !== undefined){
-                            feature.attributes[field.alias] = val;
-                            if (feature.attributes[field.name] !== undefined){
-                                delete feature.attributes[field.name];
-                            }
-                        } else if (feature.properties !== undefined) {
-                            feature.properties[field.alias] = val;
-                            if (feature.properties[field.name] !== undefined){
-                                delete feature.properties[field.name];
-                            } 
-                        }
-                    }
-                }
-            } catch(err){
-                console.log("Error replacing the field name with its alias");
-            }
-        }
-
-        // Store the feature in the results array, so we can show it when the table is clicked on
-        bootleaf.queryResults[fIdx] = feature;
-        tbody += "</tr>";
-    }
-
-    tbody += "</tbody>";
-
-    $("#tblQueryResults").append(tbody);
-    $("#ajaxLoading").hide();
-
-    // Enable datatables
-    try{
-        var dtConfig = {
-            "dom": '<"top"if<"clear">>rt<"bottom"p<"clear">>',
-            "bFilter" : false,               
-            "bLengthChange": false,
-            "searching": true,
-            "language": {
-                "paginate": {
-                    "previous": "<",
-                    "next": ">"
-                }
-            },
-            "columnDefs": [],
-            "fnDrawCallback":function(){
-                if ( $('.dataTables_paginate .paginate_button').size() && $('.dataTables_paginate .paginate_button').size() > 3) {
-                    $(".dataTables_paginate").show();
-                } else {
-                    $(".dataTables_paginate").hide();
-                }
-            }
-        }
-
-        // Hide columns if specified
-        for (var fldIdx = 0; fldIdx < outFields.length; fldIdx++){
-            var fld = outFields[fldIdx];
-            var hidden = fld.hidden || false;
-            if (hidden){
-                dtConfig.columnDefs.push({"targets": [fldIdx], "visible": !hidden});
-            }
-        }
-
-        $.fn.DataTable.ext.pager.numbers_length = 7;
-        var table = $('#tblQueryResults').DataTable(dtConfig);
-    } catch (err){
-        console.log("There was a problem enabling DataTables for the Query Widget results", err);
-    }
-
-    // Display the Download to CSV button
-    try{
-        new $.fn.dataTable.Buttons( table, {
-            buttons: [
-                {
-                    extend: 'csvHtml5',
-                    text: 'Download results as CSV'
-                }]
-        }); 
-        table.buttons( 0, null ).containers().appendTo( $('#exportButtons') );
-    } catch(err){
-        console.log("There was a problem enabling Data Tables for the Query Widget buttons", err)
-    }
-}
-
-function handleQueryError(errMessage){
-    $.growl.warning({ title: "Query Widget", message: errMessage});
-    $("#ajaxLoading").hide();
-    $("#queryResults").html('<p class="info">' + errMessage + '</p>');
-}
-
-function resetQueryOutputTable(){
-    $("#queryResults").html('<span id="ajaxLoading"></span><table id="tblQueryResults" class="table table-condensed table-hover"></table><div id="exportButtons"></div>');
-}
-
-/**************************************************************************************************/
-// IDENTIFY TOOL START
-/**************************************************************************************************/
-
-function configureIdentifyTool(){
-    
-    resetSidebar("Identify results");
-    $("#sidebar").show("slow");
-    switchOffTools();
-    bootleaf.activeTool = "identify";
-
-    if (bootleaf.identifyLayers.length === 0){
-        $("#sidebarContents").html("<p><span class='info'>There are no identifiable layers currently visible on the map</span></p>");
-        disableIdentify()
-    } else {
-        $("#sidebarContents").html("<p><span class='info'>Click on the map to identify visible layers</span></p>");
-        enableIdentify();
-    }
-}
-
-function enableIdentify(){
-    // Called when the Identify tool should be made active
-    if (bootleaf.activeTool === 'identify'){
-        $("#liIdentify").removeClass("disabled");
-        bootleaf.map.on('click', runIdentifies);
-        setMapCursor('crosshair');
-    }
-}
-
-function disableIdentify(){
-    // Called when the Identify tool should be disabled
-    $("#liIdentify").addClass("disabled");
-    bootleaf.map.off('click', runIdentifies);
-    setMapCursor('auto');
-}
-
-function runIdentifies(evt) {
-    // Clear the results from any previous Identifies
-    bootleaf.identifyResponse = {};
-    bootleaf.identifyCounter = {};
-    bootleaf.identifyLayerHeadings = [];
-    if (bootleaf.identifyLayers.length ===0) {
-        $("#sidebarContents").html("<p><span class='info'>There are no identifiable layers currently visible on the map</span></p>");
-        $("#liIdentify").addClass("disabled");
-        $("#ajaxLoading").hide();
-        return;
-    } 
-    $("#sidebarContents").html('<span id="ajaxLoading"></span>');
-    $("#ajaxLoading").show();
-    // There is an option not to show the Identify marker
-    var showIdentifyMarker = true;
-    if (config.showIdentifyMarker !== undefined) {
-        showIdentifyMarker = config.showIdentifyMarker;
-    }
-    if (showIdentifyMarker) {
-        showMarker(evt);
-    }
-
-    var geometry = evt.latlng.lng + "," + evt.latlng.lat;
-    var bounds = bootleaf.map.getBounds();
-    var mapExtent = bounds._southWest.lng + "," + bounds._southWest.lat + "," + bounds._northEast.lng + "," + bounds._northEast.lat;
-
-    // Run an identify on each layer in the bootleaf.identifyLayers array
-    for (var idx =0; idx < bootleaf.identifyLayers.length; idx++){
-        var idLayer = bootleaf.identifyLayers[idx];
-        if (idLayer.layerConfig.type === "agsDynamicLayer") {
-            var urlBase = idLayer.layerConfig.url + "identify";
-            var layers = idLayer.layerConfig.layers || [];
-
-            var data = {
-                "srs": bootleaf.mapWkid || 4326,
-                "tolerance": bootleaf.clickTolerance || 5,
-                "maxAllowableOffset": idLayer.layerConfig.identify.maxAllowableOffset || 0.1,
-                "returnGeometry": true,
-                "imageDisplay": bootleaf.map.getSize().x + "," + bootleaf.map.getSize().y + "," + 96,
-                "mapExtent": mapExtent,
-                "geometry": geometry,
-                "geometryType": "esriGeometryPoint",
-                "f": "json",
-                "layers": "all"
-            }
-
-            try {
-                if (idLayer.layerConfig.where !== undefined) {
-                    data['layerDefs'] = "{" + idLayer.layerConfig.layers[0] + ":" + idLayer.layerConfig.where + "}";
-                }
-            } catch (err){
-                console.log("There was a problem applying the Where clause to the Identify task");
-            }
-
-            $.when(
-                $.ajax({
-                    dataType: "jsonp",
-                    type: 'POST',
-                    url: urlBase,
-                    data: data,
-                    beforeSend: function (jqXHR, settings) {
-                        jqXHR.layerConfig = idLayer.layerConfig;
-                    }
-                })).then(
-                    function( data, textStatus, jqXHR ) {
-                        $("#ajaxLoading").hide();
-                        if(data.error !== undefined){
-                            $.growl.error({ message: "There was an error with the Identify function:"});
-                            $.growl.error({ message: data.error.message});
-                        } else{
-                            $.each(data.results, function( index, result ) {
-                                var layerId = jqXHR.layerConfig.id;
-                                var layerConfig = jqXHR.layerConfig;
-                                var identify = layerConfig.identify;
-                                var layerName = identify.layerName || layerConfig.name || layerConfig.id;
-                                var value = result.value;
-
-                                if (bootleaf.identifyResponse[layerId] === undefined){
-                                    bootleaf.identifyResponse[layerId] = {
-                                        "config": layerConfig
-                                    };
-                                }
-                                if (bootleaf.identifyResponse[layerId][value] === undefined && result.layerName === layerName) {
-                                    if (layerConfig.identify.maxFeatures !== undefined){
-                                        if (bootleaf.identifyCounter[layerName] === undefined) {
-                                            bootleaf.identifyCounter[layerName] = 1;
-                                        } else {
-                                            bootleaf.identifyCounter[layerName] += 1;
-                                        }
-                                        if (bootleaf.identifyCounter[layerName] <= layerConfig.identify.maxFeatures) {
-                                            displayIdentifyResult(layerId, layerName, layerConfig, result);
-                                        }
-                                    } else {
-                                        displayIdentifyResult(layerId, layerName, layerConfig, result);
-                                    }
-                                }
-                            });
-                        }
-                    }, function(error) {
-                        $("#sidebarContents").html("<p><span class='info'>There was an error with the Identify tool</span></p>");
-                    });
-
-        } else if (idLayer.layerConfig.type === 'wmsTiledLayer') {
-
-            var x = evt.latlng.lng;
-            var y = evt.latlng.lat;
-            var width = bootleaf.map.getBounds().getEast() - bootleaf.map.getBounds().getWest();
-            var factor = width / 50; // expand the BBOX by 1% of the current map width
-            var bbox = (x-factor) + "," + (y-factor) + "," + (x+factor) + "," + (y+factor);
-            var width = 101;
-            var height = 101;
-            var x = 50;
-            var y = 50;
-            var buffer = idLayer.layerConfig.identify.buffer || 5;
-
-            var data = {
-                service: 'WMS',
-                version: '1.1.1',
-                request: 'GetFeatureInfo',
-                layers: idLayer.layerConfig.layers,
-                query_layers: idLayer.layerConfig.layers,
-                buffer: buffer,
-                feature_count: 1000,
-                info_format: 'application/json',
-                SRS: 'EPSG:4326',
-                width: width,
-                height: height,
-                x: x,
-                y: y,
-                bbox: bbox
-            }
-
-            if (idLayer.layerConfig.CQL_FILTER !== undefined){
-                data['CQL_FILTER'] = idLayer.layerConfig.CQL_FILTER;
-            }
-
-            if (idLayer.layerConfig.styles !== undefined){
-                data['styles'] = idLayer.layerConfig.styles;
-            }
-            var url = idLayer.layerConfig.url;
-
-            $.when(
-                $.ajax({
-                    dataType: "json",
-                    type: 'POST',
-                    url: url,
-                    data: data,
-                    beforeSend: function (jqXHR, settings) {
-                        jqXHR.layerConfig = idLayer.layerConfig;
-                    }
-                })).then(
-                    function( data, textStatus, jqXHR ) {
-                        $("#ajaxLoading").hide();
-                        // Obtain the layer ID and retrieve its layerConfig object
-                        if (data.features.length > 0){
-                            var layerId = data.features[0].id.substring(0,data.features[0].id.indexOf("."));
-                            var layerConfig = jqXHR.layerConfig;
-                            for (var i=0; i < bootleaf.identifyLayers.length; i++){
-                                var identifyLayer = bootleaf.identifyLayers[i];
-                                if (layerConfig.identify.layerName === layerId){
-
-                                    var layerName = layerConfig.name || layerConfig.id || "unknown layer";
-
-                                    if (bootleaf.identifyResponse[layerId] === undefined){
-                                        bootleaf.identifyResponse[layerId] = {
-                                            "config": layerConfig
-                                        };
-                                    }
-
-                                    for (var j = 0; j<data.features.length; j++){
-                                        var result = data.features[j];
-                                        result.layerId = layerId;
-                                        result.layerName = layerName;
-                                        result.attributes = result.properties;
-                                        if (data.crs !== undefined && data.crs.properties !== undefined && data.crs.properties.name !== undefined){
-                                            result.crs = data.crs.properties.name;
-                                        }
-                                        var value = JSON.stringify(result.attributes);
-                                        if (bootleaf.identifyResponse[layerId][value] === undefined) {
-                                            if (layerConfig.identify.maxFeatures !== undefined){
-                                                if (bootleaf.identifyCounter[layerName] === undefined) {
-                                                    bootleaf.identifyCounter[layerName] = 1;
-                                                } else {
-                                                    bootleaf.identifyCounter[layerName] += 1;
-                                                }
-                                                if (bootleaf.identifyCounter[layerName] <= layerConfig.identify.maxFeatures) {
-                                                    bootleaf.identifyResponse[layerId][value] = value;
-                                                    displayIdentifyResult(layerId, layerName, layerConfig, result);
-                                                }
-                                            } else if (bootleaf.identifyResponse[layerId][value] !== value){
-                                                bootleaf.identifyResponse[layerId][value] = value;
-                                                displayIdentifyResult(layerId, layerName, layerConfig, result);
-                                            }
-                                        } else if (bootleaf.identifyResponse[layerId][JSON.stringify(result.attributes)] === undefined) {
-                                            bootleaf.identifyResponse[layerId][value] = value;
-                                            displayIdentifyResult(layerId, layerName, layerConfig, result);
-                                        }
-
-                                    }
-
-                                }
-                            }
-                        }
-                    }, function(error) {
-                        $("#sidebarContents").html("<p><span class='info'>There was an error with the Identify tool</span></p>");
-                    });
-
-        }
-    }
-}
-
-function displayIdentifyResult(layerId, layerName, layerConfig, result){
-    $("#ajaxLoading").hide();
-
-    if(bootleaf.identifyLayerHeadings.indexOf(layerName) < 0){
-        // Add a section to the sidebar for this layer's results
-        var sidebarContents = $("#sidebarContents").html();
-        sidebarContents += "<div class='identifyResults'><strong>" + layerConfig.name + "</strong><ul class='identifyLayer list-unstyled list-group' id='" + layerConfig.id + "'></ul></div>";
-        $("#sidebarContents").html(sidebarContents);
-        bootleaf.identifyLayerHeadings.push(layerName);
-
-    }
-
-    // Store the relevant details for this result against the identifyResponse object
-    var geometryType;
-    if (result.geometryType !== undefined) {
-        geometryType = result.geometryType;
-    } else if (result.geometry.type !== undefined) {
-        geometryType = result.geometry.type;
-    }
-    var outFeature = {
-        "geometry": result.geometry,
-        "attributes": [],
-        "geometryType": geometryType
-    }
-
-    if (result.crs !== undefined) {
-        outFeature.geometry.crs = result.crs;
-    }
-
-    bootleaf.wantedFields = [];
-    if(layerConfig.identify.primaryField) {
-        bootleaf.wantedFields.push(layerConfig.identify.primaryField);
-    }
-    var outFields = [];
-    if (layerConfig.identify.outFields !== undefined) {
-        outFields = layerConfig.identify.outFields;
-    } else if(layerConfig.outFields !== undefined) {
-        outFields = layerConfig.outFields;
-    }
-    if (outFields.length > 0) {
-        Object.keys(outFields).map(function(i, field){
-            bootleaf.wantedFields.push(outFields[field]['name']);
-        });                
-    }
-    for(var field in result.attributes){
-        if (bootleaf.wantedFields.indexOf(field) > -1) {
-            outFeature.attributes[field] = result.attributes[field];
-        }
-    }
-
-    // bootleaf.identifyResponse[layerId][value] = outFeature;
-
-    // Store this feature's geometry against a guid, so we can retrieve it later. Tie this to the list item
-    var guid = generateGuid();
-    bootleaf.identifyResponse[guid] = outFeature;
-    var output = $("#" + layerConfig.id).html();
-
-    output += "<li class='list-group-item identifyResult' data-guid=" + guid + ">"
-    if(layerConfig.identify.primaryField !== undefined){
-        output += "<span class='primaryField'>" + result.attributes[layerConfig.identify.primaryField] + "</span><br>";
-    }
-    if (outFields.length > 0){
-        for(var fldIdx = 0; fldIdx < outFields.length; fldIdx++){
-            var fld = outFields[fldIdx];
-            var fldName = fld.name || "";
-            var fldAlias = fld.alias || fldName;
-            var val = result.attributes[fld.name];
-
-            // Apply formatting to the field as appropriate and add to the table
-            val = formatValue(val, fld);
-            output += "<span class='fieldName'>" + fldAlias + ": </span><span class='fieldValue'>" + val + "</span><br>";
-        }
-    }
-    output += "</li>";
-    $("#" + layerConfig.id).html(output);
-
-    // When clicking on the Identify result, use the guid to determine the 
-    $(".identifyResult").on("click", function(evt) {
-        $(".identifyResult").removeClass("active");
-        $(this).addClass("active");
-        var feature = bootleaf.identifyResponse[this.dataset['guid']];
-        showHighlight(feature, true);                  
-    });
-    $(".identifyResult").on("mouseover", function(evt) {
-        var feature = bootleaf.identifyResponse[this.dataset['guid']];
-        showHighlight(feature, false);                  
-    });
-    $(".identifyResult").on("mouseout", function() {
-        bootleaf.map.removeLayer(bootleaf.highlightLayer);                 
-    });
-}
-
-function handleWMSIdentifyResult(data){
-    $("#ajaxLoading").hide();
-    // Obtain the layer ID and retrieve its layerConfig object
-    if (data.features.length > 0){
-        var layerId = data.features[0].id.substring(0,data.features[0].id.indexOf("."));
-        for (var i=0; i < bootleaf.identifyLayers.length; i++){
-            var identifyLayer = bootleaf.identifyLayers[i];
-            var layerConfig = identifyLayer.layerConfig
-            if (layerConfig.identify.layerName === layerId){
-
-                var layerName = layerConfig.name || layerConfig.id || "unknown layer";
-
-                for (var j = 0; j<data.features.length; j++){
-                    var result = data.features[j];
-                    result.layerId = layerId;
-                    result.layerName = layerName;
-                    result.attributes = result.properties;
-
-                    displayIdentifyResult(layerId, layerName, layerConfig, result);
-
-                }
-
-            }
-        }
-    }
-}
-
 
 /**************************************************************************************************/
 // COORDINATES TOOL START
@@ -2039,7 +873,8 @@ function updateScaleThresholds() {
             }
         } else {
             layer.outsideScaleThreshold = false;
-            if (layer.tocState === 'grey' && $.inArray(layer.layerConfig.id, bootleaf.visibleLayers) > -1) {
+            if (layer.tocState === 'grey' &&
+                $.inArray(layer.layerConfig.id, bootleaf.visibleLayers) > -1) {
                 bootleaf.map.addLayer(layer);
                 layer.tocState = 'on';
             }
@@ -2062,135 +897,16 @@ function updateTOCcheckboxes(){
             $(".toc_" + layerConfig.id).removeClass("outsideScaleThreshold");
         }
     }
-}
-
-// Handle WFS layers
-function fetchWFS(){
-
-    // Clear any WFS label layers (geoJSON label layers aren't reset on pan/zoom)
-    for (var i=0; i<bootleaf.labelLayers.length; i++){
-        var labelLayer = bootleaf.labelLayers[i];
-        if (labelLayer.layerConfig.type === 'WFS'){
-            labelLayer.clearLayers();
-        }
-    }
-
-    for (var j=0; j < bootleaf.wfsLayers.length; j++){
-        var layer = bootleaf.wfsLayers[j];
-        var layerConfig = layer.layerConfig;
-        if (layer.lastRun) {
-            var elapsed = Date.now() - layer.lastRun;
-            if (elapsed < 500) {
-                console.log("sequential WFS requests are appearing too soon - rate limiting");
-            } else if (layer.tocState === "on"){
-                wfsAjax(layer);
-            }
-        } else if (layer.tocState === "on"){
-            wfsAjax(layer);
-        }
-    }
+    // bootleaf.TOCcontrol._onInputClick();
 }
 
 function getJson(json){
     // This function isn't used, but is required for the WFS AJAX function's JSONP callback
 }
 
-function wfsAjax(layer){
-
-    // Only run the query if the map bounds have changed since the last request
-    if (layer.lastBounds && layer.lastBounds === bootleaf.map.getBounds().toBBoxString()) {return;}
-
-    var layerConfig = layer.layerConfig;
-    var bbox = bootleaf.map.getBounds().toBBoxString();
-    var geomField = layerConfig.geomField || "geom";
-
-    // Add the where clause, if specified
-    var whereClause = "BBOX(" + geomField + "," + bbox + ")";
-    if (layerConfig.where !== undefined) {
-        whereClause += " and " + layerConfig.where;
-    }
-
-    // If multiple JSONP requests are to be made simultaneously, it may be necessary to specify
-    // a unique callback for each layer. In this case, ensure that the unique callback functions
-    // are defined in the custom.js file (even if the functions are empty).
-    var callback = "getJson";
-    if (layerConfig.callback !== undefined) {callback = layerConfig.callback;}
-    var data = {
-        "service":"WFS",
-        "version":"1.0.0",
-        "request":"GetFeature",
-        "typeName": layerConfig.typeName,
-        "outputFormat":"text/javascript",
-        "format_options":"callback:" + callback,
-        "CQL_FILTER": whereClause
-    }
-
-    // Restrict the fields which are returned by the query. Ensure that the geometry field is included
-    if (layerConfig.fields && layerConfig.fields.length && layerConfig.fields.length > 0) {
-        if ($.inArray(geomField, layerConfig.fields) < 0) {
-            layerConfig.fields.push(geomField);
-        }
-        data.propertyName = layerConfig.fields.join(",").replace(/, /g,",");
-    }
-
-    layer.lastRun = Date.now();
-    layer.lastBounds = bootleaf.map.getBounds().toBBoxString();
-
-    $.ajax({
-        jsonp: false,
-        jsonpCallback: layerConfig.callback || 'getJson',
-        // jsonpCallback: 'getJson',
-        type: 'GET',
-        url: layerConfig.url,
-        data: data,
-        async: false,
-        dataType: 'jsonp',
-        beforeSend: function (jqXHR, settings) {
-            // add required properties so they can be accessed in the success function
-            jqXHR.layerConfig = layerConfig;
-        },
-        success: function(data, jqXHR, response) {
-            // Find the layer which corresponds to this request
-            var layerId = response.layerConfig.id;
-            for (var x=0; x < bootleaf.wfsLayers.length; x++){
-                var layer = bootleaf.wfsLayers[x];
-                if (layer.layerConfig.id === layerId){
-                    if (layer.layerConfig.cluster){
-                        var tempLayer = new L.geoJson(null,layer.layerConfig);
-                        $(data.features).each(function(key, data) {
-                            tempLayer.addData(data);
-                        });
-                        layer.clearLayers();
-                        layer.addLayer(tempLayer);
-
-                    } else {
-                        layer.clearLayers();
-                        layer.addData(data);
-                        layer.lastRun = null;
-                    }
-
-                    // Display labels if configured for this layer
-                    if (layer.layerConfig.label !== undefined){
-                        createLabels(layer.layerConfig, data)
-                    }
-                }
-
-            }
-        },
-        error: function(err){
-            if (err.layerConfig) {
-                console.log("WFS error with ", err.layerConfig.id);
-                $.growl.warning({ message: "There was a problem fetching the features for " + err.layerConfig.id});
-            }
-        }
-    });
-    
-}
-
 function createLabels(layerConfig, data){
     // Create labels for WFS and GeoJSON layers
     try{
-
         // De-duplicate any coincident labels
         // TODO: take into account the current map scale and perform some rudimentary collision avoidance
         var newData = {
@@ -2204,7 +920,8 @@ function createLabels(layerConfig, data){
             var latLng = lat + "|" + lng;
             if (newData.latLngs.indexOf(latLng) === -1) {
                 newData.latLngs.push(latLng);
-                // Manually force the creation of the label attribute, specified in the layerConfig.layer.name variable
+                // Manually force the creation of the label attribute,
+                // specified in the layerConfig.layer.name variable
                 feature.properties["_xxxLabelText"] = feature.properties[layerConfig.label.name];
                 newData.features.push(feature);
             }
@@ -2284,7 +1001,7 @@ function buildLabelLayer(layerConfig) {
         pointToLayer: function(feature,latlng){
             // _xxxLabelText is calculated once the values are returned from the server. This is a deliberately
             // obscure variable name in the hope that it doesn't already exist on the layer ;)
-            label = String(feature.properties._xxxLabelText)
+            label = String(feature.properties._xxxLabelText);
             return new L.CircleMarker(latlng, {
                 radius: 0,
                 opacity: 0

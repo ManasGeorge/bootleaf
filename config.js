@@ -24,14 +24,21 @@ var config = {
         "TOC": {
             //http://leafletjs.com/reference-1.0.2.html#control-layers-option
             "collapsed": false,
-            "uncategorisedLabel": "Layers",
+            "uncategorisedLabel": false,
             "position": "topright",
-            "toggleAll": true
+            "toggleAll": false
         },
         "history": {
             "position": "bottomleft"
         },
     },
+    "tocCategories": [
+	      {
+		        "name": "Appointment Task",
+		        "layers" : ["DT_labels", "VR_labels", "RID_labels", "CID_labels"],
+		        "exclusive": true
+	      }
+    ],
     "basemaps": ['esriStreets', 'OpenStreetMap', 'esriGray', 'esriDarkGray'],
     "defaultIcon": {
         "imagePath": "http://leafletjs.com/examples/custom-icons/",
@@ -56,35 +63,5 @@ var config = {
         "stroke": true
     },
     "layers": [
-        {
-            "id": "dmvs",
-            "name": "DMVs",
-            "type": "geoJSON",
-            "cluster": false,
-            "showCoverageOnHover": true,
-            "minZoom": 1,
-            "url": "./data/dmvs.geojson",
-            "style": {
-                "stroke": true,
-                "fillColor": "#00FFFF",
-                "fillOpacity": 0.5,
-                "radius": 10,
-                "weight": 0.5,
-                "opacity": 1,
-                "color": '#727272',
-            },
-            "outFields": [
-	              {"name": "name", "alias": "Name"},
-	              {"name": "address", "alias": "Address"},
-	              {"name": "earliest", "alias": "Earliest Appointment"},
-            ],
-	          "visible": true,
-	          "label": {
-	  	          "name": "earliest",
-	  	          "minZoom": 8,
-	          },
-            "tooltipField": "name",
-            "popup": true,
-        }
     ]
 };

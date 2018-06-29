@@ -59,8 +59,11 @@ function beforeMapLoads(){
         markerColor: 'red',
     });
 
-    tasks.map((t,i) => dmvConfig.outFields.push({"name": t, "alias": aliases[i],
-                                                 "url": (t=="DT")?dtUrl:officeUrl}));
+    tasks.map((t,i) => dmvConfig.outFields.push(
+        {"name": t, "alias": "<a href='"
+         + ((t=="DT")?dtUrl:officeUrl)
+         // + "#"
+         + "'>" + aliases[i] + "</a>"}));
     dmvConfig.hidden = false;
     dmvConfig.visible = true;
     dmvConfig.popup = true;

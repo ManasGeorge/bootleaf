@@ -351,8 +351,6 @@ $(document).ready(function(){
         } 
     }
     
-    // Hide the loading indicator
-    // TODO - show the loading indicator when something happens
     $("#loading").hide();
 
     // Set the active tool, if applicable and supported by the current layers
@@ -373,7 +371,6 @@ $(document).ready(function(){
                 $('*[data-tool="' +  config.activeTool + '"]').addClass("active");
             }
         }
-        // TODO - add more tools here, with corresponding configureXXXtool functions
 
     } else {
         $("#sidebar").hide("slow");
@@ -523,12 +520,6 @@ function configurePopup(feature, layer) {
                         var outputs = formatPopup(key, val, outFields);
                         key = outputs[0];
                         val = outputs[1];
-
-                        // TODO: FIGURE OUT WHY THE URL DOESN'T SHOW UP
-                        if(outFields.url) {
-                            key = "<a href='" + outFields.url + "'>" + key;
-                            key += "</a>";
-                        }
                     }
                     if (key !== null) {
                         popupContent += "<tr><td>" + key + "</td><td>"+ val + "</td></tr>";
@@ -907,7 +898,6 @@ function createLabels(layerConfig, data){
     // Create labels for WFS and GeoJSON layers
     try{
         // De-duplicate any coincident labels
-        // TODO: take into account the current map scale and perform some rudimentary collision avoidance
         var newData = {
             features: [],
             latLngs: []

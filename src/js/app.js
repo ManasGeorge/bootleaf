@@ -44,7 +44,7 @@ $(document).ready(function(){
 
     // Get parameters passed via the URL. Overwrite the config file's start parameter
     if(getURLParameter("lat") !== null && getURLParameter("lng") !== null){
-        config.start.center = [getURLParameter("lat"), getURLParameter("lng")]
+        config.start.center = [getURLParameter("lat"), getURLParameter("lng")];
     }
     if(getURLParameter("zoom") !== null){
         config.start.zoom = getURLParameter("zoom");
@@ -96,14 +96,7 @@ $(document).ready(function(){
 
     // Override the default icon if an icon is specified. See http://leafletjs.com/reference-1.1.0.html#icon-default
     if (config.defaultIcon !== undefined){
-        var options = ["imagePath", "iconUrl", "iconSize", "iconAnchor",
-                       "popupAnchor", "shadowUrl", "shadowSize", "shadowAnchor"];
-        for (var o = 0; o < options.length; o++){
-            var option = options[o];
-            if (config.defaultIcon[option] !== undefined){
-                L.Icon.Default.prototype.options[option] = config.defaultIcon[option];
-            }
-        }
+        L.Icon = config.defaultIcon;
     }
 
     // Build layers from the config file
@@ -126,7 +119,7 @@ $(document).ready(function(){
 
             // Enable the icon if specified
             if (layerConfig.icon !== undefined){
-                var icon = L.icon(layerConfig.icon);
+                var icon = layerConfig.icon;
                 layerConfig.pointToLayer = function (feature, latlng) {
                     var marker = L.marker(latlng,{
                         icon: icon
@@ -155,7 +148,7 @@ $(document).ready(function(){
                         if (jqXHR.layerConfig.icon !== undefined){
                             jqXHR.layerConfig.pointToLayer = function (feature, latlng) {
                                 var marker = L.marker(latlng,{
-                                    icon: L.icon(jqXHR.layerConfig.icon)
+                                    icon: jqXHR.layerConfig.icon
                                 });
                                 return marker;
                             };
@@ -286,7 +279,7 @@ $(document).ready(function(){
             }
 
             bootleaf.leafletGeocoder = L.Control.geocoder({
-                defaultMarkGeocode: false,
+                defaultMarkGeocode: true,
                 position: config.controls.leafletGeocoder.position || "bottomright",
                 placeholder: config.controls.leafletGeocoder.placeholder || "Search for an address",
                 collapsed: config.controls.leafletGeocoder.collapsed || false,
@@ -298,7 +291,7 @@ $(document).ready(function(){
                     bbox.getNorthEast(),
                     bbox.getNorthWest(),
                     bbox.getSouthWest()
-                ]).addTo(bootleaf.map);
+                ]);
                 bootleaf.map.fitBounds(poly.getBounds());
             }).addTo(bootleaf.map);
 
@@ -1005,7 +998,7 @@ function buildLabelLayer(layerConfig) {
             return new L.CircleMarker(latlng, {
                 radius: 0,
                 opacity: 0
-            }).bindTooltip(label, {permanent: true, opacity: 0.7}).openTooltip();
+            }).bindTooltip(label, {permanent: true, opacity: 0.9}).openTooltip();
         }
     });
     labelLayer.layerConfig = Object.assign({}, layerConfig);
@@ -1017,7 +1010,7 @@ function buildLabelLayer(layerConfig) {
         labelLayer.layerConfig.maxZoom = layerConfig.label.maxZoom;
     }
     if (labelLayer.layerConfig.name !== undefined) {
-        labelLayer.layerConfig.name += " labels";
+        // labelLayer.layerConfig.name += " labels";
     } else {
         labelLayer.layerConfig.name = labelLayer.layerConfig.id + " labels";
     }

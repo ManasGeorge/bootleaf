@@ -67,3 +67,8 @@ div.dataTables_wrapper div.dataTables_paginate {
   margin-right: 8px;
   opacity: 0.7;
 }
+
+.awesome-marker i {
+    font-size: 14px;
+    margin-top: 8px;
+}

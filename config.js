@@ -2,7 +2,7 @@ var config = {
     "title": "CA DMV Appointment Finder",
     "start": {
         "center": [37.3861, -122.0839],
-        "zoom": 7,
+        "zoom": 10,
         "attributionControl": false,
         "zoomControl": false
     },
@@ -33,23 +33,13 @@ var config = {
         },
     },
     "tocCategories": [
-	      {
-		        "name": "Appointment Task",
-		        "layers" : ["DT_labels", "VR_labels", "RID_labels", "CID_labels"],
-		        "exclusive": true
-	      }
     ],
-    "basemaps": ['esriStreets', 'OpenStreetMap', 'esriGray', 'esriDarkGray'],
-    "defaultIcon": {
-        "imagePath": "http://leafletjs.com/examples/custom-icons/",
-        "iconUrl": "leaf-green.png",
-        "shadowUrl": "leaf-shadow.png",
-        "iconSize":     [38, 95],
-        "shadowSize":   [50, 64],
-        "iconAnchor":   [22, 94],
-        "shadowAnchor": [4, 62],
-        "popupAnchor":  [-3, -76]
-    },
+    "basemaps": ['esriNationalGeographic', 'esriStreets', 'OpenStreetMap', 'esriShadedRelief', 'esriTerrain'],
+    "defaultIcon": L.AwesomeMarkers.icon({
+        icon: 'home',
+        prefix: 'fa',
+        markerColor: 'red'
+    }),
     "projections": [
         {4269: '+proj=longlat +ellps=GRS80 +datum=NAD83 +no_defs '}
     ],
@@ -58,7 +48,7 @@ var config = {
         "opacity": 1,
         "color": 'white',
         "dashArray": '3',
-        "fillOpacity": 0.5,
+        "fillOpacity": 0.8,
         "fillColor": '#E31A1C',
         "stroke": true
     },

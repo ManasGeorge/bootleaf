@@ -523,6 +523,12 @@ function configurePopup(feature, layer) {
                         var outputs = formatPopup(key, val, outFields);
                         key = outputs[0];
                         val = outputs[1];
+
+                        // TODO: FIGURE OUT WHY THE URL DOESN'T SHOW UP
+                        if(outFields.url) {
+                            key = "<a href='" + outFields.url + "'>" + key;
+                            key += "</a>";
+                        }
                     }
                     if (key !== null) {
                         popupContent += "<tr><td>" + key + "</td><td>"+ val + "</td></tr>";

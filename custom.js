@@ -3,6 +3,8 @@ tasks = ["DT", "VR", "RID", "CID"];
 aliases = ["Driving Test", "Vehicle Registration", "REAL ID", "Regular CA ID"];
 
 function beforeMapLoads(){
+    officeUrl = "https://www.dmv.ca.gov/wasapp/foa/clear.do?goTo=officeVisit&localeName=en";
+    dtUrl = "https://www.dmv.ca.gov/wasapp/foa/clear.do?goTo=driveTest&localeName=en";
     dmvConfig = {
         "id": "DMVs",
         "name": "DMVs",
@@ -37,7 +39,7 @@ function beforeMapLoads(){
         task_layer.id = aliases[i];
         task_layer.name = aliases[i];
         task_layer.label = {
-            "name":t, "alias":aliases[i], "minZoom":10
+            "name":t, "alias":aliases[i], "minZoom":10,
         };
         config.layers.push(task_layer);
     });
@@ -57,7 +59,8 @@ function beforeMapLoads(){
         markerColor: 'red',
     });
 
-    tasks.map((t,i) => dmvConfig.outFields.push({"name": t, "alias": aliases[i]}));
+    tasks.map((t,i) => dmvConfig.outFields.push({"name": t, "alias": aliases[i],
+                                                 "url": (t=="DT")?dtUrl:officeUrl}));
     dmvConfig.hidden = false;
     dmvConfig.visible = true;
     dmvConfig.popup = true;

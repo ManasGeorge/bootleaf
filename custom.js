@@ -62,7 +62,6 @@ function beforeMapLoads(){
     tasks.map((t,i) => dmvConfig.outFields.push(
         {"name": t, "alias": "<a href='"
          + ((t=="DT")?dtUrl:officeUrl)
-         // + "#"
          + "'>" + aliases[i] + "</a>"}));
     dmvConfig.hidden = false;
     dmvConfig.visible = true;

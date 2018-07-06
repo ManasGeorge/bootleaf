@@ -45,7 +45,7 @@ function beforeMapLoads(){
     });
 
     // Part of exclusive group, have only one be visible
-    config.layers[0].visible = true;
+    config.layers[1].visible = true;
     config.tocCategories.push({
         "name": "Appointment Task",
         "layers" : aliases.map(a=>a+"_labels"),

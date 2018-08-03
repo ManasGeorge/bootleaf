@@ -2,6 +2,10 @@
   width: 450px;
 }
 
+.alert{
+   margin-bottom: 0px;
+}
+
 .panel-heading{
    width: 450px;
 }
